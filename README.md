@@ -1,0 +1,36 @@
+# ESTUN Programming Reference Library
+
+A comprehensive, multi-lingual programmer's reference and instruction library for ESTUN Industrial Robots.
+
+![ESTUN](https://img.shields.io/badge/Robotics-ESTUN-blue?style=for-the-badge)
+![React](https://img.shields.io/badge/UI-React-blueviolet?style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/Lang-TypeScript-blue?style=for-the-badge)
+
+## Overview
+This digital library extracts the raw IDE configurations (`configTable.cfg`, `usertable.cfg`) from ESTUN's programming environment and presents them in a beautiful, searchable, and responsive web application. 
+
+### Features:
+- **Complete Command Database**: Contains 210 instructions categorized by function (Movement, IO, Logic, Wait, etc.).
+- **Multi-lingual Support**: Full descriptions and parameter references in Russian (RU), English (EN), and Turkish (TR).
+- **Dark Mode UI**: Designed for industrial programmers with high contrast, code-font parameters, and instant global search.
+
+## Setup & Local Development
+
+This application is built using Vite + React + TypeScript.
+
+```bash
+# Install dependencies
+npm install
+
+# Start local development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Deployment
+This project is configured to automatically deploy to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`) on every push to the `main` branch.
+
+---
+*Created for Teknorob Robot ve Otomasyon*

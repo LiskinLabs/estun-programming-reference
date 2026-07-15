@@ -1,0 +1,4020 @@
+{
+  "Pos Calculate": [
+    {
+      "command": "CalPosOffset",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetCurAPos",
+      "description": {
+        "ru": "Инструкция GetCurAPos для робота ESTUN",
+        "en": "ESTUN instruction GetCurAPos",
+        "tr": "ESTUN komutu GetCurAPos"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetCurCPos",
+      "description": {
+        "ru": "Инструкция GetCurCPos для робота ESTUN",
+        "en": "ESTUN instruction GetCurCPos",
+        "tr": "ESTUN komutu GetCurCPos"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "APosToCPos",
+      "description": {
+        "ru": "Инструкция APosToCPos для робота ESTUN",
+        "en": "ESTUN instruction APosToCPos",
+        "tr": "ESTUN komutu APosToCPos"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CPosToAPos",
+      "description": {
+        "ru": "Инструкция CPosToAPos для робота ESTUN",
+        "en": "ESTUN instruction CPosToAPos",
+        "tr": "ESTUN komutu CPosToAPos"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CPosToCPos",
+      "description": {
+        "ru": "Инструкция CPosToCPos для робота ESTUN",
+        "en": "ESTUN instruction CPosToCPos",
+        "tr": "ESTUN komutu CPosToCPos"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CalPosOffset",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "ToolOffset",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "UserOffset",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PosOffset",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "AxisLock",
+      "description": {
+        "ru": "Инструкция AxisLock для робота ESTUN",
+        "en": "ESTUN instruction AxisLock",
+        "tr": "ESTUN komutu AxisLock"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "Movement": [
+    {
+      "command": "MovJ",
+      "description": {
+        "ru": "Движение по осям (Joint)",
+        "en": "Joint motion",
+        "tr": "Eklem hareketi (Joint)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovL",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovC",
+      "description": {
+        "ru": "Круговое движение (Circular)",
+        "en": "Circular motion",
+        "tr": "Dairesel hareket (Circular)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovCircle",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovLOffset",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovL",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovLOffsetC",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovL",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovJOffset",
+      "description": {
+        "ru": "Движение по осям (Joint)",
+        "en": "Joint motion",
+        "tr": "Eklem hareketi (Joint)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovJOffsetC",
+      "description": {
+        "ru": "Движение по осям (Joint)",
+        "en": "Joint motion",
+        "tr": "Eklem hareketi (Joint)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovJSearch",
+      "description": {
+        "ru": "Движение по осям (Joint)",
+        "en": "Joint motion",
+        "tr": "Eklem hareketi (Joint)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovLSearch",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovJRel",
+      "description": {
+        "ru": "Движение по осям (Joint)",
+        "en": "Joint motion",
+        "tr": "Eklem hareketi (Joint)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovLRel",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovLW",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovCW",
+      "description": {
+        "ru": "Круговое движение (Circular)",
+        "en": "Circular motion",
+        "tr": "Dairesel hareket (Circular)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovCircleW",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovH",
+      "description": {
+        "ru": "Команда движения",
+        "en": "Motion command",
+        "tr": "Hareket komutu"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovArch",
+      "description": {
+        "ru": "Круговое движение (Circular)",
+        "en": "Circular motion",
+        "tr": "Dairesel hareket (Circular)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovLArch",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovJHand",
+      "description": {
+        "ru": "Движение по осям (Joint)",
+        "en": "Joint motion",
+        "tr": "Eklem hareketi (Joint)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "OnDistance",
+      "description": {
+        "ru": "Инструкция OnDistance для робота ESTUN",
+        "en": "ESTUN instruction OnDistance",
+        "tr": "ESTUN komutu OnDistance"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "OnParameter",
+      "description": {
+        "ru": "Инструкция OnParameter для робота ESTUN",
+        "en": "ESTUN instruction OnParameter",
+        "tr": "ESTUN komutu OnParameter"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "Conveyor": [
+    {
+      "command": "MovLSync",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovLSyncQuit",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MovJSyncQuit",
+      "description": {
+        "ru": "Движение по осям (Joint)",
+        "en": "Joint motion",
+        "tr": "Eklem hareketi (Joint)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "SetSyncoord",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WaitWObj",
+      "description": {
+        "ru": "Команда ожидания",
+        "en": "Wait command",
+        "tr": "Bekleme komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetTargetPos",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SynCToUserC",
+      "description": {
+        "ru": "Инструкция SynCToUserC для робота ESTUN",
+        "en": "ESTUN instruction SynCToUserC",
+        "tr": "ESTUN komutu SynCToUserC"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WaitConvDis",
+      "description": {
+        "ru": "Ожидание цифрового входа",
+        "en": "Wait for digital input",
+        "tr": "Dijital giriş bekle"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SimConveyorOn",
+      "description": {
+        "ru": "Инструкция SimConveyorOn для робота ESTUN",
+        "en": "ESTUN instruction SimConveyorOn",
+        "tr": "ESTUN komutu SimConveyorOn"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SimConveyorOff",
+      "description": {
+        "ru": "Инструкция SimConveyorOff для робота ESTUN",
+        "en": "ESTUN instruction SimConveyorOff",
+        "tr": "ESTUN komutu SimConveyorOff"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "ReceiveWObj",
+      "description": {
+        "ru": "Инструкция ReceiveWObj для робота ESTUN",
+        "en": "ESTUN instruction ReceiveWObj",
+        "tr": "ESTUN komutu ReceiveWObj"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "ResetWObjBuf",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "Other": [
+    {
+      "command": "RefRobotAxis",
+      "description": {
+        "ru": "Инструкция RefRobotAxis для робота ESTUN",
+        "en": "ESTUN instruction RefRobotAxis",
+        "tr": "ESTUN komutu RefRobotAxis"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetSCArm",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "EScopeStart",
+      "description": {
+        "ru": "Перезапустите EScope.",
+        "en": "Restart EScope.",
+        "tr": "Escope'u yeniden başlatın."
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "EScopeStop",
+      "description": {
+        "ru": "Остановите EScope и сохраните данные.",
+        "en": "Stop EScope and save data.",
+        "tr": "Escope'u durdurun ve verileri kaydedin."
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetTorqueLimit",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetTrackId",
+      "description": {
+        "ru": "Инструкция GetTrackId для робота ESTUN",
+        "en": "ESTUN instruction GetTrackId",
+        "tr": "ESTUN komutu GetTrackId"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SFStop",
+      "description": {
+        "ru": "Функция SoftFloat отключена.",
+        "en": "SoftFloat function deactivate.",
+        "tr": "SoftFloat işlevi devre dışı bırakılır."
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GainDisable",
+      "description": {
+        "ru": "Закрыть параметр усиления сервопривода.",
+        "en": "Close servo gain parameter.",
+        "tr": "Servo kazanç parametresini kapatın."
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "ChirpExcit",
+      "description": {
+        "ru": "Инструкция ChirpExcit для робота ESTUN",
+        "en": "ESTUN instruction ChirpExcit",
+        "tr": "ESTUN komutu ChirpExcit"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetDampAcclimit",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetJointDamp",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetJointDamp",
+      "description": {
+        "ru": "Прекратите собирать данные MDL.",
+        "en": "Stop collect mdl data.",
+        "tr": "Mdl verilerini toplamayı bırakın."
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "RemoveAxisFromGroup",
+      "description": {
+        "ru": "Команда движения",
+        "en": "Motion command",
+        "tr": "Hareket komutu"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "AddAxisToGroup",
+      "description": {
+        "ru": "Инструкция AddAxisToGroup для робота ESTUN",
+        "en": "ESTUN instruction AddAxisToGroup",
+        "tr": "ESTUN komutu AddAxisToGroup"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgCmdRun",
+      "description": {
+        "ru": "Инструкция SgCmdRun для робота ESTUN",
+        "en": "ESTUN instruction SgCmdRun",
+        "tr": "ESTUN komutu SgCmdRun"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgPowerOn",
+      "description": {
+        "ru": "Инструкция SgPowerOn для робота ESTUN",
+        "en": "ESTUN instruction SgPowerOn",
+        "tr": "ESTUN komutu SgPowerOn"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgPowerOff",
+      "description": {
+        "ru": "Инструкция SgPowerOff для робота ESTUN",
+        "en": "ESTUN instruction SgPowerOff",
+        "tr": "ESTUN komutu SgPowerOff"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgHardStop",
+      "description": {
+        "ru": "Инструкция SgHardStop для робота ESTUN",
+        "en": "ESTUN instruction SgHardStop",
+        "tr": "ESTUN komutu SgHardStop"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgReset",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgStop",
+      "description": {
+        "ru": "Инструкция SgStop для робота ESTUN",
+        "en": "ESTUN instruction SgStop",
+        "tr": "ESTUN komutu SgStop"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgSetOverRide",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgHome",
+      "description": {
+        "ru": "Инструкция SgHome для робота ESTUN",
+        "en": "ESTUN instruction SgHome",
+        "tr": "ESTUN komutu SgHome"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgSetDriveMode",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SgMoveRelative",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "SgMoveAbsolute",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "SgMoveVelocity",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "SgTorqueControl",
+      "description": {
+        "ru": "Инструкция SgTorqueControl для робота ESTUN",
+        "en": "ESTUN instruction SgTorqueControl",
+        "tr": "ESTUN komutu SgTorqueControl"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "OnSgMoveRelative",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "OnSgMoveAbsolute",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "OnSgMoveVelocity",
+      "description": {
+        "ru": "Линейное движение (Linear)",
+        "en": "Linear motion",
+        "tr": "Doğrusal hareket (Linear)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "OnSgTorqueControl",
+      "description": {
+        "ru": "Инструкция OnSgTorqueControl для робота ESTUN",
+        "en": "ESTUN instruction OnSgTorqueControl",
+        "tr": "ESTUN komutu OnSgTorqueControl"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetPosTorLimit",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetNegTorLimit",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetPosTorLimit",
+      "description": {
+        "ru": "Инструкция GetPosTorLimit для робота ESTUN",
+        "en": "ESTUN instruction GetPosTorLimit",
+        "tr": "ESTUN komutu GetPosTorLimit"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetNegTorLimit",
+      "description": {
+        "ru": "Инструкция GetNegTorLimit для робота ESTUN",
+        "en": "ESTUN instruction GetNegTorLimit",
+        "tr": "ESTUN komutu GetNegTorLimit"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "Setting": [
+    {
+      "command": "SetCartDyn",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetJointDyn",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetSCARAMode",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetSingularPass",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetCircMode",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetOriMode",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetOverRide",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetCurOverRide",
+      "description": {
+        "ru": "Инструкция GetCurOverRide для робота ESTUN",
+        "en": "ESTUN instruction GetCurOverRide",
+        "tr": "ESTUN komutu GetCurOverRide"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetColliEnable",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetAxisColliParam",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetAxisVibraBLevel",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CalcTool",
+      "description": {
+        "ru": "Инструкция CalcTool для робота ESTUN",
+        "en": "ESTUN instruction CalcTool",
+        "tr": "ESTUN komutu CalcTool"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CalcCoord",
+      "description": {
+        "ru": "Инструкция CalcCoord для робота ESTUN",
+        "en": "ESTUN instruction CalcCoord",
+        "tr": "ESTUN komutu CalcCoord"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetTool",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetCoord",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetExternalTCP",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetPositioner",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetPayload",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetMotionMode",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "AutoTune",
+      "description": {
+        "ru": "Инструкция AutoTune для робота ESTUN",
+        "en": "ESTUN instruction AutoTune",
+        "tr": "ESTUN komutu AutoTune"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetRtToErr",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetRtInfo",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetRtWarning",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "Stop",
+      "description": {
+        "ru": "Останавливает все запущенные программы.",
+        "en": "Stops all running programs.",
+        "tr": "Çalışan tüm programları durdurur."
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "Hand",
+      "description": {
+        "ru": "Инструкция Hand для робота ESTUN",
+        "en": "ESTUN instruction Hand",
+        "tr": "ESTUN komutu Hand"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetBlendParam",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetRestorePC",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetRobotIsMoving",
+      "description": {
+        "ru": "Команда движения",
+        "en": "Motion command",
+        "tr": "Hareket komutu"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "SetVibrationParam",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "AutoGainEnable",
+      "description": {
+        "ru": "Инструкция AutoGainEnable для робота ESTUN",
+        "en": "ESTUN instruction AutoGainEnable",
+        "tr": "ESTUN komutu AutoGainEnable"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetColliAutoTune",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetColliParam",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "IO": [
+    {
+      "command": "SetDO",
+      "description": {
+        "ru": "Установить цифровой выход",
+        "en": "Set digital output",
+        "tr": "Dijital çıkış ayarla"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "WaitDI",
+      "description": {
+        "ru": "Ожидание цифрового входа",
+        "en": "Wait for digital input",
+        "tr": "Dijital giriş bekle"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SetAO",
+      "description": {
+        "ru": "Установить аналоговый выход",
+        "en": "Set analog output",
+        "tr": "Analog çıkış ayarla"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WaitAI",
+      "description": {
+        "ru": "Команда ожидания",
+        "en": "Wait command",
+        "tr": "Bekleme komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetSimDO",
+      "description": {
+        "ru": "Установить цифровой выход",
+        "en": "Set digital output",
+        "tr": "Dijital çıkış ayarla"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "WaitSimDI",
+      "description": {
+        "ru": "Ожидание цифрового входа",
+        "en": "Wait for digital input",
+        "tr": "Dijital giriş bekle"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "WaitDI8421",
+      "description": {
+        "ru": "Ожидание цифрового входа",
+        "en": "Wait for digital input",
+        "tr": "Dijital giriş bekle"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "WaitSimDI8421",
+      "description": {
+        "ru": "Ожидание цифрового входа",
+        "en": "Wait for digital input",
+        "tr": "Dijital giriş bekle"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SetSimAO",
+      "description": {
+        "ru": "Установить аналоговый выход",
+        "en": "Set analog output",
+        "tr": "Analog çıkış ayarla"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WaitSimAI",
+      "description": {
+        "ru": "Команда ожидания",
+        "en": "Wait command",
+        "tr": "Bekleme komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PulseOut",
+      "description": {
+        "ru": "Инструкция PulseOut для робота ESTUN",
+        "en": "ESTUN instruction PulseOut",
+        "tr": "ESTUN komutu PulseOut"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PulseSimOut",
+      "description": {
+        "ru": "Инструкция PulseSimOut для робота ESTUN",
+        "en": "ESTUN instruction PulseSimOut",
+        "tr": "ESTUN komutu PulseSimOut"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetDI8421",
+      "description": {
+        "ru": "Инструкция GetDI8421 для робота ESTUN",
+        "en": "ESTUN instruction GetDI8421",
+        "tr": "ESTUN komutu GetDI8421"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "GetSimDI8421",
+      "description": {
+        "ru": "Инструкция GetSimDI8421 для робота ESTUN",
+        "en": "ESTUN instruction GetSimDI8421",
+        "tr": "ESTUN komutu GetSimDI8421"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SetDO8421",
+      "description": {
+        "ru": "Установить цифровой выход",
+        "en": "Set digital output",
+        "tr": "Dijital çıkış ayarla"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SetSimDO8421",
+      "description": {
+        "ru": "Установить цифровой выход",
+        "en": "Set digital output",
+        "tr": "Dijital çıkış ayarla"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "GetSimDIToVar",
+      "description": {
+        "ru": "Инструкция GetSimDIToVar для робота ESTUN",
+        "en": "ESTUN instruction GetSimDIToVar",
+        "tr": "ESTUN komutu GetSimDIToVar"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SetSimDOByVar",
+      "description": {
+        "ru": "Установить цифровой выход",
+        "en": "Set digital output",
+        "tr": "Dijital çıkış ayarla"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "GetSimAIToVar",
+      "description": {
+        "ru": "Инструкция GetSimAIToVar для робота ESTUN",
+        "en": "ESTUN instruction GetSimAIToVar",
+        "tr": "ESTUN komutu GetSimAIToVar"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetSimAOByVar",
+      "description": {
+        "ru": "Установить аналоговый выход",
+        "en": "Set analog output",
+        "tr": "Analog çıkış ayarla"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetDIEdge",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SetSimDIEdge",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    }
+  ],
+  "Wait": [
+    {
+      "command": "Wait",
+      "description": {
+        "ru": "Команда ожидания",
+        "en": "Wait command",
+        "tr": "Bekleme komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WaitFinish",
+      "description": {
+        "ru": "Команда ожидания",
+        "en": "Wait command",
+        "tr": "Bekleme komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WaitCondition",
+      "description": {
+        "ru": "Ожидание цифрового входа",
+        "en": "Wait for digital input",
+        "tr": "Dijital giriş bekle"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    }
+  ],
+  "Interrupt": [
+    {
+      "command": "IEnter",
+      "description": {
+        "ru": "Запустить команду прерывания",
+        "en": "Start interrupt command",
+        "tr": "Kesme komutunu başlat"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "IExit",
+      "description": {
+        "ru": "Команда остановки прерывания",
+        "en": "Stop interrupt command",
+        "tr": "Kesintiyi durdurma komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "MovToIPos",
+      "description": {
+        "ru": "Команда движения",
+        "en": "Motion command",
+        "tr": "Hareket komutu"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "IConnect",
+      "description": {
+        "ru": "Инструкция IConnect для робота ESTUN",
+        "en": "ESTUN instruction IConnect",
+        "tr": "ESTUN komutu IConnect"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "IDelete",
+      "description": {
+        "ru": "Инструкция IDelete для робота ESTUN",
+        "en": "ESTUN instruction IDelete",
+        "tr": "ESTUN komutu IDelete"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "ISleep",
+      "description": {
+        "ru": "Инструкция ISleep для робота ESTUN",
+        "en": "ESTUN instruction ISleep",
+        "tr": "ESTUN komutu ISleep"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "IWatch",
+      "description": {
+        "ru": "Инструкция IWatch для робота ESTUN",
+        "en": "ESTUN instruction IWatch",
+        "tr": "ESTUN komutu IWatch"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "ITimer",
+      "description": {
+        "ru": "Инструкция ITimer для робота ESTUN",
+        "en": "ESTUN instruction ITimer",
+        "tr": "ESTUN komutu ITimer"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "ISignalDI",
+      "description": {
+        "ru": "Инструкция ISignalDI для робота ESTUN",
+        "en": "ESTUN instruction ISignalDI",
+        "tr": "ESTUN komutu ISignalDI"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "ISignalSimDI",
+      "description": {
+        "ru": "Инструкция ISignalSimDI для робота ESTUN",
+        "en": "ESTUN instruction ISignalSimDI",
+        "tr": "ESTUN komutu ISignalSimDI"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "ExitCycle",
+      "description": {
+        "ru": "Выйти из текущей команды цикла",
+        "en": "Exit current cycle command",
+        "tr": "Geçerli döngü komutundan çık"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "BitOperate": [
+    {
+      "command": "BitAnd",
+      "description": {
+        "ru": "Побитовая операция",
+        "en": "Bitwise operation",
+        "tr": "Bitsel işlem"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "BitNeg",
+      "description": {
+        "ru": "Побитовая операция",
+        "en": "Bitwise operation",
+        "tr": "Bitsel işlem"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "BitOr",
+      "description": {
+        "ru": "Побитовая операция",
+        "en": "Bitwise operation",
+        "tr": "Bitsel işlem"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "BitXOr",
+      "description": {
+        "ru": "Побитовая операция",
+        "en": "Bitwise operation",
+        "tr": "Bitsel işlem"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "BitLSH",
+      "description": {
+        "ru": "Побитовая операция",
+        "en": "Bitwise operation",
+        "tr": "Bitsel işlem"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "BitRSH",
+      "description": {
+        "ru": "Побитовая операция",
+        "en": "Bitwise operation",
+        "tr": "Bitsel işlem"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "Clock": [
+    {
+      "command": "CLKStart",
+      "description": {
+        "ru": "Инструкция CLKStart для робота ESTUN",
+        "en": "ESTUN instruction CLKStart",
+        "tr": "ESTUN komutu CLKStart"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CLKStop",
+      "description": {
+        "ru": "Инструкция CLKStop для робота ESTUN",
+        "en": "ESTUN instruction CLKStop",
+        "tr": "ESTUN komutu CLKStop"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CLKReset",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CLKRead",
+      "description": {
+        "ru": "Инструкция CLKRead для робота ESTUN",
+        "en": "ESTUN instruction CLKRead",
+        "tr": "ESTUN komutu CLKRead"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "AREA": [
+    {
+      "command": "AreaActivate",
+      "description": {
+        "ru": "Инструкция AreaActivate для робота ESTUN",
+        "en": "ESTUN instruction AreaActivate",
+        "tr": "ESTUN komutu AreaActivate"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "AreaDeactivate",
+      "description": {
+        "ru": "Инструкция AreaDeactivate для робота ESTUN",
+        "en": "ESTUN instruction AreaDeactivate",
+        "tr": "ESTUN komutu AreaDeactivate"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PolyhedronAreaActivate",
+      "description": {
+        "ru": "Инструкция PolyhedronAreaActivate для робота ESTUN",
+        "en": "ESTUN instruction PolyhedronAreaActivate",
+        "tr": "ESTUN komutu PolyhedronAreaActivate"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PolyhedronAreaDeactivate",
+      "description": {
+        "ru": "Инструкция PolyhedronAreaDeactivate для робота ESTUN",
+        "en": "ESTUN instruction PolyhedronAreaDeactivate",
+        "tr": "ESTUN komutu PolyhedronAreaDeactivate"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "AreaConnectIO",
+      "description": {
+        "ru": "Инструкция AreaConnectIO для робота ESTUN",
+        "en": "ESTUN instruction AreaConnectIO",
+        "tr": "ESTUN komutu AreaConnectIO"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "AreaDisConnectIO",
+      "description": {
+        "ru": "Инструкция AreaDisConnectIO для робота ESTUN",
+        "en": "ESTUN instruction AreaDisConnectIO",
+        "tr": "ESTUN komutu AreaDisConnectIO"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "PolyhedronAreaConnectIO",
+      "description": {
+        "ru": "Инструкция PolyhedronAreaConnectIO для робота ESTUN",
+        "en": "ESTUN instruction PolyhedronAreaConnectIO",
+        "tr": "ESTUN komutu PolyhedronAreaConnectIO"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PolyhedronAreaDisConnectIO",
+      "description": {
+        "ru": "Инструкция PolyhedronAreaDisConnectIO для робота ESTUN",
+        "en": "ESTUN instruction PolyhedronAreaDisConnectIO",
+        "tr": "ESTUN komutu PolyhedronAreaDisConnectIO"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    }
+  ],
+  "Vision": [
+    {
+      "command": "TrigCam",
+      "description": {
+        "ru": "Инструкция TrigCam для робота ESTUN",
+        "en": "ESTUN instruction TrigCam",
+        "tr": "ESTUN komutu TrigCam"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WaitFinishCAM",
+      "description": {
+        "ru": "Команда ожидания",
+        "en": "Wait command",
+        "tr": "Bekleme komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetCamPos",
+      "description": {
+        "ru": "Инструкция GetCamPos для робота ESTUN",
+        "en": "ESTUN instruction GetCamPos",
+        "tr": "ESTUN komutu GetCamPos"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SendMessage",
+      "description": {
+        "ru": "Инструкция SendMessage для робота ESTUN",
+        "en": "ESTUN instruction SendMessage",
+        "tr": "ESTUN komutu SendMessage"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "Tracking",
+      "description": {
+        "ru": "Инструкция Tracking для робота ESTUN",
+        "en": "ESTUN instruction Tracking",
+        "tr": "ESTUN komutu Tracking"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "Pallet": [
+    {
+      "command": "PalletToPut",
+      "description": {
+        "ru": "Инструкция PalletToPut для робота ESTUN",
+        "en": "ESTUN instruction PalletToPut",
+        "tr": "ESTUN komutu PalletToPut"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PalletFromPut",
+      "description": {
+        "ru": "Инструкция PalletFromPut для робота ESTUN",
+        "en": "ESTUN instruction PalletFromPut",
+        "tr": "ESTUN komutu PalletFromPut"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PalletToGet",
+      "description": {
+        "ru": "Инструкция PalletToGet для робота ESTUN",
+        "en": "ESTUN instruction PalletToGet",
+        "tr": "ESTUN komutu PalletToGet"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PalletFromGet",
+      "description": {
+        "ru": "Инструкция PalletFromGet для робота ESTUN",
+        "en": "ESTUN instruction PalletFromGet",
+        "tr": "ESTUN komutu PalletFromGet"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "PalletReset",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "SoftFloat": [
+    {
+      "command": "SoftFloatStart",
+      "description": {
+        "ru": "Инструкция SoftFloatStart для робота ESTUN",
+        "en": "ESTUN instruction SoftFloatStart",
+        "tr": "ESTUN komutu SoftFloatStart"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "Socket": [
+    {
+      "command": "SocketCreate",
+      "description": {
+        "ru": "Операция с сокетами (TCP/IP)",
+        "en": "Socket operation (TCP/IP)",
+        "tr": "Soket işlemi (TCP/IP)"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SocketClose",
+      "description": {
+        "ru": "Операция с сокетами (TCP/IP)",
+        "en": "Socket operation (TCP/IP)",
+        "tr": "Soket işlemi (TCP/IP)"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SocketSendStr",
+      "description": {
+        "ru": "Операция с сокетами (TCP/IP)",
+        "en": "Socket operation (TCP/IP)",
+        "tr": "Soket işlemi (TCP/IP)"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SocketSendReal",
+      "description": {
+        "ru": "Операция с сокетами (TCP/IP)",
+        "en": "Socket operation (TCP/IP)",
+        "tr": "Soket işlemi (TCP/IP)"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SocketSendInt",
+      "description": {
+        "ru": "Операция с сокетами (TCP/IP)",
+        "en": "Socket operation (TCP/IP)",
+        "tr": "Soket işlemi (TCP/IP)"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SocketReadInt",
+      "description": {
+        "ru": "Операция с сокетами (TCP/IP)",
+        "en": "Socket operation (TCP/IP)",
+        "tr": "Soket işlemi (TCP/IP)"
+      },
+      "parameters": [
+        {
+          "name": "Port",
+          "type": "Int",
+          "desc_en": "IO Port number",
+          "desc_ru": "Номер порта I/O",
+          "desc_tr": "IO Port numarası"
+        },
+        {
+          "name": "Value",
+          "type": "Bool",
+          "desc_en": "Signal value (On/Off)",
+          "desc_ru": "Значение сигнала",
+          "desc_tr": "Sinyal değeri"
+        }
+      ]
+    },
+    {
+      "command": "SocketReadReal",
+      "description": {
+        "ru": "Операция с сокетами (TCP/IP)",
+        "en": "Socket operation (TCP/IP)",
+        "tr": "Soket işlemi (TCP/IP)"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SocketReadStr",
+      "description": {
+        "ru": "Операция с сокетами (TCP/IP)",
+        "en": "Socket operation (TCP/IP)",
+        "tr": "Soket işlemi (TCP/IP)"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SocketResetBuf",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "Matrix": [
+    {
+      "command": "SetMatrix",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetMatrix",
+      "description": {
+        "ru": "Матричная операция",
+        "en": "Matrix operation",
+        "tr": "Matris işlemi"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetMatrixFourP",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetMatrixFourP",
+      "description": {
+        "ru": "Матричная операция",
+        "en": "Matrix operation",
+        "tr": "Matris işlemi"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "ModbusTcp": [
+    {
+      "command": "GetModConState",
+      "description": {
+        "ru": "Инструкция GetModConState для робота ESTUN",
+        "en": "ESTUN instruction GetModConState",
+        "tr": "ESTUN komutu GetModConState"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "ReadModbusReg",
+      "description": {
+        "ru": "Инструкция ReadModbusReg для робота ESTUN",
+        "en": "ESTUN instruction ReadModbusReg",
+        "tr": "ESTUN komutu ReadModbusReg"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WriteModbusReg",
+      "description": {
+        "ru": "Инструкция WriteModbusReg для робота ESTUN",
+        "en": "ESTUN instruction WriteModbusReg",
+        "tr": "ESTUN komutu WriteModbusReg"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "ERBD": [
+    {
+      "command": "StartMdlLog",
+      "description": {
+        "ru": "Инструкция StartMdlLog для робота ESTUN",
+        "en": "ESTUN instruction StartMdlLog",
+        "tr": "ESTUN komutu StartMdlLog"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "CalcDynMdl",
+      "description": {
+        "ru": "Инструкция CalcDynMdl для робота ESTUN",
+        "en": "ESTUN instruction CalcDynMdl",
+        "tr": "ESTUN komutu CalcDynMdl"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "MA_ELF": [
+    {
+      "command": "MA_ELF_START",
+      "description": {
+        "ru": "Время начала выполнения записи.",
+        "en": "The time which valid execute start record.",
+        "tr": "Geçerli yürütme başlatma kaydının süresi."
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "MA_ELF_STOP",
+      "description": {
+        "ru": "Время окончания выполнения записи.",
+        "en": "The time which valid execute end record.",
+        "tr": "Yürütme bitiş kaydının geçerli olduğu süre."
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "MasterSlave Move": [
+    {
+      "command": "MSWaitSync",
+      "description": {
+        "ru": "Команда ожидания",
+        "en": "Wait command",
+        "tr": "Bekleme komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "MovMSSyncOn",
+      "description": {
+        "ru": "Круговое движение (Circular)",
+        "en": "Circular motion",
+        "tr": "Dairesel hareket (Circular)"
+      },
+      "parameters": [
+        {
+          "name": "Target",
+          "type": "Position",
+          "desc_en": "Target position",
+          "desc_ru": "Целевая позиция",
+          "desc_tr": "Hedef pozisyon"
+        },
+        {
+          "name": "Speed",
+          "type": "Real",
+          "desc_en": "Movement speed",
+          "desc_ru": "Скорость движения",
+          "desc_tr": "Hareket hızı"
+        }
+      ]
+    },
+    {
+      "command": "MSSyncOff",
+      "description": {
+        "ru": "Инструкция MSSyncOff для робота ESTUN",
+        "en": "ESTUN instruction MSSyncOff",
+        "tr": "ESTUN komutu MSSyncOff"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetSyncSignal",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetSyncSignal",
+      "description": {
+        "ru": "Инструкция GetSyncSignal для робота ESTUN",
+        "en": "ESTUN instruction GetSyncSignal",
+        "tr": "ESTUN komutu GetSyncSignal"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ],
+  "FlyPhotos": [
+    {
+      "command": "LatchEnable",
+      "description": {
+        "ru": "Инструкция LatchEnable для робота ESTUN",
+        "en": "ESTUN instruction LatchEnable",
+        "tr": "ESTUN komutu LatchEnable"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "GetPSOStatus",
+      "description": {
+        "ru": "Инструкция GetPSOStatus для робота ESTUN",
+        "en": "ESTUN instruction GetPSOStatus",
+        "tr": "ESTUN komutu GetPSOStatus"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetLatchPos",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetLatchPosAttr",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "SetLatchPosDyn",
+      "description": {
+        "ru": "Команда установки параметров",
+        "en": "Parameter setting command",
+        "tr": "Parametre ayar komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "RecordLatchPos",
+      "description": {
+        "ru": "Инструкция RecordLatchPos для робота ESTUN",
+        "en": "ESTUN instruction RecordLatchPos",
+        "tr": "ESTUN komutu RecordLatchPos"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    },
+    {
+      "command": "WaitCameraDCPOS",
+      "description": {
+        "ru": "Команда ожидания",
+        "en": "Wait command",
+        "tr": "Bekleme komutu"
+      },
+      "parameters": [
+        {
+          "name": "Param1",
+          "type": "Any",
+          "desc_en": "Generic parameter",
+          "desc_ru": "Общий параметр",
+          "desc_tr": "Genel parametre"
+        }
+      ]
+    }
+  ]
+}
