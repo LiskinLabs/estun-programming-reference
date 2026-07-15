@@ -89,6 +89,28 @@ function App() {
     return results;
   }, [activeCategory, searchQuery, lang, categories]);
 
+  const displayedExamples = useMemo(() => {
+    if (!searchQuery) return examplesDB;
+    const query = searchQuery.toLowerCase();
+    return examplesDB.filter(ex => 
+      ex.title[lang].toLowerCase().includes(query) ||
+      ex.description[lang].toLowerCase().includes(query) ||
+      ex.code.toLowerCase().includes(query)
+    );
+  }, [searchQuery, lang]);
+
+  const displayedErrors = useMemo(() => {
+    if (!searchQuery) return errorsDB;
+    const query = searchQuery.toLowerCase();
+    return errorsDB.filter(err => 
+      String(err.code).includes(query) ||
+      (err.en && err.en.toLowerCase().includes(query)) ||
+      (err.ru && err.ru.toLowerCase().includes(query)) ||
+      (err.tr && err.tr.toLowerCase().includes(query)) ||
+      (err.ch && err.ch.toLowerCase().includes(query))
+    );
+  }, [searchQuery]);
+
   return (
     <div className="app-container">
       {/* Sidebar */}
@@ -226,8 +248,11 @@ function App() {
                 {lang === 'ru' ? 'Примеры программ' : lang === 'en' ? 'Code Examples' : 'Kod Örnekleri'}
               </div>
               <div className="examples-grid">
-                {examplesDB.map((ex) => (
-                  <div key={ex.id} className="cmd-card">
+                {displayedExamples.length === 0 ? (
+                  <div className="no-results">No examples found.</div>
+                ) : (
+                  displayedExamples.map((ex) => (
+                    <div key={ex.id} className="cmd-card">
                     <div className="cmd-header">
                       <span className="cmd-name" style={{ color: '#60a5fa' }}>{ex.title[lang]}</span>
                     </div>
@@ -237,8 +262,9 @@ function App() {
                     <div className="code-block">
                       <code>{ex.code}</code>
                     </div>
-                  </div>
-                ))}
+                    </div>
+                  ))
+                )}
               </div>
             </>
           ) : (
@@ -246,23 +272,27 @@ function App() {
               <div className="category-title">
                 {lang === 'ru' ? 'Системные ошибки (System Errors)' : lang === 'en' ? 'System Errors' : 'Sistem Hataları (System Errors)'}
                 <span style={{ fontSize: '0.9rem', color: '#94a3b8', marginLeft: 'auto', fontWeight: 'normal' }}>
-                  {errorsDB.length} Codes
+                  {displayedErrors.length} Codes
                 </span>
               </div>
               <div className="errors-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(500px, 1fr))', gap: '16px' }}>
-                {errorsDB.map((err, idx) => (
-                  <div key={idx} className="cmd-card" style={{ padding: '16px' }}>
-                    <div className="cmd-header" style={{ marginBottom: '8px' }}>
-                      <span className="cmd-name" style={{ color: '#ef4444' }}>E{err.code}</span>
-                    </div>
-                    <div className="cmd-desc" style={{ marginBottom: '0' }}>
-                      <div style={{ color: '#e2e8f0', marginBottom: '4px' }}>{err.en}</div>
-                      {(lang === 'ru' || lang === 'tr') && (
+                {displayedErrors.length === 0 ? (
+                  <div className="no-results">No errors found.</div>
+                ) : (
+                  displayedErrors.map((err, idx) => (
+                    <div key={idx} className="cmd-card" style={{ padding: '16px' }}>
+                      <div className="cmd-header" style={{ marginBottom: '8px' }}>
+                        <span className="cmd-name" style={{ color: '#ef4444' }}>E{err.code}</span>
+                      </div>
+                      <div className="cmd-desc" style={{ marginBottom: '0' }}>
+                        <div style={{ color: '#e2e8f0', marginBottom: '4px' }}>
+                          {lang === 'ru' && err.ru ? err.ru : lang === 'tr' && err.tr ? err.tr : err.en}
+                        </div>
                         <div style={{ color: '#94a3b8', fontSize: '0.85rem' }}>{err.ch}</div>
-                      )}
                     </div>
-                  </div>
-                ))}
+                      </div>
+                  ))
+                )}
               </div>
             </>
           )}
