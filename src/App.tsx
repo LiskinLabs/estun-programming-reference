@@ -47,7 +47,7 @@ const commandsDB: Record<string, Command[]> = commandsDataRaw as any;
 const examplesDB: Example[] = examplesDataRaw as any;
 const errorsDB: any[] = errorsDataRaw as any;
 
-const categories = Object.keys(commandsDB);
+
 
 // Icon mapping for categories
 const iconMap: Record<string, React.ReactNode> = {

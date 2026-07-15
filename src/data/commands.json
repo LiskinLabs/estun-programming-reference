@@ -192,8 +192,8 @@
     {
       "command": "MovJ",
       "description": {
-        "ru": "Движение по осям (Joint)",
-        "en": "Joint motion",
+        "ru": "Абсолютно фундаментальная команда. Выполняет интерполированное перемещение в суставных (joint) координатах от текущей позиции до целевой точки `P`. В отличие от `MovL`, траектория между точками не является прямой линией в пространстве, зато робот движется максимально плавно, быстро и с минимальной нагрузкой на серводвигатели. \n\n**Особенности:**\n- Поддерживает установку зоны скругления углов (параметр `C`), что позволяет роботу не останавливаться в точке, а сглаживать траекторию.\n- Поддерживает `B=\"RELATIVE\"` для относительного смещения от текущей позы.\n- Можно задать цифровой выход `DO=\"\"`, который сработает точно по достижении целевой точки без использования отдельной команды `Wait`.",
+        "en": "An absolutely fundamental command. Executes interpolated movement in joint coordinates from the current position to the target point `P`. Unlike `MovL`, the trajectory is not a straight line in space, but the robot moves extremely smoothly, quickly, and with minimal stress on the servo motors. \n\n**Features:**\n- Supports corner rounding zones (parameter `C`), allowing the robot to blend trajectories continuously without stopping.\n- Supports `B=\"RELATIVE\"` for relative offsets from the current posture.\n- You can specify a digital output `DO=\"\"` that triggers exactly when the point is reached without needing a separate `Wait` command.",
         "tr": "Eklem hareketi (Joint)"
       },
       "parameters": [
@@ -216,8 +216,8 @@
     {
       "command": "MovL",
       "description": {
-        "ru": "Линейное движение (Linear)",
-        "en": "Linear motion",
+        "ru": "Линейная интерполяция (Linear Movement). Команда заставляет робота (TCP) двигаться к целевой точке `P` строго по прямой линии. Это критически важно для таких задач как лазерная резка, сварка или нанесение клея.\n\n**Важно:** Линейные перемещения требуют решения обратной кинематики в реальном времени. Если прямая линия проходит через сингулярность (Singularity) или требует превышения максимальной скорости осей, робот выдаст ошибку и остановится. Рекомендуется использовать `MovJ` для подхода к детали, и `MovL` только для самого рабочего процесса.",
+        "en": "Linear interpolation (Linear Movement). This command forces the robot (TCP) to move to the target point `P` strictly along a straight line. This is critical for tasks like laser cutting, welding, or dispensing.\n\n**Important:** Linear movements require real-time inverse kinematics calculation. If the straight line passes through a singularity or requires exceeding maximum axis speeds, the robot will throw an error and stop. It is recommended to use `MovJ` to approach the workpiece, and `MovL` only for the actual work process.",
         "tr": "Doğrusal hareket (Linear)"
       },
       "parameters": [
