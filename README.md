@@ -14,6 +14,11 @@ This digital library extracts the raw IDE configurations (`configTable.cfg`, `us
 - **Multi-lingual Support**: Full descriptions and parameter references in Russian (RU), English (EN), and Turkish (TR).
 - **Dark Mode UI**: Designed for industrial programmers with high contrast, code-font parameters, and instant global search.
 
+## 🗄️ Raw Data & Project Backups
+All the documentation and logic shown in this app were programmatically extracted from the raw configuration files (`configTable.cfg`, `usertable.cfg`, `inst.lua`) found on the ESTUN controller's internal storage. 
+
+Additionally, we have included real-world project backups inside the `raw_data/Examples_Old_Projects` directory (such as `TestV4_0.er` and `Lasertrajectory.er`). These backups serve as the ultimate truth for how ESTUN `.erd` / `.erp` scripts are structured and written in production environments.
+
 ## Setup & Local Development
 
 This application is built using Vite + React + TypeScript.
