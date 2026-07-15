@@ -1,0 +1,73 @@
+// InstParseVersion: V1.02
+Start:
+/*稳定性跑和过程中，如果下位，请记录SumCycNumber2的值，该数据表示循环多少次之后出现故障，方便后续跟踪和问题分析，同时当机器人重新上位时将工程变量中的SumCycNumber2设置为0*/
+SetPayload{PayLoad=t_g.PAYLOAD0}
+CALL ProgramVersion
+t_p.JudgeMent.value = 2
+t_p.ENER.value = 0
+IF ( t_p.SumCycNumber2.value == 0 ) THEN
+t_p.SumCycNumber2.value = 1
+ENDIF
+t_l.TemporaryCycNumber.value = 1
+WHILE ( t_l.TemporaryCycNumber.value <= 1 ) DO
+SetOverRide{V=10}
+CALL Scope
+CALL LimitAngle
+CALL Dedicated
+CALL Durable
+CALL ProductionTrack
+CALL linkage
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+WHILE ( t_l.TemporaryCycNumber.value <= 10 ) DO
+SetOverRide{V=20}
+CALL LimitAngle
+CALL Dedicated
+CALL Durable
+CALL linkage
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+WHILE ( t_l.TemporaryCycNumber.value <= 30 ) DO
+SetOverRide{V=50}
+CALL LimitAngle
+CALL Dedicated
+CALL Durable
+CALL linkage
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+WHILE ( t_l.TemporaryCycNumber.value <= 40 ) DO
+SetOverRide{V=80}
+CALL LimitAngle
+CALL Dedicated
+CALL Durable
+CALL linkage
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+WHILE ( t_l.TemporaryCycNumber.value > 40 ) DO
+SetOverRide{V=100}
+CALL LimitAngle
+CALL Dedicated
+CALL Durable
+CALL linkage
+SetOverRide{V=68}
+Wait{T=500}
+SetOverRide{V=100}
+CALL ProductionTrack
+SetOverRide{V=28}
+Wait{T=500}
+IF t_l.TemporaryCycNumber.value % 10 == 0 THEN
+    t_p.ENER.value = 1
+ENDIF
+IF t_l.TemporaryCycNumber.value % 10 ~= 0 THEN
+    t_p.ENER.value = 0
+ENDIF
+t_p.SumCycNumber2.value = t_p.SumCycNumber2.value + 1
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+IF ( t_l.TemporaryCycNumber.value % 10 == 0 ) THEN
+t_p.Trigger.value = 1
+ENDIF
+IF ( t_l.TemporaryCycNumber.value % 10 ~= 0 ) THEN
+t_p.Trigger.value = 0
+ENDIF
+ENDWHILE
+End;

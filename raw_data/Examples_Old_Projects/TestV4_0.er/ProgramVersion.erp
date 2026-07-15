@@ -1,0 +1,67 @@
+// InstParseVersion: V1.02
+Start:
+/*机型：ER220-2700*/
+/*系统版本：RCS2V1.31*/
+/*示教器版本：V1.31*/
+/*控制器版本：V1.31*/
+/*程序版本：V5.0*/
+/*Command循环变量初始化*/
+t_p.CycX.value = 1
+t_p.CycY.value = 1
+t_p.CycZ.value = 1
+t_p.CycCircle.value = 1
+/*Command设定间隔*/
+t_p.SpaceX.value = 50
+t_p.SpaceY.value = 50
+t_p.SpaceZ.value = 50
+t_p.SpaceCircle.value = 10
+/*生产跑合次数*/
+t_p.PmNumber1.value = 1
+t_p.PmNumber2.value = 10
+t_p.PmNumber3.value = 30
+t_p.PmNumber4.value = 39
+/*研发测试跑合次数*/
+t_p.TmNumber1.value = 1
+t_p.TmNumber2.value = 3
+t_p.TmNumber3.value = 5
+t_p.TmNumber4.value = 7
+/*Durable循环次数*/
+t_p.DaNumber.value = 3
+/*DynamicLoad循环次数*/
+t_p.DLNumber.value = 4
+/*LimitAngle循环次数*/
+t_p.LANumber.value = 3
+/*DirectionSpeed循环次数*/
+t_p.DSNumber.value = 10
+/*Scope设置空间大小*/
+t_p.BoxX.value = 1000
+t_p.BoxY.value = 1000
+t_p.BoxZ.value = 1000
+/*设置中心点位置*/
+t_p.P1.x = 1700
+t_p.P1.y = 0
+t_p.P1.z = 1200
+t_p.P1.a = -90
+t_p.P1.b = 0
+t_p.P1.c = -180
+/*设置DirectionSpeedxyz方向及行程Direction为1表示左方向，2为右方向，默认为1*/
+t_p.Direction.value = 1
+t_p.FrontMAXX.value = 1900
+t_p.AfterMAXX.value = 1400
+t_p.LeftMAXY.value = 1900
+t_p.RightMAXY.value = 1800
+t_p.UpperMAXZ.value = 1100
+t_p.DownMAXZ.value = 500
+/*各速度段时间设置*/
+t_p.CKTen.value = 10000
+t_p.CKTwenty.value = 10000
+t_p.CKFifty.value = 10000
+t_p.CKEighty.value = 10000
+t_p.CKHundred.value = 10000
+/*Escopestar触发设置0为不触发，1触发，默认为0不触发*/
+t_p.Trigger.value = 0
+/*循环变量设置1为无限循环设置，0为正常顺序跑合，默认为0*/
+t_p.Loopvariable.value = 0
+/*判断是调用研发轨迹还是生产轨迹：1是研发轨迹2是生产轨迹，对程序Scope有影响,默认为0*/
+t_p.JudgeMent.value = 0
+End;

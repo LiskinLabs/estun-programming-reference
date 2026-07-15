@@ -1,0 +1,10 @@
+// InstParseVersion: V1.02
+Start:
+WHILE ( true ) DO
+MovJ{P=t_l.P0}
+MovJ{P=t_l.P1}
+--MovJ{P=t_p.LJ5P1}
+--MovJ{P=t_p.LJ5P2}
+Wait{T=1000}
+ENDWHILE
+End;

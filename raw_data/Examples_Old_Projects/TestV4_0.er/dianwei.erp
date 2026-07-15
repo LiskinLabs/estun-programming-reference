@@ -1,0 +1,9 @@
+Start:
+MovJ{P=t_l.P0}
+WHILE ( true ) DO
+MovL{P=t_l.P0}
+Wait{T=3000}
+MovL{P=t_l.P1}
+Wait{T=3000}
+ENDWHILE
+End;

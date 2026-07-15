@@ -1,0 +1,75 @@
+// InstParseVersion: V1.02
+Start:
+SetPayload{PayLoad=t_g.PAYLOAD0}
+MovJ{P=t_p.ZeroPoint}
+MovJ{P=t_l.P0}
+MovJ{P=t_l.P1}
+MovJ{P=t_l.P2}
+MovJ{P=t_l.P3}
+MovJ{P=t_l.P4}
+MovJ{P=t_l.P5}
+MovJ{P=t_l.P6}
+MovJ{P=t_l.P7}
+MovJ{P=t_l.P8}
+MovJ{P=t_l.P9}
+MovJ{P=t_l.P10}
+MovL{P=t_l.P11}
+MovC{A=t_l.P12,P=t_l.P13}
+MovJ{P=t_p.ZeroPoint}
+J1:
+MovJ{P=t_l.PJ1P0}
+t_l.TemporaryCycNumber.value = 1
+WHILE ( t_l.TemporaryCycNumber.value <= 1 ) DO
+MovJ{P=t_l.PJ1P1}
+MovJ{P=t_l.PJ1P2}
+Wait{T=2000}
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+J2:
+MovJ{P=t_l.PJ2P0}
+t_l.TemporaryCycNumber.value = 1
+WHILE ( t_l.TemporaryCycNumber.value <= 1 ) DO
+MovJ{P=t_l.PJ2P1}
+MovJ{P=t_l.PJ2P2}
+Wait{T=2000}
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+J3:
+MovJ{P=t_l.PJ3P0}
+t_l.TemporaryCycNumber.value = 1
+WHILE ( t_l.TemporaryCycNumber.value <= 1 ) DO
+MovJ{P=t_l.PJ3P1}
+MovJ{P=t_l.PJ3P2}
+Wait{T=2000}
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+J4:
+MovJ{P=t_l.PJ4P0}
+t_l.TemporaryCycNumber.value = 1
+WHILE ( t_l.TemporaryCycNumber.value <= 1 ) DO
+MovJ{P=t_l.PJ4P1}
+MovJ{P=t_l.PJ4P2}
+Wait{T=2000}
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+J5:
+MovJ{P=t_l.PJ5P0}
+t_l.TemporaryCycNumber.value = 1
+WHILE ( t_l.TemporaryCycNumber.value <= 1 ) DO
+MovJ{P=t_l.PJ5P1}
+MovJ{P=t_l.PJ5P2}
+Wait{T=2000}
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+J6:
+MovJ{P=t_l.PJ6P0}
+t_l.TemporaryCycNumber.value = 1
+WHILE ( t_l.TemporaryCycNumber.value <= 1 ) DO
+MovJ{P=t_l.PJ6P1}
+MovJ{P=t_l.PJ6P2}
+MovJ{P=t_l.PJ6P0}
+Wait{T=2000}
+t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1
+ENDWHILE
+MovJ{P=t_p.ZeroPoint}
+End;

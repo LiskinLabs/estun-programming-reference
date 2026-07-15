@@ -1,0 +1,116 @@
+// InstParseVersion: V1.02
+Start:
+t_p.JudgeMent.value = 1
+/*设置空间大小*/
+t_p.BoxX.value = 1000
+t_p.BoxY.value = 1000
+t_p.BoxZ.value = 1000
+/*设置中心点位置*/
+t_p.P1.x = 1700
+t_p.P1.y = 0
+t_p.P1.z = 1100
+t_p.P1.a = 90
+t_p.P1.b = 0
+t_p.P1.c = 180
+/*一下内容不需要修改*/
+MovJ{P=t_p.StraightPoint}
+MovJ{P=t_p.P1}
+/*根据机型、空间大小和中心点设置空间顶点*/
+t_p.C1 = t_p.P1
+t_p.C1.x = t_p.P1.x + t_p.BoxX.value * 0.5
+t_p.C1.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C1.z = t_p.P1.z + t_p.BoxZ.value * 0.5
+--t_p.C2.value = t_p.P1.value
+t_p.C2 = t_p.P1
+t_p.C2.x = t_p.P1.x + t_p.BoxX.value * 0.5
+t_p.C2.y = t_p.P1.y - t_p.BoxY.value * 0.5
+t_p.C2.z = t_p.P1.z + t_p.BoxZ.value * 0.5
+--t_p.C3.value = t_p.P1.value
+t_p.C3 = t_p.P1
+t_p.C3.x = t_p.P1.x - t_p.BoxX.value * 0.5
+t_p.C3.y = t_p.P1.y - t_p.BoxY.value * 0.5
+t_p.C3.z = t_p.P1.z + t_p.BoxZ.value * 0.5
+--t_p.C4.value = t_p.P1.value
+t_p.C4 = t_p.P1
+t_p.C4.x = t_p.P1.x - t_p.BoxX.value * 0.5
+t_p.C4.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C4.z = t_p.P1.z + t_p.BoxZ.value * 0.5
+--t_p.C5.value = t_p.P1.value
+t_p.C5 = t_p.P1
+t_p.C5.x = t_p.P1.x + t_p.BoxX.value * 0.5
+t_p.C5.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C5.z = t_p.P1.z - t_p.BoxZ.value * 0.5
+--t_p.C6.value = t_p.P1.value
+t_p.C6 = t_p.P1
+t_p.C6.x = t_p.P1.x + t_p.BoxX.value * 0.5
+t_p.C6.y = t_p.P1.y - t_p.BoxY.value * 0.5
+t_p.C6.z = t_p.P1.z - t_p.BoxZ.value * 0.5
+--t_p.C7.value = t_p.P1.value
+t_p.C7 = t_p.P1
+t_p.C7.x = t_p.P1.x - t_p.BoxX.value * 0.5
+t_p.C7.y = t_p.P1.y - t_p.BoxY.value * 0.5
+t_p.C7.z = t_p.P1.z - t_p.BoxZ.value * 0.5
+--t_p.C8.value = t_p.P1.value
+t_p.C8 = t_p.P1
+t_p.C8.x = t_p.P1.x - t_p.BoxX.value * 0.5
+t_p.C8.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C8.z = t_p.P1.z - t_p.BoxZ.value * 0.5
+/*根据机型、和中间点设置精度顶点*/
+IF ( t_p.JudgeMent.value == 1 ) THEN
+t_p.P2 = t_p.P1
+t_p.P2.x = t_p.P1.x + t_p.BoxX.value * 0.4
+t_p.P2.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P2.z = t_p.P1.z + t_p.BoxZ.value * 0.4
+--t_p.P3.value = t_p.P1.value
+t_p.P3 = t_p.P1
+t_p.P3.x = t_p.P1.x + t_p.BoxX.value * 0.4
+t_p.P3.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P3.z = t_p.P1.z + t_p.BoxZ.value * 0.4
+--t_p.P4.value = t_p.P1.value
+t_p.P4 = t_p.P1
+t_p.P4.x = t_p.P1.x - t_p.BoxX.value * 0.4
+t_p.P4.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P4.z = t_p.P1.z - t_p.BoxZ.value * 0.4
+--t_p.P5.value = t_p.P1.value
+t_p.P5 = t_p.P1
+t_p.P5.x = t_p.P1.x - t_p.BoxX.value * 0.4
+t_p.P5.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P5.z = t_p.P1.z - t_p.BoxZ.value * 0.4
+ENDIF
+IF ( t_p.JudgeMent.value == 2 ) THEN
+t_p.P2.value = t_p.P1.value
+t_p.P2.x = t_p.P1.x
+t_p.P2.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P2.z = t_p.P1.z + t_p.BoxZ.value * 0.4
+t_p.P3.value = t_p.P1.value
+t_p.P3.x = t_p.P1.x
+t_p.P3.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P3.z = t_p.P1.z + t_p.BoxZ.value * 0.4
+t_p.P4.value = t_p.P1.value
+t_p.P4.x = t_p.P1.x
+t_p.P4.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P4.z = t_p.P1.z - t_p.BoxZ.value * 0.4
+t_p.P5.value = t_p.P1.value
+t_p.P5.x = t_p.P1.x
+t_p.P5.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P5.z = t_p.P1.z - t_p.BoxZ.value * 0.4
+ENDIF
+IF ( t_p.JudgeMent.value == 3 ) THEN
+t_p.P2.value = t_p.P1.value
+t_p.P2.x = t_p.P1.x + t_p.BoxX.value * 0.4
+t_p.P2.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P2.z = t_p.P1.z
+t_p.P3.value = t_p.P1.value
+t_p.P3.x = t_p.P1.x + t_p.BoxX.value * 0.4
+t_p.P3.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P3.z = t_p.P1.z
+t_p.P4.value = t_p.P1.value
+t_p.P4.x = t_p.P1.x - t_p.BoxX.value * 0.4
+t_p.P4.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P4.z = t_p.P1.z
+t_p.P5.value = t_p.P1.value
+t_p.P5.x = t_p.P1.x - t_p.BoxX.value * 0.4
+t_p.P5.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P5.z = t_p.P1.z
+ENDIF
+End;

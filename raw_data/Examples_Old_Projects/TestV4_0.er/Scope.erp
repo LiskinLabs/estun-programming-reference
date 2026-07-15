@@ -1,0 +1,129 @@
+// InstParseVersion: V1.02
+Start:
+IF ( t_p.JudgeMent.value == 1 ) THEN
+GOTO TestMainProgram
+ENDIF
+IF ( t_p.JudgeMent.value == 2 ) THEN
+GOTO ProductionMainProgram
+ENDIF
+TestMainProgram:
+/*一下内容不需要修改*/
+MovJ{P=t_p.P1}
+/*根据机型、空间大小和中心点设置空间顶点*/
+t_p.C1 = t_p.P1
+t_p.C1.x = t_p.P1.x + t_p.BoxX.value * 0.5
+t_p.C1.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C1.z = t_p.P1.z + t_p.BoxZ.value * 0.5
+t_p.C2 = t_p.P1
+t_p.C2.x = t_p.P1.x + t_p.BoxX.value * 0.5
+t_p.C2.y = t_p.P1.y - t_p.BoxY.value * 0.5
+t_p.C2.z = t_p.P1.z + t_p.BoxZ.value * 0.5
+t_p.C3 = t_p.P1
+t_p.C3.x = t_p.P1.x - t_p.BoxX.value * 0.5
+t_p.C3.y = t_p.P1.y - t_p.BoxY.value * 0.5
+t_p.C3.z = t_p.P1.z + t_p.BoxZ.value * 0.5
+t_p.C4 = t_p.P1
+t_p.C4.x = t_p.P1.x - t_p.BoxX.value * 0.5
+t_p.C4.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C4.z = t_p.P1.z + t_p.BoxZ.value * 0.5
+t_p.C5 = t_p.P1
+t_p.C5.x = t_p.P1.x + t_p.BoxX.value * 0.5
+t_p.C5.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C5.z = t_p.P1.z - t_p.BoxZ.value * 0.5
+t_p.C6 = t_p.P1
+t_p.C6.x = t_p.P1.x + t_p.BoxX.value * 0.5
+t_p.C6.y = t_p.P1.y - t_p.BoxY.value * 0.5
+t_p.C6.z = t_p.P1.z - t_p.BoxZ.value * 0.5
+t_p.C7 = t_p.P1
+t_p.C7.x = t_p.P1.x - t_p.BoxX.value * 0.5
+t_p.C7.y = t_p.P1.y - t_p.BoxY.value * 0.5
+t_p.C7.z = t_p.P1.z - t_p.BoxZ.value * 0.5
+t_p.C8 = t_p.P1
+t_p.C8.x = t_p.P1.x - t_p.BoxX.value * 0.5
+t_p.C8.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C8.z = t_p.P1.z - t_p.BoxZ.value * 0.5
+t_p.C9 = t_p.P1
+t_p.C9.x = t_p.P1.x
+t_p.C9.y = t_p.P1.y + t_p.BoxY.value * 0.5
+t_p.C9.z = t_p.P1.z
+/*根据机型、和中间点设置精度顶点*/
+IF ( t_p.JudgeMent.value == 1 ) THEN
+t_p.P2 = t_p.P1
+t_p.P2.x = t_p.P1.x + t_p.BoxX.value * 0.4
+t_p.P2.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P2.z = t_p.P1.z + t_p.BoxZ.value * 0.4
+t_p.P3 = t_p.P1
+t_p.P3.x = t_p.P1.x + t_p.BoxX.value * 0.4
+t_p.P3.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P3.z = t_p.P1.z + t_p.BoxZ.value * 0.4
+t_p.P4 = t_p.P1
+t_p.P4.x = t_p.P1.x - t_p.BoxX.value * 0.4
+t_p.P4.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P4.z = t_p.P1.z - t_p.BoxZ.value * 0.4
+t_p.P5 = t_p.P1
+t_p.P5.x = t_p.P1.x - t_p.BoxX.value * 0.4
+t_p.P5.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P5.z = t_p.P1.z - t_p.BoxZ.value * 0.4
+t_p.P6 = t_p.P1
+ENDIF
+IF ( t_p.JudgeMent.value == 2 ) THEN
+t_p.P2 = t_p.P1
+t_p.P2.x = t_p.P1.x
+t_p.P2.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P2.z = t_p.P1.z + t_p.BoxZ.value * 0.4
+t_p.P3 = t_p.P1
+t_p.P3.x = t_p.P1.x
+t_p.P3.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P3.z = t_p.P1.z + t_p.BoxZ.value * 0.4
+t_p.P4 = t_p.P1
+t_p.P4.x = t_p.P1.x
+t_p.P4.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P4.z = t_p.P1.z - t_p.BoxZ.value * 0.4
+t_p.P5 = t_p.P1
+t_p.P5.x = t_p.P1.x
+t_p.P5.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P5.z = t_p.P1.z - t_p.BoxZ.value * 0.4
+ENDIF
+IF ( t_p.JudgeMent.value == 3 ) THEN
+t_p.P2 = t_p.P1
+t_p.P2.x = t_p.P1.x + t_p.BoxX.value * 0.4
+t_p.P2.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P2.z = t_p.P1.z
+t_p.P3 = t_p.P1
+t_p.P3.x = t_p.P1.x + t_p.BoxX.value * 0.4
+t_p.P3.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P3.z = t_p.P1.z
+t_p.P4 = t_p.P1
+t_p.P4.x = t_p.P1.x - t_p.BoxX.value * 0.4
+t_p.P4.y = t_p.P1.y - t_p.BoxY.value * 0.4
+t_p.P4.z = t_p.P1.z
+t_p.P5 = t_p.P1
+t_p.P5.x = t_p.P1.x - t_p.BoxX.value * 0.4
+t_p.P5.y = t_p.P1.y + t_p.BoxY.value * 0.4
+t_p.P5.z = t_p.P1.z
+ENDIF
+/*判断是否可以运行*/
+MovL{P=t_p.C8}
+MovL{P=t_p.C5}
+MovL{P=t_p.C1}
+MovL{P=t_p.C4}
+MovL{P=t_p.C3}
+MovL{P=t_p.C2}
+MovL{P=t_p.C1}
+MovL{P=t_p.C4}
+MovL{P=t_p.C8}
+MovL{P=t_p.C7}
+MovL{P=t_p.C6}
+MovL{P=t_p.C5}
+MovL{P=t_p.C1}
+MovL{P=t_p.C2}
+MovL{P=t_p.C6}
+MovL{P=t_p.C7}
+MovL{P=t_p.C3}
+ProductionMainProgram:
+--确定最容易干涉的范围
+MovJ{P=t_p.StraightPoint}
+--CALL Durable
+--确保再次调用Durable程序的时候，各速度段都会运行
+t_p.JudgeMent.value = 3
+End;
