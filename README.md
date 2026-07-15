@@ -19,6 +19,9 @@ All the documentation and logic shown in this app were programmatically extracte
 
 Additionally, we have included real-world project backups inside the `raw_data/Examples_Old_Projects` directory (such as `TestV4_0.er` and `Lasertrajectory.er`). These backups serve as the ultimate truth for how ESTUN `.erd` / `.erp` scripts are structured and written in production environments.
 
+**ESTUN Controller Snapshot (`raw_data/c_drive_backup`)**:
+We have also safely backed up the essential configuration files and scripts from the real ESTUN robot C drive (`C:\temp\runtime`). This includes the `lua` API bindings (`robotface_shm.lua`), system configurations (`sysConfig`), translation matrices (`ErrMsg.ts`), and the base robot setup (`sysKeyWord.cfg`, `auxiliary.cfg`). This is extremely useful for advanced debugging and reverse engineering the controller's logic.
+
 ## Setup & Local Development
 
 This application is built using Vite + React + TypeScript.

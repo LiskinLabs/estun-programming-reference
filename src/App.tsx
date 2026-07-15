@@ -3,6 +3,8 @@ import { Search, Book, Terminal, Globe, Radio, Settings2, Code, Zap } from 'luci
 import './index.css';
 import commandsDataRaw from './data/commands.json';
 
+import examplesDataRaw from './data/examples.json';
+
 // Types
 type Language = 'ru' | 'en' | 'tr';
 
@@ -24,8 +26,24 @@ interface Command {
   parameters: Parameter[];
 }
 
+interface Example {
+  id: string;
+  title: {
+    ru: string;
+    en: string;
+    tr: string;
+  };
+  description: {
+    ru: string;
+    en: string;
+    tr: string;
+  };
+  code: string;
+}
+
 // Convert JSON object format to strongly typed record
 const commandsDB: Record<string, Command[]> = commandsDataRaw as any;
+const examplesDB: Example[] = examplesDataRaw as any;
 
 // Icon mapping for categories
 const iconMap: Record<string, React.ReactNode> = {
@@ -37,6 +55,7 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 function App() {
+  const [currentView, setCurrentView] = useState<'commands' | 'examples'>('commands');
   const [activeCategory, setActiveCategory] = useState<string>(Object.keys(commandsDB)[0]);
   const [searchQuery, setSearchQuery] = useState('');
   const [lang, setLang] = useState<Language>('ru');
@@ -76,22 +95,49 @@ function App() {
         </div>
         
         <div className="sidebar-nav">
-          {categories.map(cat => (
-            <div 
-              key={cat}
-              className={`nav-item ${activeCategory === cat && !searchQuery ? 'active' : ''}`}
-              onClick={() => {
-                setActiveCategory(cat);
-                setSearchQuery('');
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                {iconMap[cat] || <Book size={18} />}
-                <span>{cat}</span>
-              </div>
-              <span className="count-badge">{commandsDB[cat].length}</span>
+          <div className="nav-group-title">VIEWS</div>
+          
+          <div 
+            className={`nav-item ${currentView === 'commands' ? 'active' : ''}`}
+            onClick={() => setCurrentView('commands')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Book size={18} />
+              <span>{lang === 'ru' ? 'Справочник' : lang === 'en' ? 'Dictionary' : 'Kütüphane'}</span>
             </div>
-          ))}
+          </div>
+          
+          <div 
+            className={`nav-item ${currentView === 'examples' ? 'active' : ''}`}
+            onClick={() => setCurrentView('examples')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Terminal size={18} />
+              <span>{lang === 'ru' ? 'Примеры' : lang === 'en' ? 'Examples' : 'Örnekler'}</span>
+            </div>
+          </div>
+
+          {currentView === 'commands' && (
+            <>
+              <div className="nav-group-title" style={{ marginTop: '20px' }}>CATEGORIES</div>
+              {categories.map(cat => (
+                <div 
+                  key={cat}
+                  className={`nav-item ${activeCategory === cat && !searchQuery ? 'active' : ''}`}
+                  onClick={() => {
+                    setActiveCategory(cat);
+                    setSearchQuery('');
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    {iconMap[cat] || <Book size={18} />}
+                    <span>{cat}</span>
+                  </div>
+                  <span className="count-badge">{commandsDB[cat].length}</span>
+                </div>
+              ))}
+            </>
+          )}
         </div>
       </aside>
 
@@ -117,45 +163,70 @@ function App() {
         </header>
 
         <div className="content-scroll">
-          <div className="category-title">
-            {searchQuery ? `Search Results for "${searchQuery}"` : activeCategory}
-          </div>
-          
-          {displayedCommands.length === 0 ? (
-            <div className="no-results">No instructions found.</div>
-          ) : (
-            <div className="cards-grid">
-              {displayedCommands.map((cmd, idx) => (
-                <div key={`${cmd.command}-${idx}`} className="cmd-card">
-                  <div className="cmd-header">
-                    <span className="cmd-name">{cmd.command}</span>
-                  </div>
-                  
-                  <div className="cmd-desc">
-                    {cmd.description[lang]}
-                  </div>
-
-                  {cmd.parameters && cmd.parameters.length > 0 && (
-                    <>
-                      <div className="params-title">Parameters</div>
-                      <div className="param-list">
-                        {cmd.parameters.map((p, i) => (
-                          <div key={i} className="param-item">
-                            <div className="param-header">
-                              <span className="param-name">{p.name}</span>
-                              <span className="param-type">{p.type}</span>
-                            </div>
-                            <div className="param-desc">
-                              {lang === 'ru' ? p.desc_ru : lang === 'en' ? p.desc_en : p.desc_tr}
-                            </div>
-                          </div>
-                        ))}
+          {currentView === 'commands' ? (
+            <>
+              <div className="category-title">
+                {searchQuery ? `Search Results for "${searchQuery}"` : activeCategory}
+              </div>
+              
+              {displayedCommands.length === 0 ? (
+                <div className="no-results">No instructions found.</div>
+              ) : (
+                <div className="cards-grid">
+                  {displayedCommands.map((cmd, idx) => (
+                    <div key={`${cmd.command}-${idx}`} className="cmd-card">
+                      <div className="cmd-header">
+                        <span className="cmd-name">{cmd.command}</span>
                       </div>
-                    </>
-                  )}
+                      
+                      <div className="cmd-desc">
+                        {cmd.description[lang]}
+                      </div>
+
+                      {cmd.parameters && cmd.parameters.length > 0 && (
+                        <>
+                          <div className="params-title">Parameters</div>
+                          <div className="param-list">
+                            {cmd.parameters.map((p, i) => (
+                              <div key={i} className="param-item">
+                                <div className="param-header">
+                                  <span className="param-name">{p.name}</span>
+                                  <span className="param-type">{p.type}</span>
+                                </div>
+                                <div className="param-desc">
+                                  {lang === 'ru' ? p.desc_ru : lang === 'en' ? p.desc_en : p.desc_tr}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              )}
+            </>
+          ) : (
+            <>
+              <div className="category-title">
+                {lang === 'ru' ? 'Примеры программ' : lang === 'en' ? 'Code Examples' : 'Kod Örnekleri'}
+              </div>
+              <div className="examples-grid">
+                {examplesDB.map((ex) => (
+                  <div key={ex.id} className="cmd-card">
+                    <div className="cmd-header">
+                      <span className="cmd-name" style={{ color: '#60a5fa' }}>{ex.title[lang]}</span>
+                    </div>
+                    <div className="cmd-desc">
+                      {ex.description[lang]}
+                    </div>
+                    <div className="code-block">
+                      <code>{ex.code}</code>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
           )}
         </div>
       </main>

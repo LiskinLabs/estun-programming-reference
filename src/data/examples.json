@@ -1,0 +1,44 @@
+[
+  {
+    "id": "laser-loop",
+    "title": {
+      "ru": "Базовый цикл перемещений (Лазерная траектория)",
+      "en": "Basic Movement Loop (Laser Trajectory)",
+      "tr": "Temel Hareket Döngüsü (Lazer Yörüngesi)"
+    },
+    "description": {
+      "ru": "Пример бесконечного цикла (GOTO), где робот устанавливает нагрузку, вызывает подпрограмму настройки инструмента и бесконечно обходит серию точек (MovJ) с паузами (Wait).",
+      "en": "An example of an infinite loop (GOTO) where the robot sets the payload, calls a tool setup subprogram, and infinitely traverses a series of points (MovJ) with delays (Wait).",
+      "tr": "Robotun yükü ayarladığı, bir takım ayar alt programı çağırdığı ve bir dizi noktayı (MovJ) duraklamalarla (Wait) sonsuz bir şekilde dolaştığı sonsuz bir döngü (GOTO) örneği."
+    },
+    "code": "Start:\nSetPayload{PayLoad=t_g.PAYLOAD0}\nCALL Scope\n\nzbzh:\nMovJ{P=t_p.C3}\nWait{T=3000}\nMovJ{P=t_p.C4}\nWait{T=3000}\nMovJ{P=t_p.P1}\nWait{T=3000}\n\nDW:\nMovJ{P=t_p.P5}\nWait{T=5000}\nMovJ{P=t_p.P4}\nWait{T=5000}\nGOTO DW\nEnd;"
+  },
+  {
+    "id": "production-main",
+    "title": {
+      "ru": "Сложная логика (ProductionMain)",
+      "en": "Complex Logic (ProductionMain)",
+      "tr": "Karmaşık Mantık (ProductionMain)"
+    },
+    "description": {
+      "ru": "Реальный пример из производства: использование циклов WHILE, условий IF, математических операций с переменными (%), динамическое изменение скорости (SetOverRide) и вызов подпрограмм (CALL).",
+      "en": "A real production example: using WHILE loops, IF conditions, mathematical operations with variables (%), dynamically changing speed (SetOverRide), and calling subprograms (CALL).",
+      "tr": "Gerçek bir üretim örneği: WHILE döngüleri, IF koşulları, değişkenlerle matematiksel işlemler (%), hızı dinamik olarak değiştirme (SetOverRide) ve alt programları çağırma (CALL) kullanımı."
+    },
+    "code": "Start:\n/* Если падает в ошибку, запишите SumCycNumber2 */\nSetPayload{PayLoad=t_g.PAYLOAD0}\nCALL ProgramVersion\nt_p.JudgeMent.value = 2\nt_p.ENER.value = 0\n\nIF ( t_p.SumCycNumber2.value == 0 ) THEN\n  t_p.SumCycNumber2.value = 1\nENDIF\nt_l.TemporaryCycNumber.value = 1\n\nWHILE ( t_l.TemporaryCycNumber.value <= 10 ) DO\n  SetOverRide{V=20}\n  CALL LimitAngle\n  CALL Dedicated\n  CALL Durable\n  CALL linkage\n  t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1\nENDWHILE\n\nWHILE ( t_l.TemporaryCycNumber.value > 40 ) DO\n  SetOverRide{V=100}\n  CALL LimitAngle\n  SetOverRide{V=68}\n  Wait{T=500}\n  SetOverRide{V=100}\n  CALL ProductionTrack\n\n  IF t_l.TemporaryCycNumber.value % 10 == 0 THEN\n      t_p.ENER.value = 1\n      t_p.Trigger.value = 1\n  ENDIF\n\n  t_p.SumCycNumber2.value = t_p.SumCycNumber2.value + 1\n  t_l.TemporaryCycNumber.value = t_l.TemporaryCycNumber.value + 1\nENDWHILE\nEnd;"
+  },
+  {
+    "id": "soft-limits",
+    "title": {
+      "ru": "Тестирование программных лимитов осей",
+      "en": "Testing Axis Software Limits",
+      "tr": "Eksen Yazılım Limitlerini Test Etme"
+    },
+    "description": {
+      "ru": "Скрипт поочередного движения каждой оси (J1-J6) из нулевой точки (ZeroPoint) к их программным лимитам (SJ1P1, SJ1P2) для проверки безопасности.",
+      "en": "A script for moving each axis (J1-J6) sequentially from the ZeroPoint to their software limits (SJ1P1, SJ1P2) to verify safety constraints.",
+      "tr": "Güvenlik kısıtlamalarını doğrulamak için her ekseni (J1-J6) sırayla Sıfır Noktasından (ZeroPoint) yazılım limitlerine (SJ1P1, SJ1P2) taşımak için bir komut dosyası."
+    },
+    "code": "Start:\n/* Испытание осей на лимиты */\nMovJ{P=t_p.ZeroPoint}\n\nJ1:\nMovJ{P=t_l.SJ1P1}\nWait{T=3000}\nMovJ{P=t_l.SJ1P2}\nWait{T=3000}\n\nJ2:\nMovJ{P=t_l.SJ2P1}\nWait{T=3000}\nMovJ{P=t_l.SJ2P2}\nWait{T=3000}\n\nJ3:\nMovJ{P=t_p.ZeroPoint}\nMovJ{P=t_l.SJ3P1}\nWait{T=3000}\nMovJ{P=t_l.SJ3P2}\nWait{T=3000}\n\nEnd;"
+  }
+]
