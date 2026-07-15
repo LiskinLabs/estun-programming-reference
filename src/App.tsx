@@ -1,12 +1,13 @@
 import { useState, useMemo } from 'react';
-import { Search, Book, Terminal, Globe, Radio, Settings2, Code, Zap } from 'lucide-react';
+import { Search, Book, Terminal, Globe, Radio, Settings2, Code, Zap, AlertTriangle } from 'lucide-react';
 import './index.css';
 import commandsDataRaw from './data/commands.json';
-
 import examplesDataRaw from './data/examples.json';
+import errorsDataRaw from './data/errors.json';
 
 // Types
 type Language = 'ru' | 'en' | 'tr';
+type View = 'commands' | 'examples' | 'errors';
 
 interface Parameter {
   name: string;
@@ -44,6 +45,9 @@ interface Example {
 // Convert JSON object format to strongly typed record
 const commandsDB: Record<string, Command[]> = commandsDataRaw as any;
 const examplesDB: Example[] = examplesDataRaw as any;
+const errorsDB: any[] = errorsDataRaw as any;
+
+const categories = Object.keys(commandsDB);
 
 // Icon mapping for categories
 const iconMap: Record<string, React.ReactNode> = {
@@ -55,7 +59,7 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 function App() {
-  const [currentView, setCurrentView] = useState<'commands' | 'examples'>('commands');
+  const [currentView, setCurrentView] = useState<View>('commands');
   const [activeCategory, setActiveCategory] = useState<string>(Object.keys(commandsDB)[0]);
   const [searchQuery, setSearchQuery] = useState('');
   const [lang, setLang] = useState<Language>('ru');
@@ -114,6 +118,16 @@ function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <Terminal size={18} />
               <span>{lang === 'ru' ? 'Примеры' : lang === 'en' ? 'Examples' : 'Örnekler'}</span>
+            </div>
+          </div>
+
+          <div 
+            className={`nav-item ${currentView === 'errors' ? 'active' : ''}`}
+            onClick={() => setCurrentView('errors')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <AlertTriangle size={18} />
+              <span>{lang === 'ru' ? 'Коды ошибок' : lang === 'en' ? 'Error Codes' : 'Hata Kodları'}</span>
             </div>
           </div>
 
@@ -206,7 +220,7 @@ function App() {
                 </div>
               )}
             </>
-          ) : (
+          ) : currentView === 'examples' ? (
             <>
               <div className="category-title">
                 {lang === 'ru' ? 'Примеры программ' : lang === 'en' ? 'Code Examples' : 'Kod Örnekleri'}
@@ -222,6 +236,30 @@ function App() {
                     </div>
                     <div className="code-block">
                       <code>{ex.code}</code>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="category-title">
+                {lang === 'ru' ? 'Системные ошибки (System Errors)' : lang === 'en' ? 'System Errors' : 'Sistem Hataları (System Errors)'}
+                <span style={{ fontSize: '0.9rem', color: '#94a3b8', marginLeft: 'auto', fontWeight: 'normal' }}>
+                  {errorsDB.length} Codes
+                </span>
+              </div>
+              <div className="errors-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(500px, 1fr))', gap: '16px' }}>
+                {errorsDB.map((err, idx) => (
+                  <div key={idx} className="cmd-card" style={{ padding: '16px' }}>
+                    <div className="cmd-header" style={{ marginBottom: '8px' }}>
+                      <span className="cmd-name" style={{ color: '#ef4444' }}>E{err.code}</span>
+                    </div>
+                    <div className="cmd-desc" style={{ marginBottom: '0' }}>
+                      <div style={{ color: '#e2e8f0', marginBottom: '4px' }}>{err.en}</div>
+                      {(lang === 'ru' || lang === 'tr') && (
+                        <div style={{ color: '#94a3b8', fontSize: '0.85rem' }}>{err.ch}</div>
+                      )}
                     </div>
                   </div>
                 ))}

@@ -1,0 +1,4412 @@
+[
+  {
+    "code": "201",
+    "ch": "设置系统模式失败，不支持该模式！",
+    "en": "Set system mode failed，this mode is not supported!"
+  },
+  {
+    "code": "202",
+    "ch": "系统模式切换导致程序报警停止！",
+    "en": "Switching system mode causes the program to stop!"
+  },
+  {
+    "code": "203",
+    "ch": "系统切换到远程模式，自动加载程序失败！",
+    "en": "System was switched to remote mode, program auto-load failed!"
+  },
+  {
+    "code": "204",
+    "ch": "系统切换到远程模式，启动设置全局速度失败！",
+    "en": "System was switched to remote mode, set global velocity failed!"
+  },
+  {
+    "code": "205",
+    "ch": "远程模式下，启动程序失败！",
+    "en": "Start program failed in remote mode!"
+  },
+  {
+    "code": "206",
+    "ch": "远程模式下，停止程序失败！",
+    "en": "Stop program failed in remote mode!"
+  },
+  {
+    "code": "207",
+    "ch": "安全门打开，程序转到暂停状态！",
+    "en": "The safe-door is open, program paused!"
+  },
+  {
+    "code": "208",
+    "ch": "多工位加载程序失败！请检查预约程序的正确性！",
+    "en": "Loading Multi-station program failed! System execute failed!"
+  },
+  {
+    "code": "209",
+    "ch": "与示教器断开连接，暂停运动！",
+    "en": "Network interruption, pause current motion!"
+  },
+  {
+    "code": "210",
+    "ch": "远程模式下，ExitCycle只在非运行状态有效，暂停运动！",
+    "en": "ExitCycle is only valid in the non-running state, pause current motion!"
+  },
+  {
+    "code": "211",
+    "ch": "系统模式切换导致程序报警暂停！",
+    "en": "Switching system mode causes the program to pause!"
+  },
+  {
+    "code": "251",
+    "ch": "主管理模块1运行异常！",
+    "en": "An exception occurred in the main management module 1!"
+  },
+  {
+    "code": "252",
+    "ch": "运动管理模块2运行异常！",
+    "en": "An exception occurred in the motion management module 2!"
+  },
+  {
+    "code": "253",
+    "ch": "指令管理模块3运行异常！",
+    "en": "An exception occurred in the instruction management module 3!"
+  },
+  {
+    "code": "254",
+    "ch": "通讯模块4运行异常！",
+    "en": "An exception occurred in the linker module 4!"
+  },
+  {
+    "code": "255",
+    "ch": "PLC管理模块5运行异常！",
+    "en": "An exception occurred in the PLC management module 5!"
+  },
+  {
+    "code": "256",
+    "ch": "视觉管理模块6运行异常！",
+    "en": "An exception occurred in the vision management module 6!"
+  },
+  {
+    "code": "257",
+    "ch": "现场总线Modbus模块7运行异常！",
+    "en": "An exception occurred in the ModbusTCP management module 7!"
+  },
+  {
+    "code": "601",
+    "ch": "configTable.cfg文件加载失败！",
+    "en": "Load file \"configTable.cfg\" failed!"
+  },
+  {
+    "code": "602",
+    "ch": "userTable.cfg文件加载失败！",
+    "en": "Load file \"userTable.cfg\" failed!"
+  },
+  {
+    "code": "603",
+    "ch": "执行逻辑控制指令失败！",
+    "en": "Execute logical control instructions failed!"
+  },
+  {
+    "code": "604",
+    "ch": "命令执行失败！",
+    "en": "Execute command failed!"
+  },
+  {
+    "code": "605",
+    "ch": "执行失败！run程序中存在禁止运行的指令在运行！",
+    "en": "Program execute failed, there is prohibited instructions in \"run\" program!"
+  },
+  {
+    "code": "606",
+    "ch": "判断指令中有变量不存在！",
+    "en": "There is invalid variable in judge instruction!"
+  },
+  {
+    "code": "607",
+    "ch": "加载指令字符串失败！",
+    "en": "Load instruction string failed!"
+  },
+  {
+    "code": "608",
+    "ch": "运动内核缓存已满！",
+    "en": "The buffer of motion kernel is full!"
+  },
+  {
+    "code": "609",
+    "ch": "加载程序数据失败！",
+    "en": "Load program data failed!"
+  },
+  {
+    "code": "610",
+    "ch": "加载run程序数据失败！",
+    "en": "Load run program data failed!"
+  },
+  {
+    "code": "611",
+    "ch": "加载触发程序数据失败！",
+    "en": "Load trig-data of program failed!"
+  },
+  {
+    "code": "612",
+    "ch": "解析失败！程序未加载！",
+    "en": "Parse instruction failed! No program has been loaded!"
+  },
+  {
+    "code": "613",
+    "ch": "解析逻辑控制指令失败！",
+    "en": "Parse logical control instructions failed!"
+  },
+  {
+    "code": "614",
+    "ch": "call指令行变更,请重新载入工程！",
+    "en": "The CALL instruction line change.Please reload project!"
+  },
+  {
+    "code": "615",
+    "ch": "执行call时获取call程序文件失败！",
+    "en": "Get \"call\" program file failed when executing \"call\" instruction!"
+  },
+  {
+    "code": "616",
+    "ch": "需要call的程序文件不存在！",
+    "en": "The program file of \"call\" is not found!"
+  },
+  {
+    "code": "617",
+    "ch": "圆弧中间停止,不允许直接再启动！",
+    "en": "Stop at the middle of arc path, restarting the program is forbidden!"
+  },
+  {
+    "code": "618",
+    "ch": "系统最多同时支持八个程序run！",
+    "en": "The system supports up to eight \"Run\" programs!"
+  },
+  {
+    "code": "619",
+    "ch": "kill与run程序不匹配！",
+    "en": "\"Kill\" program does not match \"run\" program!"
+  },
+  {
+    "code": "620",
+    "ch": "表达式指令执行失败！",
+    "en": "Execute expression instruction failed!"
+  },
+  {
+    "code": "621",
+    "ch": "机器人零点已丢失！",
+    "en": "The robot's home-pos of driver has lost!"
+  },
+  {
+    "code": "622",
+    "ch": "触发指令缓冲已满,请确保程序结构正确！",
+    "en": "The buffer of trigger instructions is full, please make sure the program structure is correct!"
+  },
+  {
+    "code": "623",
+    "ch": "变量类型不存在！",
+    "en": "The variable type does not exist!"
+  },
+  {
+    "code": "624",
+    "ch": "变量类型不匹配！",
+    "en": "The variable type mismatch!"
+  },
+  {
+    "code": "625",
+    "ch": "单步模式下，不允许执行run指令！",
+    "en": "\"Run\" instruction cannot be executed in single-step mode!"
+  },
+  {
+    "code": "626",
+    "ch": "程序处于run时，不允许再次run！",
+    "en": "Program in running state is not allowed to run again!"
+  },
+  {
+    "code": "627",
+    "ch": "单步模式下，不允许执行触发指令！",
+    "en": "Trigger instruction cannot be executed in single-step mode!"
+  },
+  {
+    "code": "628",
+    "ch": "触发指令执行失败！请检查指令是否合法！",
+    "en": "Failed to execute trigger instruction, please check the legality of the instruction!"
+  },
+  {
+    "code": "629",
+    "ch": "OnParameter触发指令不支持该运动指令！",
+    "en": "The OnParameter instruction dose not support current motion instruction!"
+  },
+  {
+    "code": "630",
+    "ch": "触发指令与运动指令之间不允许使用等待指令！",
+    "en": "The wait instruction cannot be used between trigger instruction and motion instruction!"
+  },
+  {
+    "code": "631",
+    "ch": "软浮动指令之间，不允许运动指令！",
+    "en": "Motion instructions is forbidden between soft-floating instructions!"
+  },
+  {
+    "code": "632",
+    "ch": "软浮动停止指令之前缺少软浮动启动指令！",
+    "en": "The start command of soft-floating function is missing before the soft-floating instruction!"
+  },
+  {
+    "code": "633",
+    "ch": "多个软浮动指令嵌套使用！",
+    "en": "Multiple soft-floating instructions are nested!"
+  },
+  {
+    "code": "634",
+    "ch": "缺少软浮动结束指令！",
+    "en": "The end command of soft-floating function is missing!"
+  },
+  {
+    "code": "635",
+    "ch": "该区域变量未被激活，不允许条件判断！",
+    "en": "This area variable is not activated, condition judge failed!"
+  },
+  {
+    "code": "636",
+    "ch": "单条轨迹的触发数量超过最大限制数量，执行失败！",
+    "en": "Trig count of single line is out of max count, execute failed!"
+  },
+  {
+    "code": "637",
+    "ch": "获取程序变量文件失败！",
+    "en": "Failed to obtain program variable file!"
+  },
+  {
+    "code": "638",
+    "ch": "BendTrack过程中停止，不允许再启动！",
+    "en": "System execute stop command during BendTrack process, restarting the program is forbidden!"
+  },
+  {
+    "code": "639",
+    "ch": "OnDistance触发指令不支持该运动指令！",
+    "en": "The OnDistance instruction dose not support current motion instruction!"
+  },
+  {
+    "code": "640",
+    "ch": "触发指令执行失败！",
+    "en": "The trigger instruction implement error!"
+  },
+  {
+    "code": "641",
+    "ch": "当前指令不支持倒退执行！",
+    "en": "The current instruction dose not support backward execution!"
+  },
+  {
+    "code": "642",
+    "ch": "待跳转的label不存在！",
+    "en": "The label is not existed!"
+  },
+  {
+    "code": "643",
+    "ch": "跟随状态下有禁止的指令在运行！",
+    "en": "Some command is forbidden during the follow motion!"
+  },
+  {
+    "code": "644",
+    "ch": "跟随过程中停止，请pc到带有用户坐标系的运动指令上再启动！",
+    "en": "System execute stop command during ConveyorTrack process, restarting the program is forbidden!"
+  },
+  {
+    "code": "645",
+    "ch": "跟随失败后跳转的label不能为空！",
+    "en": "The label which systen need skip is empty when conveyorTrack is failed!"
+  },
+  {
+    "code": "646",
+    "ch": "全局程序中不支持RUN、KILL指令！",
+    "en": "Global program is forbid to execute RUN/KILL command!"
+  },
+  {
+    "code": "647",
+    "ch": "全局程序中CALL指令不支持call到非全局程序以外的程序！",
+    "en": "The CALL command of Global program should be use local program!"
+  },
+  {
+    "code": "648",
+    "ch": "AddDo指令执行失败！",
+    "en": "AddDo instruction implement error!"
+  },
+  {
+    "code": "649",
+    "ch": "单步模式下，不允许执行负载在线辨识指令！",
+    "en": "ERBD instruction cannot be executed in single-step mode!"
+  },
+  {
+    "code": "650",
+    "ch": "CALL指令不允许调用当前程序本身！",
+    "en": "Cannot call itself!"
+  },
+  {
+    "code": "651",
+    "ch": "指令中参数数量异常！",
+    "en": "Invalid number of parameters in instruction!"
+  },
+  {
+    "code": "652",
+    "ch": "指令中位置点数据异常！",
+    "en": "Invalid Pos data in the instruction!"
+  },
+  {
+    "code": "653",
+    "ch": "指令参数中位置点类型不匹配！",
+    "en": "Mismatch Pos data type in instruction!"
+  },
+  {
+    "code": "654",
+    "ch": "指令参数中位置点类型无法找到！",
+    "en": "Pos data type cannot be found in instruction!"
+  },
+  {
+    "code": "655",
+    "ch": "指令参数中位置点中某项的值找不到！",
+    "en": " Element cannot be found in Pos data!"
+  },
+  {
+    "code": "656",
+    "ch": "指令参数中速度项参数异常！",
+    "en": "Invalid velocity parameters of instruction!"
+  },
+  {
+    "code": "657",
+    "ch": "指令参数中过渡类型参数异常！",
+    "en": "Invalid blend type of instruction parameters!"
+  },
+  {
+    "code": "658",
+    "ch": "指令参数中触发参数异常！",
+    "en": "Invalid trigger parameter in instruction!"
+  },
+  {
+    "code": "659",
+    "ch": "指令参数中AddDO类型参数异常！",
+    "en": "Invalid \"AddDo\" parameter in instruction!"
+  },
+  {
+    "code": "660",
+    "ch": "指令参数中速度变量数据异常！",
+    "en": " Abnormal speed variable data in instruction parameters!"
+  },
+  {
+    "code": "661",
+    "ch": "指令参数中速度变量类型不匹配！",
+    "en": "Speed variable type mismatch in instruction parameters!"
+  },
+  {
+    "code": "662",
+    "ch": "指令参数中速度变量类型无法找到！",
+    "en": "Speed variable type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "663",
+    "ch": "指令参数中速度变量中某项的值找不到！",
+    "en": "Some value of Speed variable cannot be found in instruction parameters!"
+  },
+  {
+    "code": "664",
+    "ch": "指令参数中过渡变量数据异常！",
+    "en": "There is some abnormal data of blend variable in instruction parameters!"
+  },
+  {
+    "code": "665",
+    "ch": "指令参数中过渡变量类型不匹配！",
+    "en": "Blend variable type mismatch in instruction parameters!"
+  },
+  {
+    "code": "666",
+    "ch": "指令参数中过渡变量类型无法找到！",
+    "en": "Blend variable type missing in instruction parameters!"
+  },
+  {
+    "code": "667",
+    "ch": "指令参数中过渡变量中某项的值找不到！",
+    "en": "Some value of Blend variable cannot be found in instruction parameters!"
+  },
+  {
+    "code": "668",
+    "ch": "指令参数POS点中MODE类型找不到！",
+    "en": "The \"Mode\" type cannot be found in \"POS\" parameters!"
+  },
+  {
+    "code": "669",
+    "ch": "指令参数POS点中MODE中某项的值找不到！",
+    "en": "Some value of \"Mode\" type cannot be found!"
+  },
+  {
+    "code": "670",
+    "ch": "指令参数中socket名字异常！",
+    "en": "Invalid socket name in instruction!"
+  },
+  {
+    "code": "671",
+    "ch": "指令参数中IP地址不合法！",
+    "en": "Invalid IP address in instruction!"
+  },
+  {
+    "code": "672",
+    "ch": "指令参数中tool坐标系参数异常！",
+    "en": "Invalid parameters in tool coordinate system!"
+  },
+  {
+    "code": "673",
+    "ch": "指令参数中tool坐标系类型不匹配！",
+    "en": "The tool coordinate system type mismatch in instruction parameters!"
+  },
+  {
+    "code": "674",
+    "ch": "指令参数中tool坐标系类型无法找到！",
+    "en": "The tool coordinate system type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "675",
+    "ch": "指令参数中tool坐标系中某项的值找不到！",
+    "en": "Some value of tool coordinate system cannot be found in instruction parameters!"
+  },
+  {
+    "code": "676",
+    "ch": "指令参数中用户坐标系参数异常！",
+    "en": "There have exceptions in the user coordinate system!"
+  },
+  {
+    "code": "677",
+    "ch": "指令参数中用户坐标系类型不匹配！",
+    "en": "The user coordinate system type mismatch in instruction parameters!"
+  },
+  {
+    "code": "678",
+    "ch": "指令参数中用户坐标系类型无法找到！",
+    "en": "The user coordinate system type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "679",
+    "ch": "指令参数中用户坐标系中某项的值找不到！",
+    "en": "Some value of user coordinate system cannot be found in instruction parameters!"
+  },
+  {
+    "code": "680",
+    "ch": "指令参数中负载惯量类型不匹配！",
+    "en": "The payload system type mismatch in instruction parameters!"
+  },
+  {
+    "code": "681",
+    "ch": "指令参数中负载惯量类型无法找到！",
+    "en": "The payload system type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "682",
+    "ch": "指令参数中负载惯量中某项找不到！",
+    "en": "Some value of payload system cannot be found in instruction parameters!"
+  },
+  {
+    "code": "683",
+    "ch": "指令参数中摆弧类型不匹配！",
+    "en": "The weave type mismatch in instruction parameters!"
+  },
+  {
+    "code": "684",
+    "ch": "指令参数中摆弧类型无法找到！",
+    "en": "The weave type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "685",
+    "ch": "指令参数中摆弧中某项找不到！",
+    "en": "Some value of weave cannot be found in instruction parameters!"
+  },
+  {
+    "code": "686",
+    "ch": "指令参数中外部TCP坐标系参数异常！",
+    "en": "There have exceptions in the external tcp coordinate system!"
+  },
+  {
+    "code": "687",
+    "ch": "指令参数中外部TCP坐标系类型不匹配！",
+    "en": "The external tcp coordinate type mismatch in instruction parameters!"
+  },
+  {
+    "code": "688",
+    "ch": "指令参数中外部TCP坐标系类型无法找到！",
+    "en": "The external tcp coordinate type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "689",
+    "ch": "指令参数中外部TCP坐标系中某项的值找不到！",
+    "en": "Some value of external tcp coordinate system cannot be found in instruction parameters!"
+  },
+  {
+    "code": "690",
+    "ch": "指令中坐标系参数数据异常！",
+    "en": "Invalid Coordinate data in the instruction!"
+  },
+  {
+    "code": "691",
+    "ch": "指令参数中坐标系类型不匹配！",
+    "en": "Mismatch Coordinate data type in instruction!"
+  },
+  {
+    "code": "692",
+    "ch": "指令参数中坐标系类型无法找到！",
+    "en": "Coordinate data type cannot be found in instruction!"
+  },
+  {
+    "code": "693",
+    "ch": "指令参数中坐标系中某项的值找不到！",
+    "en": " Element cannot be found in Coordinate data!"
+  },
+  {
+    "code": "694",
+    "ch": "指令参数中变位机坐标系参数异常！",
+    "en": "There have exceptions in the positioner coordinate system!"
+  },
+  {
+    "code": "695",
+    "ch": "指令参数中变位机坐标系类型不匹配！",
+    "en": "The positioner coordinate type mismatch in instruction parameters!"
+  },
+  {
+    "code": "696",
+    "ch": "指令参数中变位机坐标系类型无法找到！",
+    "en": "The positioner coordinate type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "697",
+    "ch": "指令参数中变位机坐标系中某项的值找不到！",
+    "en": "Some value of positioner coordinate system cannot be found in instruction parameters!"
+  },
+  {
+    "code": "698",
+    "ch": "指令中待跳转的label格式不正确！",
+    "en": "The label system type mismatch in instruction parameters"
+  },
+  {
+    "code": "699",
+    "ch": "指令参数中动坐标系参数异常！",
+    "en": "There have exceptions in the dyn coordinate system!"
+  },
+  {
+    "code": "700",
+    "ch": "指令参数中动坐标系类型不匹配！",
+    "en": "The dyn coordinate system type mismatch in instruction parameters!"
+  },
+  {
+    "code": "701",
+    "ch": "指令参数中动坐标系类型无法找到！",
+    "en": "The dyn coordinate system type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "702",
+    "ch": "指令参数中动坐标系中某项的值找不到！",
+    "en": "Some value of dyn coordinate system cannot be found in instruction parameters!"
+  },
+  {
+    "code": "703",
+    "ch": "指令参数中速率类型参数异常！",
+    "en": "Invalid override type of instruction parameters!"
+  },
+  {
+    "code": "704",
+    "ch": "指令参数中扫频参数异常！",
+    "en": "There have exceptions in the chirp parameter!"
+  },
+  {
+    "code": "705",
+    "ch": "指令参数中扫频类型不匹配！",
+    "en": "The chirp type mismatch in instruction parameters!"
+  },
+  {
+    "code": "706",
+    "ch": "指令参数中扫频类型无法找到！",
+    "en": "The chirp type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "707",
+    "ch": "MovJOffset指令中不支持工具坐标系下的DAPOS偏移！",
+    "en": "MovJOffset Inst cannot support DAPOS offset in Tool coordinate system!"
+  },
+  {
+    "code": "708",
+    "ch": "SWITCH中'CASE'值错误！",
+    "en": "SWITCH 'CASE' value error!"
+  },
+  {
+    "code": "709",
+    "ch": "'IF/WHILE/FOR'语句里面不能包含'CASE'",
+    "en": "'IF/WHILE/FOR' can not contain 'CASE'!"
+  },
+  {
+    "code": "710",
+    "ch": "'IF/WHILE/FOR'语句里面不能包含'DEFAULT'",
+    "en": "'IF/WHILE/FOR' can not contain 'DEFAULT'!"
+  },
+  {
+    "code": "711",
+    "ch": "'IF/WHILE/FOR'语句里面不能包含'BREAK'",
+    "en": "'IF/WHILE/FOR' can not contain 'BREAK'!"
+  },
+  {
+    "code": "712",
+    "ch": "'SWITCH'语句里面不能嵌套'SWITCH'",
+    "en": "'SWITCH' can not nest 'SWITCH'!!"
+  },
+  {
+    "code": "713",
+    "ch": "'SWITCH'语句'CASE'值重复",
+    "en": "duplicate case value!!"
+  },
+  {
+    "code": "714",
+    "ch": "'SWITCH_ENDSWITCH'不匹配",
+    "en": "'SWITCH_ENDSWITCH' not match!!"
+  },
+  {
+    "code": "715",
+    "ch": "'SWITCH’后面必须紧跟'CASE'或者'DEFAULT'",
+    "en": "below 'SWITCH' must be  'CASE' or 'DEFAULT''!!"
+  },
+  {
+    "code": "716",
+    "ch": "'BREAK'后面必须为'CASE'/'DEFAULT'/'ENDSWITCH'",
+    "en": "'below 'BREAK' error, must be 'CASE' or 'DEFAULT' or 'ENDSWITCH!!"
+  },
+  {
+    "code": "717",
+    "ch": "'DEFAULT'值太多",
+    "en": "too much 'DEFAULT'!!"
+  },
+  {
+    "code": "718",
+    "ch": "DEFAULT必须在CASE下面",
+    "en": "'DEFAULT must below 'CASE''!!"
+  },
+  {
+    "code": "719",
+    "ch": "robot信息ID号错误，设置范围[70001-80000]",
+    "en": "'please set info id in [70001-80000]!!"
+  },
+  {
+    "code": "720",
+    "ch": "robot错误信息ID号错误，设置范围[90001-100000]",
+    "en": "'please set error id in [90001-100000]'!!"
+  },
+  {
+    "code": "721",
+    "ch": "robot报警信息ID号错误,设置范围[80001-90000]",
+    "en": "'please set Warning id in [80001-90000]!!"
+  },
+  {
+    "code": "722",
+    "ch": "'CASE'、'BREAK'、'DEFAULT'语句只能在SWITCH语句里面使用",
+    "en": "'CASE'、'BREAK'、'DEFAULT' only been used in 'SWITCH'!!"
+  },
+  {
+    "code": "723",
+    "ch": "指令参数中左右手类型参数异常！",
+    "en": "Invalid scope type of instruction parameters!"
+  },
+  {
+    "code": "724",
+    "ch": "存在多个AutoTune指令,请检查程序！",
+    "en": "AutoTune is to much,please check your program!"
+  },
+  {
+    "code": "725",
+    "ch": "AutoTune 指令个数或参数不匹配,请检查程序！！",
+    "en": "AutoTune Pid is not match,please check your program!"
+  },
+  {
+    "code": "726",
+    "ch": "主机器人协同运动过程中有禁止的指令在运行！",
+    "en": "Some command is forbidden during the master robot synchronous motion!"
+  },
+  {
+    "code": "727",
+    "ch": "从机器人协同运动过程中有禁止的指令在运行！",
+    "en": "Some command is forbidden during the slave robot synchronous motion!"
+  },
+  {
+    "code": "728",
+    "ch": "关闭主从协同运动指令需要与开启主从协同运动指令组合搭配使用！",
+    "en": "The MSSyncOff inst need to be executed after system execute the MovMSSyncOn inst. Please mix and match!"
+  },
+  {
+    "code": "729",
+    "ch": "不允许多个开启和关闭主从协同运动指令嵌套使用！",
+    "en": "Multiple MovMSSyncOn and MSSyncOff insts are forbidded to be nested use!"
+  },
+  {
+    "code": "730",
+    "ch": "SetSyncSignal指令或GetSyncSignal指令只能在执行开启主从协同运动指令后执行！",
+    "en": "The SetSyncSignal inst or GetSyncSignal inst is forbidded to be executed before system execute the MovMSSyncOn inst!"
+  },
+  {
+    "code": "731",
+    "ch": "指令中CTV参数异常！",
+    "en": "Invalid parameters in tool coordinate system!"
+  },
+  {
+    "code": "732",
+    "ch": "指令参数中CTV类型不匹配！",
+    "en": "The CTV type mismatch in instruction parameters!"
+  },
+  {
+    "code": "733",
+    "ch": "指令参数中CTV类型无法找到！",
+    "en": "The CTV type cannot be found in instruction parameters!"
+  },
+  {
+    "code": "734",
+    "ch": "指令参数中CTV类型中某项的值找不到！",
+    "en": "Some value of CTV cannot be found in instruction parameters!"
+  },
+  {
+    "code": "800",
+    "ch": "中断指令只能在中断程序调用时执行！",
+    "en": "The interrupt inst should be executed in interrupt program!"
+  },
+  {
+    "code": "801",
+    "ch": "执行失败！中断程序中存在禁止运行的指令在运行！",
+    "en": "Program execute failed, there is prohibited instructions in \"Interrupt\" program!"
+  },
+  {
+    "code": "802",
+    "ch": "中断程序中的运动指令只能在执行IEnter指令后执行！",
+    "en": "The motion inst is forbid to execute before system execute IEnter command!"
+  },
+  {
+    "code": "803",
+    "ch": "中断程序中的IExit指令前必须为MovToIPos指令！",
+    "en": "MovToIPos inst must be teach before IExit inst in \"Interrupt\" program!"
+  },
+  {
+    "code": "804",
+    "ch": "中断程序中的IEnter必须与IExit或ExitCycle指令搭配执行！",
+    "en": "IEnter inst must be used with IExit or ExitCycle inst!"
+  },
+  {
+    "code": "805",
+    "ch": "中断程序中不支持CALL全局程序！",
+    "en": "CALL global program is not supported in Interrupt program!"
+  },
+  {
+    "code": "806",
+    "ch": "示教程序call嵌套次数达到系统限制，请检查是否存在递归调用！",
+    "en": "The number of nested calls reaches the limit, please check if there are recursive calls!"
+  },
+  {
+    "code": "807",
+    "ch": "获取上级程序名失败！",
+    "en": "Failed to get parent program name!"
+  },
+  {
+    "code": "851",
+    "ch": "示教程序call嵌套次数达到系统限制，请重新加载程序运行！",
+    "en": "The number of nested calls reaches the limit, please reload the program to run!"
+  },
+  {
+    "code": "852",
+    "ch": "校验全部工程变量达到系统限制，请单个工程校验",
+    "en": "The number of nested calls reaches the limit, please reload the program to run!"
+  },
+  {
+    "code": "901",
+    "ch": "3D视觉信息发送失败，请确认相机已连接！",
+    "en": "Failed to send 3D-vision message, please confirm the camera is connected!"
+  },
+  {
+    "code": "902",
+    "ch": "2D视觉拍照命令触发失败！",
+    "en": "Failed to trig 2D-vision photograph command!"
+  },
+  {
+    "code": "903",
+    "ch": "计算失败，请确认点位数据正确！",
+    "en": "Failed to Calculate, please make sure the point data is correct!"
+  },
+  {
+    "code": "951",
+    "ch": "APOS转CPOS失败！",
+    "en": "Conversion from APOS to CPOS failed!"
+  },
+  {
+    "code": "952",
+    "ch": "CPOS转APOS失败！",
+    "en": "Conversion from CPOS to APOS failed!"
+  },
+  {
+    "code": "953",
+    "ch": "CPOS转CPOS失败！",
+    "en": "Conversion from CPOS to CPOS failed!"
+  },
+  {
+    "code": "954",
+    "ch": "位运算失败！不能对负数进行位操作！",
+    "en": "Bit operation failed, the variable cannot be set to a negative number!"
+  },
+  {
+    "code": "955",
+    "ch": "当前码垛计数已经超过最大码垛数量！",
+    "en": "The current pallet count exceeds the maximum number of pallets!"
+  },
+  {
+    "code": "956",
+    "ch": "放置失败,当前放置已满！",
+    "en": "Placement failed, the current placement is full!"
+  },
+  {
+    "code": "957",
+    "ch": "抓取失败,当前可抓取工件为空！",
+    "en": "Failed to grab, there are no artifacts to grab currently!"
+  },
+  {
+    "code": "958",
+    "ch": "码垛参考位置点不存在！",
+    "en": "The reference position point of pallet does not exist!"
+  },
+  {
+    "code": "959",
+    "ch": "批量IO操作失败，起始端口号大于结束端口号！",
+    "en": "Batch IO operation failed, the start port number is bigger than the end port number!"
+  },
+  {
+    "code": "960",
+    "ch": "Hand指令答复失败！",
+    "en": "Hand instruction reply failed!"
+  },
+  {
+    "code": "961",
+    "ch": "1~8号输出口为系统输出口，禁止用户操作！",
+    "en": "User is not allowed to operate system output, these output is 1,2,3,4,5,6,7,8!"
+  },
+  {
+    "code": "962",
+    "ch": "读取的数据个数不能超过数组的大小！",
+    "en": "Data count which need read cannot exceed the array size"
+  },
+  {
+    "code": "963",
+    "ch": "IO类型的触发值只能为0或者1！",
+    "en": "The trigger value of type IO can only be 0 or 1!"
+  },
+  {
+    "code": "964",
+    "ch": "AreaActivate 或 AreaDeactivate 指令失败！",
+    "en": "AreaActivate or AreaDeactivate failed!"
+  },
+  {
+    "code": "965",
+    "ch": "参数异常，请检查参数是否合法！",
+    "en": "Parameter Error! Please check whether parameter is truely!"
+  },
+  {
+    "code": "966",
+    "ch": "无法获取明确的回退位置点，不能继续！",
+    "en": "Unable to get clear back position point,unable to continue!"
+  },
+  {
+    "code": "967",
+    "ch": "SetTargetPos指令仅能在传送带为无视觉触发模式下运行！",
+    "en": "SetTargetPos is forbid execute in current mode!"
+  },
+  {
+    "code": "968",
+    "ch": "动坐标系对应的传送带未使能，SetTargetPos指令执行失败！",
+    "en": "SetTargetPos execute failed! Conveyor is not in enable status!"
+  },
+  {
+    "code": "969",
+    "ch": "根据动坐标系的值计算用户坐标系失败！",
+    "en": "Failed to convert the syncoord to usercoord!"
+  },
+  {
+    "code": "970",
+    "ch": "伺服增益参数设置失败！",
+    "en": "The Pn gain Param set failed!"
+  },
+  {
+    "code": "971",
+    "ch": "阵列指令:行数及列数必须为大于0的整数！",
+    "en": "Row and Column must be over than zero!"
+  },
+  {
+    "code": "972",
+    "ch": "阵列指令:行号或列号大于设置值！",
+    "en": "Row or Column larger than settings!"
+  },
+  {
+    "code": "973",
+    "ch": "阵列指令:行数和列数乘积需要小于限定值(32767)！",
+    "en": "(Row * Column) cannot larger than settings(32767)!"
+  },
+  {
+    "code": "974",
+    "ch": "当前运动指令选择不受全局速度影响模式时需设置运行速度！",
+    "en": "Please set motion speed when OverrideType is UNCONTROLLED!"
+  },
+  {
+    "code": "975",
+    "ch": "Damping加速度限制系数设置失败！",
+    "en": "The Damping acc limit param set failed!"
+  },
+  {
+    "code": "976",
+    "ch": "Damping滤波器参数设置失败！",
+    "en": "The Damping filter param set failed!"
+  },
+  {
+    "code": "977",
+    "ch": "同一时刻执行的脉冲指令数量超过了最大限制！",
+    "en": "The pulse count which system execute is out of max limit!"
+  },
+  {
+    "code": "978",
+    "ch": "传入的变量类型不合法！",
+    "en": "Inst execute failed! Please check whether parameter is truely!"
+  },
+  {
+    "code": "979",
+    "ch": "模型辨识数据采集失败！",
+    "en": "Failed to collect MDL data!"
+  },
+  {
+    "code": "980",
+    "ch": "传送带使能状态设置失败！",
+    "en": "Failed to set virual conveyor enable status!"
+  },
+  {
+    "code": "981",
+    "ch": "MovArch指令中下降高度未设置！",
+    "en": "The drop height is not set in the MovArch instruction!"
+  },
+  {
+    "code": "982",
+    "ch": "参数不合法，传入的值只能为1~100！",
+    "en": "The parameter is out of limit!"
+  },
+  {
+    "code": "983",
+    "ch": "中断标识已与其他程序绑定，请先解绑再执行绑定操作！",
+    "en": "The current interrupt index have connected to other program!"
+  },
+  {
+    "code": "984",
+    "ch": "需要操作的中断标识未绑定！",
+    "en": "The interrupt index which need operate is not connected to program!"
+  },
+  {
+    "code": "985",
+    "ch": "队列中已有待执行的中断操作命令！",
+    "en": "The interrupt operate buffer have other operate command!"
+  },
+  {
+    "code": "986",
+    "ch": "返回中断发生位置指令只能在IEnter触发后执行！",
+    "en": "MovToIPos Inst is forbid when system has not execute IEnter instruction!"
+  },
+  {
+    "code": "987",
+    "ch": "已执行过IEnter指令，请执行IExit指令后再执行IEnter指令！",
+    "en": "IEnter Inst is forbid when system is in motion interrupt status!"
+  },
+  {
+    "code": "988",
+    "ch": "IExit指令只能在IEnter触发后执行！",
+    "en": "IExit Inst is forbid when system has not execute IEnter instruction!"
+  },
+  {
+    "code": "989",
+    "ch": "ExitCycle指令只能在IEnter触发后执行！",
+    "en": "ExitCycle Inst is forbid when system has not execute IEnter instruction!"
+  },
+  {
+    "code": "990",
+    "ch": "操作转矩限制值失败！",
+    "en": "Failed to operate torque limit value!"
+  },
+  {
+    "code": "991",
+    "ch": "MovLArch指令中下降高度未设置！",
+    "en": "The drop height is not set in the MovLArch instruction!"
+  },
+  {
+    "code": "992",
+    "ch": "计算位置点偏移结果失败！",
+    "en": "Failed to calculate the offset result of POS!"
+  },
+  {
+    "code": "993",
+    "ch": "获取目标相对位置失败！",
+    "en": "Failed to get RelPos!"
+  },
+  {
+    "code": "994",
+    "ch": "获取参考坐标系失败！",
+    "en": "Failed to get RefSys!"
+  },
+  {
+    "code": "995",
+    "ch": "获取工具参数失败！",
+    "en": "Failed to get Tool!"
+  },
+  {
+    "code": "996",
+    "ch": "获取坐标系参数失败！",
+    "en": "Failed to get Coord!"
+  },
+  {
+    "code": "997",
+    "ch": "SgCmdRun指令执行失败，请检查当前轴状态！",
+    "en": "SgCmdRun execution failed, please check current axis status!"
+  },
+  {
+    "code": "998",
+    "ch": "SgPowerOn指令执行失败，请检查当前轴状态！",
+    "en": "SgPowerOn execution failed, please check current axis status!"
+  },
+  {
+    "code": "999",
+    "ch": "SgPowerOff指令执行失败，请检查当前轴状态！",
+    "en": "SgPowerOff execution failed, please check current axis status!"
+  },
+  {
+    "code": "1000",
+    "ch": "SgHardStop指令执行失败，请检查当前轴状态！",
+    "en": "SgHardStop execution failed, please check current axis status!"
+  },
+  {
+    "code": "1001",
+    "ch": "SgReset指令执行失败，请检查当前轴状态！",
+    "en": "SgReset execution failed, please check current axis status!"
+  },
+  {
+    "code": "1002",
+    "ch": "SgStop指令执行失败，请检查当前轴状态！",
+    "en": "SgStop execution failed, please check current axis status!"
+  },
+  {
+    "code": "1003",
+    "ch": "全局速度设置超出范围！",
+    "en": "Override exceeds the limit!"
+  },
+  {
+    "code": "1004",
+    "ch": "SgSetOverRide指令执行失败，请检查当前轴状态！",
+    "en": "SgSetOverRide execution failed, please check current axis status!"
+  },
+  {
+    "code": "1005",
+    "ch": "SgHome指令执行失败，请检查当前轴状态！",
+    "en": "SgHome execution failed, please check current axis status!"
+  },
+  {
+    "code": "1006",
+    "ch": "SgSetDriveMode指令执行失败，请检查当前轴状态！",
+    "en": "SgSetDriveMode execution failed, please check current axis status!"
+  },
+  {
+    "code": "1007",
+    "ch": "当前轴未使能为SG轴，请先执行设置SG轴指令！",
+    "en": "Axis is not enabled, execute RemoveAxisFromGroup instruction first!"
+  },
+  {
+    "code": "1008",
+    "ch": "轴未励磁或内核不在可执行运动状态，运动命令下发失败！",
+    "en": "Servo is off or Kernel is not in the running state, command delivery failed!"
+  },
+  {
+    "code": "1009",
+    "ch": "系统出现报警，运动命令执行失败！",
+    "en": "Current system is in error status, motion instruction execution failed!"
+  },
+  {
+    "code": "1010",
+    "ch": "轴转向值输入错误，必须为1或者-1！",
+    "en": "Direction value must be 1 or -1!"
+  },
+  {
+    "code": "1011",
+    "ch": "当前系统配置的SG轴数已达到限制，不允许切换此轴！",
+    "en": "SG axis number exceeds the limit!"
+  },
+  {
+    "code": "1012",
+    "ch": "设置SG轴指令执行失败！",
+    "en": "Failed to remove axis from group!"
+  },
+  {
+    "code": "1013",
+    "ch": "设置RC轴指令执行失败！",
+    "en": "Failed to add axis to group"
+  },
+  {
+    "code": "1014",
+    "ch": "指令参数异常，仅支持附加轴！",
+    "en": "The parameters of instruction can only be aux axes"
+  },
+  {
+    "code": "1015",
+    "ch": "SetOriMode指令执行失败，请检查当前指令参数！",
+    "en": "SetOriMode execution failed, please check current instruction parameter!"
+  },
+  {
+    "code": "1016",
+    "ch": "程序文件为只读状态，执行失败！",
+    "en": "Failed to Open the program file which file permission is ReadOnly!"
+  },
+  {
+    "code": "1017",
+    "ch": "因系统处于错误状态，坐标系设置失败！",
+    "en": "Failed to set the coordinate when system is error status!"
+  },
+  {
+    "code": "1018",
+    "ch": "SetSingularPass指令执行失败，请检查当前指令参数！",
+    "en": "SetSingularPass execution failed, please check current instruction parameter!"
+  },
+  {
+    "code": "1019",
+    "ch": "SetCircMode指令执行失败，请检查当前指令参数！",
+    "en": "SetCircMode execution failed, please check current instruction parameter!"
+  },
+  {
+    "code": "1020",
+    "ch": "SetSCARAMode指令执行失败，请检查当前指令参数！",
+    "en": "SetSCARAMode execution failed, please check current instruction parameter!"
+  },
+  {
+    "code": "1021",
+    "ch": "设置IO参数失败，请检查当前指令参数！",
+    "en": "Set IO parameter failed, please check current instruction parameter!"
+  },
+  {
+    "code": "1022",
+    "ch": "设置运动参数失败，请检查当前指令参数！",
+    "en": "Set Movement parameter failed, please check current instruction parameter!"
+  },
+  {
+    "code": "1023",
+    "ch": "AutoTune指令无法执行，请检查上次自调节是否处理完毕！",
+    "en": "AutoTune can not execution, please make sure last autoTune is completed!"
+  },
+  {
+    "code": "1024",
+    "ch": "MovArch指令中高度类型未设置！",
+    "en": "The height type is not set in the MovArch instruction!"
+  },
+  {
+    "code": "1025",
+    "ch": "协同标识参数不能为0！",
+    "en": "The synchronous index param cannot be zero!"
+  },
+  {
+    "code": "1026",
+    "ch": "从机器人只能选\"DEFAULT\",主机器人只能选非\"DEFAULT\"！",
+    "en": "Slave robot can only choose \"DEFAULT\", master robot can bot choose \"DEFAULT\"!"
+  },
+  {
+    "code": "1027",
+    "ch": "设置主从运动指令参数失败，请检查当前指令参数！",
+    "en": "Failed to set master slave synchronous motion param, please check current instruction parameter!"
+  },
+  {
+    "code": "1028",
+    "ch": "从机器人不允许设置信号索引！",
+    "en": "Slave robot cannot be allowed to set signal index!"
+  },
+  {
+    "code": "1029",
+    "ch": "主机器人不允许获取信号索引！",
+    "en": "Master robot cannot be allowed to set signal index!"
+  },
+  {
+    "code": "1030",
+    "ch": "当前主从运动功能未使能，指令执行失败！",
+    "en": "Failed to execute the instruction because the current master-slave motion function is disabled!"
+  },
+  {
+    "code": "1031",
+    "ch": "设置PSO控制字失败！",
+    "en": "Failed to set PSO controlword!"
+  },
+  {
+    "code": "1032",
+    "ch": "获取PSO状态字失败！",
+    "en": "Failed to get PSO statusword!"
+  },
+  {
+    "code": "1033",
+    "ch": "设置PSO比较点属性失败！",
+    "en": "Failed to set the attribute of PSO comparison point!"
+  },
+  {
+    "code": "50001",
+    "ch": "设置系统模式的参数异常！",
+    "en": "Invalid parameter of setting system mode!"
+  },
+  {
+    "code": "50002",
+    "ch": "设置系统模式时，程序由执行转到停止失败！",
+    "en": "Failed to switch the program state from \"run\" to \"stop\" when setting system mode!"
+  },
+  {
+    "code": "50003",
+    "ch": "获取系统中运动相关配置参数失败！",
+    "en": "Get motion configuration failed!"
+  },
+  {
+    "code": "50004",
+    "ch": "程序执行中，不允许伺服励磁操作！",
+    "en": "Servo motivate operation is not allowed when program is running!"
+  },
+  {
+    "code": "50005",
+    "ch": "系统不在自动模式，不允许伺服励磁操作！",
+    "en": "Servo motivate operation is not allowed when system is not in automatic mode!"
+  },
+  {
+    "code": "50006",
+    "ch": "系统下发运动控制复位命令失败！",
+    "en": "System failed to issue reset instruction of motion control!"
+  },
+  {
+    "code": "50007",
+    "ch": "系统下发指令处理复位命令失败！",
+    "en": "System failed to issue reset instruction of instruction processing!"
+  },
+  {
+    "code": "50008",
+    "ch": "系统清理错误列表失败！",
+    "en": "System failed to clean up the error list!"
+  },
+  {
+    "code": "50009",
+    "ch": "系统错误清空复位命令执行失败！",
+    "en": "System error! Executing instruction of emptying reset command failed!"
+  },
+  {
+    "code": "50010",
+    "ch": "获取到系统远程速度参数异常，超过[1,100]！",
+    "en": "Invalid remote velocity parameter of system, above [1,100]!"
+  },
+  {
+    "code": "50011",
+    "ch": "设置系统远程速度参数异常，超过[1,100]！",
+    "en": "Invalid remote velocity parameter to be set, above [1,100]!"
+  },
+  {
+    "code": "50012",
+    "ch": "设置自启动中工程或程序名存在空值！",
+    "en": "Project or program name is empty when setting auto-start option!"
+  },
+  {
+    "code": "50013",
+    "ch": "取消自启动中工程或程序名与原本不对应！",
+    "en": "Project or program name mismatch when canceling auto-start option!"
+  },
+  {
+    "code": "50014",
+    "ch": "程序执行中，不允许设置系统IP！",
+    "en": "Operation of setting system IP is not allowed when program is running!"
+  },
+  {
+    "code": "50015",
+    "ch": "设置系统IP参数中端口号值异常！",
+    "en": "The port value parameter of  setting system IP is abnormal!"
+  },
+  {
+    "code": "50016",
+    "ch": "加密信息不合法，加密失败！",
+    "en": "The encrypt information is not valid, failed to encrypt!"
+  },
+  {
+    "code": "50017",
+    "ch": "解密密码错误，解密失败！",
+    "en": "Password error, failed to decrypt!"
+  },
+  {
+    "code": "50018",
+    "ch": "加密数据被其他线程占用，请稍后重试！",
+    "en": "The encryption data is occupied by another thread, please try again later!"
+  },
+  {
+    "code": "50019",
+    "ch": "系统当前没有加密，无需解密！",
+    "en": "The system is not encrypted and dose not require decryption!"
+  },
+  {
+    "code": "50020",
+    "ch": "系统执行期限已过，请联系厂家进行解密！",
+    "en": "System execution period expired, please contact the manufacturer to decrypt!"
+  },
+  {
+    "code": "50021",
+    "ch": "系统时间被篡改，运行不合法！",
+    "en": "System time was tampered!"
+  },
+  {
+    "code": "50022",
+    "ch": "系统时间获取失败，操作频繁，请重试！",
+    "en": "Failed to acquire system time, please try again later!"
+  },
+  {
+    "code": "50023",
+    "ch": "程序由暂停转到停止状态出错！",
+    "en": "The program failed to switch from pause to stop state!"
+  },
+  {
+    "code": "50024",
+    "ch": "多工位参数设置失败，参数不合法！",
+    "en": "Parameter is error! Set multi-station parameter failed!"
+  },
+  {
+    "code": "50025",
+    "ch": "设置远程速度失败，请切换到其它模式下设置！",
+    "en": "Failed to set remote speed, please switch to other mode settings!"
+  },
+  {
+    "code": "50026",
+    "ch": "被使能的多工位输入口/输出口/程序名不能为空或无效值！",
+    "en": "Multi-station param is illegal, please ensure param is truely!"
+  },
+  {
+    "code": "50027",
+    "ch": "更新加密数据到文件中失败！",
+    "en": "Update the encrypt information to file failed!"
+  },
+  {
+    "code": "50028",
+    "ch": "设置系统模式时，程序倒序切换到单步失败！",
+    "en": "Failed to switch the program step from \"step_back\" to \"step\" when setting system mode!"
+  },
+  {
+    "code": "50029",
+    "ch": "该系统不支持设置外部通讯网络信息！",
+    "en": "Failed to set Ext_network when system not support!"
+  },
+  {
+    "code": "50030",
+    "ch": "非停止状态下禁止设置API模式！",
+    "en": "It is frobid to set api parameter when system is not stopping status!"
+  },
+  {
+    "code": "50031",
+    "ch": "系统处于错误状态，不能励磁操作！",
+    "en": "System is in error status,can not servo on!"
+  },
+  {
+    "code": "50032",
+    "ch": "系统异常启动！",
+    "en": "System start abnormal!"
+  },
+  {
+    "code": "51001",
+    "ch": "程序执行中，不允许进行该操作！",
+    "en": "Operation is not allowed when program is running!"
+  },
+  {
+    "code": "51002",
+    "ch": "伺服不在励磁状态，不允许回零操作！",
+    "en": "Homing operation is not allowed when servo is not in excitation state!"
+  },
+  {
+    "code": "51003",
+    "ch": "回零命令执行失败！",
+    "en": "Failed to execute homing instruction!"
+  },
+  {
+    "code": "51004",
+    "ch": "全局速度命令设置失败！",
+    "en": "Failed to execute setting override instruction!"
+  },
+  {
+    "code": "51005",
+    "ch": "程序运行中，不允许设置点动参考坐标系！",
+    "en": "Setting jog reference coordinate system is not allowed when program is running!"
+  },
+  {
+    "code": "51006",
+    "ch": "点动坐标系命令设置失败！",
+    "en": "Failed to execute setting jog coordinate system!"
+  },
+  {
+    "code": "51007",
+    "ch": "程序运行中，不允许机器人点动！",
+    "en": "Jog operation is not allowed when program is running!"
+  },
+  {
+    "code": "51008",
+    "ch": "伺服不在励磁状态，不允许机器人点动！",
+    "en": "Jog operation is not allowed when servo is not in excitation state!"
+  },
+  {
+    "code": "51009",
+    "ch": "自动模式下，不允许机器人点动！",
+    "en": "Jog operation is not allowed when system is in automatic state!"
+  },
+  {
+    "code": "51010",
+    "ch": "当前系统模式下，不允许机器人点动操作！",
+    "en": "Jog operation is not allowed when system is in current state!"
+  },
+  {
+    "code": "51011",
+    "ch": "程序运行中，不允许切换点动模式！",
+    "en": "Switching to jog mode is not allowed when program is running!"
+  },
+  {
+    "code": "51012",
+    "ch": "点动命令执行失败！",
+    "en": "Failed to execute jog instruction!"
+  },
+  {
+    "code": "51013",
+    "ch": "设置DOUT命令执行失败！",
+    "en": "Failed to execute setting DOUT instruction!"
+  },
+  {
+    "code": "51014",
+    "ch": "设置AOUT命令执行失败！",
+    "en": "Failed to execute setting AOUT instruction!"
+  },
+  {
+    "code": "51015",
+    "ch": "设置SIMDOUT命令执行失败！",
+    "en": "Failed to execute setting SIMDOUT instruction!"
+  },
+  {
+    "code": "51016",
+    "ch": "设置SIMAOUT命令执行失败！",
+    "en": "Failed to execute setting SIMAOUT instruction!"
+  },
+  {
+    "code": "51017",
+    "ch": "系统接口异常，重启系统后再尝试！",
+    "en": "The system interface is abnormal, try again after restarting the system!"
+  },
+  {
+    "code": "51018",
+    "ch": "命令参数超限定范围，命令执行失败！",
+    "en": "Command parameters exceed the limit, failed to execute the command!"
+  },
+  {
+    "code": "51019",
+    "ch": "程序运行中，不允许标定工具参数！",
+    "en": "Calibrating tool parameters is not allowed when program is running!"
+  },
+  {
+    "code": "51020",
+    "ch": "程序运行中，不允许标定用户坐标系！",
+    "en": "Calibrating user coordinate system is not allowed when program is running!"
+  },
+  {
+    "code": "51021",
+    "ch": "设置传送带参数命令执行失败！",
+    "en": "Failed to execute setting conveyor parameters instruction!"
+  },
+  {
+    "code": "51022",
+    "ch": "设置跟随参数命令执行失败！",
+    "en": "Failed to execute setting follow parameters instruction!"
+  },
+  {
+    "code": "51023",
+    "ch": "刷新单圈值失败！",
+    "en": "Failed to refresh single turn value!"
+  },
+  {
+    "code": "51024",
+    "ch": "映射运动内核接口数据失败，检查运动内核组件是否正常启动！",
+    "en": "Failed to map motion kernel interface data，check whether RTMC.rta starts normally!"
+  },
+  {
+    "code": "51025",
+    "ch": "起终点跨奇异，不支持一点到达运动！",
+    "en": "Path pass singularity!"
+  },
+  {
+    "code": "51026",
+    "ch": "设置的高度值不合法！",
+    "en": "The height value is illegal!"
+  },
+  {
+    "code": "51027",
+    "ch": "当前机型不支持一点到达操作(拱形运动)！",
+    "en": "Current model does not support go targetPos in this way(arch motion)!"
+  },
+  {
+    "code": "51028",
+    "ch": "当前模式不支持一点到达操作(拱形运动)！",
+    "en": "Current mode does not support go targetPos in this way(arch motion)!"
+  },
+  {
+    "code": "51029",
+    "ch": "运动启动失败！",
+    "en": "Failed to start motion!"
+  },
+  {
+    "code": "51030",
+    "ch": "运动缓存已满！",
+    "en": "The motion buffer is full!"
+  },
+  {
+    "code": "51031",
+    "ch": "程序运行中，不允许激活一点对正！",
+    "en": "The program is running, activating one-click alignment is not allowed!"
+  },
+  {
+    "code": "51032",
+    "ch": "程序运行中，不允许进行一点对正操作！",
+    "en": "The program is running, one-click alignment operation is not allowed!"
+  },
+  {
+    "code": "51033",
+    "ch": "一点对正操作失败！",
+    "en": "Failed to execute one-click alignment operation!"
+  },
+  {
+    "code": "51034",
+    "ch": "未激活一点对正，不允许操作！",
+    "en": "One-click alignment operation is not activated, cannot be executed!"
+  },
+  {
+    "code": "51035",
+    "ch": "程序暂停状态中，不允许进行回零操作！",
+    "en": "The program is in paused state, homing operation is not allowed!"
+  },
+  {
+    "code": "51036",
+    "ch": "程序暂停状态中，不允许设置点动参考坐标系！",
+    "en": "The program is in paused state, cannot set the reference coordinate system of jog-motion!"
+  },
+  {
+    "code": "51037",
+    "ch": "程序暂停状态中，不允许机器人点动！",
+    "en": "The program is in paused state, jog-motion is not allowed!"
+  },
+  {
+    "code": "51038",
+    "ch": "程序暂停状态中，不允许切换点动模式！",
+    "en": "The program is in paused state, switching jog-motion mode is not allowed!"
+  },
+  {
+    "code": "51039",
+    "ch": "程序暂停状态中，不允许标定工具参数！",
+    "en": "The program is in paused state, calibrating the tool parameters is not allowed!"
+  },
+  {
+    "code": "51040",
+    "ch": "程序暂停状态中，不允许标定用户坐标系！",
+    "en": "The program is in paused state, calibrating the user coordinate system is not allowed!"
+  },
+  {
+    "code": "51041",
+    "ch": "程序暂停状态中，不允许激活一点对正！",
+    "en": "The program is in paused state, activating one-click alignment is not allowed!"
+  },
+  {
+    "code": "51042",
+    "ch": "程序暂停状态中，不允许进行一点对正操作！",
+    "en": "The program is in paused state, one-click alignment operation is not allowed!"
+  },
+  {
+    "code": "51043",
+    "ch": "设置DI命令执行失败！",
+    "en": "Failed to set DI!"
+  },
+  {
+    "code": "51044",
+    "ch": "设置AI命令执行失败！",
+    "en": "Failed to set AI!"
+  },
+  {
+    "code": "51045",
+    "ch": "设置SIMDI命令执行失败！",
+    "en": "Failed to set SIMAI!"
+  },
+  {
+    "code": "51046",
+    "ch": "设置SIMAI命令执行失败！",
+    "en": "Failed to set SIMDI!"
+  },
+  {
+    "code": "51047",
+    "ch": "伺服励磁状态，不允许清除伺服报警！",
+    "en": "Clearing servo alarms is not allowed when the servo is in an excited state!"
+  },
+  {
+    "code": "51048",
+    "ch": "操作失败！",
+    "en": "Failed to execute!"
+  },
+  {
+    "code": "51049",
+    "ch": "获取伺服Pn参数失败！",
+    "en": "Failed to get the servo PN parameters!"
+  },
+  {
+    "code": "51050",
+    "ch": "设置伺服Pn参数失败！",
+    "en": "Failed to set the servo PN parameters!"
+  },
+  {
+    "code": "51051",
+    "ch": "软浮动期间，不允许机器人点动！",
+    "en": "Jog operation is not allowed during in SoftFloat!"
+  },
+  {
+    "code": "51052",
+    "ch": "内核由暂停转空闲状态失败！",
+    "en": "Kernel state from pause to idle failed!"
+  },
+  {
+    "code": "51053",
+    "ch": "设置诊断功能项失败！",
+    "en": "Set function item of Diagnose failed!"
+  },
+  {
+    "code": "51054",
+    "ch": "设置诊断参数失败！",
+    "en": "Set parameters of Diagnose failed!"
+  },
+  {
+    "code": "51055",
+    "ch": "程序运行中，不允许标定外部坐标系！",
+    "en": "Calibrating extend tcp system is not allowed when program is running!"
+  },
+  {
+    "code": "51056",
+    "ch": "程序暂停状态中，不允许标定外部坐标系！",
+    "en": "The program is in paused state, calibrating the extend tcp system is not allowed!"
+  },
+  {
+    "code": "51057",
+    "ch": "映射运动内核接口数据错误，版本不匹配！",
+    "en": "Mapping motion kernel interface data error, version mismatch!"
+  },
+  {
+    "code": "51058",
+    "ch": "变位机参数设置失败,请检查输入参数的合法性！",
+    "en": "It is failed to set positioner parameter, Please ensure parameter is truely!"
+  },
+  {
+    "code": "51059",
+    "ch": "变位机参数读取失败，请检查输入参数的合法性！",
+    "en": "It is failed to get positioner parameter, Please ensure parameter is truely!"
+  },
+  {
+    "code": "51060",
+    "ch": "程序运行中，不允许标定变位机坐标系！",
+    "en": "Calibrating positioner system is not allowed when program is running!"
+  },
+  {
+    "code": "51061",
+    "ch": "程序暂停状态中，不允许标定变位机坐标系！",
+    "en": "The program is in paused state, calibrating the positioner system is not allowed!"
+  },
+  {
+    "code": "51062",
+    "ch": "程序运行中，不允许设置变位机坐标系参数！",
+    "en": "Set positioner param error! Program is in running!"
+  },
+  {
+    "code": "51063",
+    "ch": "第一个变位机轴不在零点位置！标定失败！",
+    "en": "The first external axis is not at zero! Calibration positioner param failed!"
+  },
+  {
+    "code": "51064",
+    "ch": "第二个变位机轴不在零点位置！标定失败！",
+    "en": "The second external axis is not at zero! Calibration positioner param failed!"
+  },
+  {
+    "code": "51065",
+    "ch": "激活或冻结区域命令失败！",
+    "en": "AreaActivateOrNot cmd failed!"
+  },
+  {
+    "code": "51066",
+    "ch": "传入的传送带ID错误！",
+    "en": "The conveyor index is out of limit!"
+  },
+  {
+    "code": "51067",
+    "ch": "程序运行中，不允许标定传送带脉冲当量！",
+    "en": "Calibrating Conveyor Equivalent system is not allowed when program is running!"
+  },
+  {
+    "code": "51068",
+    "ch": "程序暂停状态中，不允许标定传送带脉冲当量！",
+    "en": "The program is in paused state, calibrating the Conveyor Equivalent system is not allowed!"
+  },
+  {
+    "code": "51069",
+    "ch": "当前点与上一次记录的点相同！",
+    "en": "The current point is samed to last point!"
+  },
+  {
+    "code": "51070",
+    "ch": "计算失败！两个点之间的编码器脉冲差值太小或者相等！",
+    "en": "The encoder value between last point and current point is equal or too short!"
+  },
+  {
+    "code": "51071",
+    "ch": "传入的动坐标系未与传送带绑定或传送带未使能，运行失败！",
+    "en": "Please ensure the dyn coordinate is bound to the conveyor!"
+  },
+  {
+    "code": "51072",
+    "ch": "设置的传送带输出口超过设定范围！",
+    "en": "The trig output of conveyor is out of limit!"
+  },
+  {
+    "code": "51073",
+    "ch": "设置的传送带输入口超过设定范围！",
+    "en": "The trig input of conveyor is out of limit!"
+  },
+  {
+    "code": "51074",
+    "ch": "设置的传送带输出口跟其他传送带的输出口重复！",
+    "en": "The trig output of conveyor is used by other conveyor!"
+  },
+  {
+    "code": "51075",
+    "ch": "设置的传送带输入口跟其他传送带的输入口重复！",
+    "en": "The trig input of conveyor is used by other conveyor!"
+  },
+  {
+    "code": "51076",
+    "ch": "未获取到视觉点信息，运行失败！",
+    "en": "Please ensure the vision message is received before execute MovLSync instruction!"
+  },
+  {
+    "code": "51077",
+    "ch": "设置的传送带坐标系跟其他传送带的动坐标系重复！",
+    "en": "The trig syncoord of conveyor is used by other conveyor!"
+  },
+  {
+    "code": "51078",
+    "ch": "动坐标系下，不允许机器人点动！",
+    "en": "Jog operation is not allowed when current coodrate is syncoord!"
+  },
+  {
+    "code": "51079",
+    "ch": "动坐标系下，不允许切换坐标系！",
+    "en": "Coordinate switch operation is not allowed when current coodrate is syncoord!"
+  },
+  {
+    "code": "51080",
+    "ch": "动坐标系下，禁止标定传送带的脉冲当量！",
+    "en": "Calibrating conveyor equivalent operation is not allowed when current coodrate is syncoord!"
+  },
+  {
+    "code": "51081",
+    "ch": "动坐标系下，禁止设置碰撞检测参数！",
+    "en": "Set CollideValue parameter operation is not allowed when current coodrate is syncoord!"
+  },
+  {
+    "code": "51082",
+    "ch": "动坐标系下，禁止设置振动抑制参数！",
+    "en": "Set vibraBatement parameter operation is not allowed when current coodrate is syncoord!"
+  },
+  {
+    "code": "51083",
+    "ch": "计算失败！两个点之间的距离太近！",
+    "en": "The distance between last point and current point is too short!"
+  },
+  {
+    "code": "51084",
+    "ch": "恢复参数完成！但是，以下参数无法恢复：",
+    "en": "Recover servo parameter done!But,below paramertes cannot recover:"
+  },
+  {
+    "code": "51085",
+    "ch": "设置机械臂参数失败！",
+    "en": "Failed to set mechanical arm parameters!"
+  },
+  {
+    "code": "51086",
+    "ch": "更改轨迹纠偏使能状态失败！",
+    "en": "Failed to change the track correction enable state!"
+  },
+  {
+    "code": "51087",
+    "ch": "设置轨迹纠偏参数失败！",
+    "en": "Failed to set correction parameter!"
+  },
+  {
+    "code": "51088",
+    "ch": "设置区域参数失败！",
+    "en": "Failed to set area parameter!"
+  },
+  {
+    "code": "51089",
+    "ch": "备份参数失败！",
+    "en": "Failed to backup servo parameter!"
+  },
+  {
+    "code": "51090",
+    "ch": "恢复参数失败！",
+    "en": "Failed to recover servo parameter!"
+  },
+  {
+    "code": "51091",
+    "ch": "当前动坐标系与待设置参数的传送带动坐标系不一致！",
+    "en": "Current syncoord should be corresponding to current conveyor syncoord!!"
+  },
+  {
+    "code": "51092",
+    "ch": "当前操作只能在动坐标系下进行！",
+    "en": "Record follow pos should be in syncoord!"
+  },
+  {
+    "code": "51093",
+    "ch": "设置多边体区域参数失败！",
+    "en": "Failed to set polyhedron area parameter!"
+  },
+  {
+    "code": "51094",
+    "ch": "获取多边体区域参数失败！",
+    "en": "Failed to get polyhedron area parameter!"
+  },
+  {
+    "code": "51095",
+    "ch": "删除多边体区域参数失败！",
+    "en": "Failed to delete polyhedron area parameter!"
+  },
+  {
+    "code": "51096",
+    "ch": "激活或冻结多边体区域命令失败！",
+    "en": "Failed to activate or deactivate polyhedron cmd!"
+  },
+  {
+    "code": "51097",
+    "ch": "一键清除IO输入量仿真状态失败！",
+    "en": "Failed to clear IO input force status!"
+  },
+  {
+    "code": "51098",
+    "ch": "获取IO注释失败！",
+    "en": "Failed to get IO note!"
+  },
+  {
+    "code": "51099",
+    "ch": "设置IO注释失败！",
+    "en": "Failed to set IO note!"
+  },
+  {
+    "code": "51100",
+    "ch": "虚拟示教器急停命令失败！",
+    "en": "Failed to activate virtual emergency button cmd!"
+  },
+  {
+    "code": "51101",
+    "ch": "设置更新伺服监测数据命令失败！",
+    "en": "Failed to set update servo status cmd!"
+  },
+  {
+    "code": "51102",
+    "ch": "获取伺服历史报警命令失败！",
+    "en": "Failed to get servo historical error list cmd!"
+  },
+  {
+    "code": "51103",
+    "ch": "文件上传命令失败！",
+    "en": "Failed to FOE Upload cmd!"
+  },
+  {
+    "code": "51104",
+    "ch": "文件下载命令失败！",
+    "en": "Failed to FOE Download cmd!"
+  },
+  {
+    "code": "51105",
+    "ch": "本次上电距离最近一次断电时间间隔较短，请再次断电并等待至少5秒后上电！",
+    "en": "The interval between this power-on the latest power-off is short, Power off again and wait at least 5 seconds！"
+  },
+  {
+    "code": "51106",
+    "ch": "远程模式下，机械运动未使能禁止下发运动段！",
+    "en": "Pushing motion instruction is not allowed due to mechanical motion disabled in remote mode!"
+  },
+  {
+    "code": "51107",
+    "ch": "远程模式下，机械运动未使能禁止程序运行！",
+    "en": "Running program is not allowed due to mechanical motion disabled in remote mode!"
+  },
+  {
+    "code": "51108",
+    "ch": "修改motion mode备注失败！",
+    "en": "modify motion mode note failed!!"
+  },
+  {
+    "code": "51109",
+    "ch": "获取motion mode参数失败！",
+    "en": "get motion mode failed!"
+  },
+  {
+    "code": "51110",
+    "ch": "设置motion mode参数失败！",
+    "en": "set motion mode failed!"
+  },
+  {
+    "code": "51111",
+    "ch": "设置motion mode自调节参数失败！",
+    "en": "set motion mode auto tune para failed!"
+  },
+  {
+    "code": "51112",
+    "ch": "保存motion mode自调节参数失败！",
+    "en": "save motion mode auto tune para failed!"
+  },
+  {
+    "code": "51113",
+    "ch": "设置默认motion mode失败！",
+    "en": "set default motion  failed!"
+  },
+  {
+    "code": "51114",
+    "ch": "motion mode id 错误，请检查",
+    "en": "motion mode id error! please check the id is correct."
+  },
+  {
+    "code": "51115",
+    "ch": "获取motion mode备注及默认motion mode失败",
+    "en": "get motion mode note and default motion mode failed!"
+  },
+  {
+    "code": "51116",
+    "ch": "系统参数操作失败！",
+    "en": "Operate system parameter failed!"
+  },
+  {
+    "code": "51117",
+    "ch": "系统未完全掉电！再次断电并等待控制器完全掉电后再上电！",
+    "en": "Power on Again, need restart!"
+  },
+  {
+    "code": "51118",
+    "ch": "程序运行中，不允许标定多机坐标系！",
+    "en": "Calibrating multi robot system is not allowed when program is running!"
+  },
+  {
+    "code": "51119",
+    "ch": "程序暂停状态中，不允许标定多机坐标系！",
+    "en": "Calibrating the multi robot system is not allowed when program is in paused state!"
+  },
+  {
+    "code": "51120",
+    "ch": "程序运行中，不允许设置多机配置参数！",
+    "en": "Setting multi robot configuration parameter is not allowed when program is running!"
+  },
+  {
+    "code": "51121",
+    "ch": "多机配置参数设置失败，请检查输入参数的合法性！",
+    "en": "It is failed to set multi robot configuration parameter, Please ensure parameter is truely!"
+  },
+  {
+    "code": "51122",
+    "ch": "多机配置参数读取失败，请检查输入参数的合法性！",
+    "en": "It is failed to get multi robot configuration parameter, Please ensure parameter is truely!"
+  },
+  {
+    "code": "51123",
+    "ch": "防碰撞配置参数设置失败，请检查输入参数的合法性！",
+    "en": "It is failed to set anti-collision configuration parameter, Please ensure parameter is truely!"
+  },
+  {
+    "code": "51124",
+    "ch": "防碰撞配置参数读取失败，请检查输入参数的合法性！",
+    "en": "It is failed to get anti-collision configuration parameter, Please ensure parameter is truely!"
+  },
+  {
+    "code": "51125",
+    "ch": "程序暂停状态中，不允许设置多机配置参数！",
+    "en": "Setting multi robot configuration parameter is not allowed when program is in paused state!"
+  },
+  {
+    "code": "51126",
+    "ch": "文件比较命令失败,出厂或用户备份参数文件不存在！",
+    "en": "Failed to compare file cmd,Factory or user backup parameter files non-existed!"
+  },
+  {
+    "code": "51127",
+    "ch": "文件更新命令失败！",
+    "en": "Failed to update file cmd!"
+  },
+  {
+    "code": "51128",
+    "ch": "禁止对已选中的主从组参数进行上下使能操作！",
+    "en": "The MSGroupId param is being setted, forbid to operate the param to be enable or disable!"
+  },
+  {
+    "code": "51129",
+    "ch": "主从模式已退出！",
+    "en": "The master-slave mode has exited!"
+  },
+  {
+    "code": "51130",
+    "ch": "寻位成功！",
+    "en": "Search successfully"
+  },
+  {
+    "code": "51131",
+    "ch": "运动到校准点成功！",
+    "en": "Motion point successfully"
+  },
+  {
+    "code": "51132",
+    "ch": "设置维保模式启停失败！",
+    "en": "Start or stop maintenance failed！"
+  },
+  {
+    "code": "51134",
+    "ch": "记录失败，三次寻位偏差值过大，请重新寻位！",
+    "en": "Back to zero point failed, variance dissatisfied!"
+  },
+  {
+    "code": "52001",
+    "ch": "系统处于运行状态，操作被禁止！",
+    "en": "The system is in running state, the operation is forbidden!"
+  },
+  {
+    "code": "52002",
+    "ch": "请先加载工程或程序！",
+    "en": "Please load a project or program at first!"
+  },
+  {
+    "code": "52003",
+    "ch": "工程创建失败！",
+    "en": "Create project failed!"
+  },
+  {
+    "code": "52004",
+    "ch": "工程加载失败！",
+    "en": "Load project failed!"
+  },
+  {
+    "code": "52005",
+    "ch": "工程注销失败！",
+    "en": "Logout project failed!"
+  },
+  {
+    "code": "52006",
+    "ch": "工程复制失败！",
+    "en": "Copy project failed!"
+  },
+  {
+    "code": "52007",
+    "ch": "工程粘贴失败！",
+    "en": "Paste project failed!"
+  },
+  {
+    "code": "52008",
+    "ch": "工程删除失败！",
+    "en": "Delete project failed!"
+  },
+  {
+    "code": "52009",
+    "ch": "工程重命名失败！",
+    "en": "Rename project failed!"
+  },
+  {
+    "code": "52010",
+    "ch": "工程刷新失败！",
+    "en": "Refresh project failed!"
+  },
+  {
+    "code": "52011",
+    "ch": "程序创建失败！",
+    "en": "Create program failed!"
+  },
+  {
+    "code": "52012",
+    "ch": "程序加载失败！",
+    "en": "Load program failed!"
+  },
+  {
+    "code": "52013",
+    "ch": "程序注销失败！",
+    "en": "Logout program failed!"
+  },
+  {
+    "code": "52014",
+    "ch": "程序打开失败！",
+    "en": "Open program failed!"
+  },
+  {
+    "code": "52015",
+    "ch": "程序关闭失败！",
+    "en": "Close program failed!"
+  },
+  {
+    "code": "52016",
+    "ch": "程序复制失败！",
+    "en": "Copy program failed!"
+  },
+  {
+    "code": "52017",
+    "ch": "程序粘贴失败！",
+    "en": "Paste program failed!"
+  },
+  {
+    "code": "52018",
+    "ch": "程序被调用，删除失败！",
+    "en": "Delete program failed!"
+  },
+  {
+    "code": "52019",
+    "ch": "程序被调用，重命名失败！",
+    "en": "Rename program failed!"
+  },
+  {
+    "code": "52020",
+    "ch": "程序刷新失败！",
+    "en": "Refresh program failed!"
+  },
+  {
+    "code": "52021",
+    "ch": "程序列表获取失败！",
+    "en": "Get program list failed!"
+  },
+  {
+    "code": "52022",
+    "ch": "工程名过长或为空！",
+    "en": "The project name is too long or empty!"
+  },
+  {
+    "code": "52023",
+    "ch": "工程名已存在！",
+    "en": "The project name already exists!"
+  },
+  {
+    "code": "52024",
+    "ch": "工程数量超出限制！",
+    "en": "The number of projects exceeds the limit!"
+  },
+  {
+    "code": "52025",
+    "ch": "创建工程变量数据文件失败！",
+    "en": "Failed to create variable data file of project!"
+  },
+  {
+    "code": "52026",
+    "ch": "创建工程后获取工程列表失败！",
+    "en": "Failed to get Project list after creating the project!"
+  },
+  {
+    "code": "52027",
+    "ch": "工程文件异常！",
+    "en": "Project file exception!"
+  },
+  {
+    "code": "52028",
+    "ch": "该工程不存在！",
+    "en": "The project does not exist!"
+  },
+  {
+    "code": "52029",
+    "ch": "获取全局数据失败！",
+    "en": "Failed to get the global speed!"
+  },
+  {
+    "code": "52030",
+    "ch": "加载工程数据失败！",
+    "en": "Failed to load the data file of project!"
+  },
+  {
+    "code": "52031",
+    "ch": "工程没有被加载！",
+    "en": "The project is not loaded!"
+  },
+  {
+    "code": "52032",
+    "ch": "非法的程序名！",
+    "en": "The program name is illegal!"
+  },
+  {
+    "code": "52033",
+    "ch": "程序名过长或为空！",
+    "en": "The program name is too long or empty!"
+  },
+  {
+    "code": "52034",
+    "ch": "程序名已存在！",
+    "en": "The variable name already exists!"
+  },
+  {
+    "code": "52035",
+    "ch": "程序数量超出限制！",
+    "en": "The number of programs exceeds the limit!"
+  },
+  {
+    "code": "52036",
+    "ch": "创建程序变量文件失败！",
+    "en": "Failed to create variable data file of program!"
+  },
+  {
+    "code": "52037",
+    "ch": "创建程序文件失败！",
+    "en": "Failed to create program file!"
+  },
+  {
+    "code": "52038",
+    "ch": "获取选定工具坐标系参数失败！",
+    "en": "Failed to get tool coordinate system parameters!"
+  },
+  {
+    "code": "52039",
+    "ch": "获取选定用户坐标系参数失败！",
+    "en": "Failed to get user coordinate system parameters!"
+  },
+  {
+    "code": "52040",
+    "ch": "工程名或程序名为空！",
+    "en": "Project name or program name is empty!"
+  },
+  {
+    "code": "52041",
+    "ch": "程序文件无法打开！",
+    "en": "Cannot open the program file!"
+  },
+  {
+    "code": "52042",
+    "ch": "该程序没有在工程中找到或没有被加载！",
+    "en": "The program was not found or was not be loaded!"
+  },
+  {
+    "code": "52043",
+    "ch": "程序文件不存在！",
+    "en": "The program file does not exist!"
+  },
+  {
+    "code": "52044",
+    "ch": "删除数据文件失败！",
+    "en": "Failed to delete data file!"
+  },
+  {
+    "code": "52045",
+    "ch": "删除程序文件失败！",
+    "en": "Failed to delete program file!"
+  },
+  {
+    "code": "52046",
+    "ch": "获取程序列表失败！",
+    "en": "Failed to get program list!"
+  },
+  {
+    "code": "52047",
+    "ch": "无法删除当前加载的工程！",
+    "en": "Current loaded project cannot be deleted!"
+  },
+  {
+    "code": "52048",
+    "ch": "从程序文件中获取全部指令失败！",
+    "en": "Failed to get all instructions from program file!"
+  },
+  {
+    "code": "52049",
+    "ch": "程序文件格式转换失败！",
+    "en": "Failed to convert program file format!"
+  },
+  {
+    "code": "52050",
+    "ch": "当前打开的程序无法关闭！",
+    "en": "Current opened program cannot be closed!"
+  },
+  {
+    "code": "52051",
+    "ch": "程序数据文件大小超出限制！",
+    "en": "The size of program file exceeds limit!"
+  },
+  {
+    "code": "52052",
+    "ch": "恢复运行的数据失败！",
+    "en": "Failed to resume running data!"
+  },
+  {
+    "code": "52053",
+    "ch": "当前加载程序的程序变量数据获取失败！",
+    "en": "Failed to get all variable data of current loaded program!"
+  },
+  {
+    "code": "52054",
+    "ch": "当前加载程序的程序变量数据加载失败！",
+    "en": "Failed to load all variable data of current loaded program!"
+  },
+  {
+    "code": "52055",
+    "ch": "当前加载程序的程序变量数据保存失败！",
+    "en": "Failed to save all variable data of current loaded program!"
+  },
+  {
+    "code": "52056",
+    "ch": "没有被复制的程序，程序粘贴失败！",
+    "en": "No program was copied, pasting program failed!"
+  },
+  {
+    "code": "52057",
+    "ch": "没有被复制的工程，工程粘贴失败！",
+    "en": "No project was copied, pasting project failed!"
+  },
+  {
+    "code": "52058",
+    "ch": "要复制的工程不存在，工程粘贴失败！",
+    "en": "The project to be copied does not exist, pasting project failed!"
+  },
+  {
+    "code": "52059",
+    "ch": "工程文件目录获取失败！",
+    "en": "Failed to get the project file directory!"
+  },
+  {
+    "code": "52060",
+    "ch": "工程被加载、程序被加载或打开时，不允许重命名操作！",
+    "en": "Renaming operation are not allowed when a project is loaded or a program is loaded or opened!"
+  },
+  {
+    "code": "52061",
+    "ch": "程序数据文件重命名失败！",
+    "en": "Failed to rename the program data file!"
+  },
+  {
+    "code": "52062",
+    "ch": "程序指令文件重命名失败！",
+    "en": "Failed to rename the program instruction file!"
+  },
+  {
+    "code": "52063",
+    "ch": "工程文件目录拷贝失败！",
+    "en": "Failed to copy the project file directory!"
+  },
+  {
+    "code": "52064",
+    "ch": "工程文件目录删除失败！",
+    "en": "Failed to delete the project file directory!"
+  },
+  {
+    "code": "52065",
+    "ch": "拷贝工程目录失败！",
+    "en": "Failed to copy the project directory!"
+  },
+  {
+    "code": "52066",
+    "ch": "工程加载状态下不允许删除工程中的程序！",
+    "en": "Program of one project cannot be deleted when the project loaded!"
+  },
+  {
+    "code": "52067",
+    "ch": "工程加载状态下不允许重命名工程中的程序！",
+    "en": "Program of one project cannot be renamed when the project loaded!"
+  },
+  {
+    "code": "52068",
+    "ch": "变量名长度超限！",
+    "en": "Variable name overrun!"
+  },
+  {
+    "code": "52069",
+    "ch": "程序平移或镜像中不允许存在与预设坐标系、工具不同的参数！",
+    "en": "Parameters different from the preset coordinate or tool parameters are not allowed in the shift or mirror program!"
+  },
+  {
+    "code": "52070",
+    "ch": "程序行数超限，程序平移或镜像的指令行数最多支持998行！",
+    "en": "The number of program lines overruns because shift or mirror progarm lines only support the maximum of 998 lines!"
+  },
+  {
+    "code": "52071",
+    "ch": "打开程序文本失败！",
+    "en": "Open program file error!"
+  },
+  {
+    "code": "52072",
+    "ch": "程序平移失败！",
+    "en": "Failed to shift the program!"
+  },
+  {
+    "code": "52073",
+    "ch": "程序平移获取结果失败！",
+    "en": "Failed to receive the program shift results!"
+  },
+  {
+    "code": "52074",
+    "ch": "镜像命令下发错误！",
+    "en": "Send Error!"
+  },
+  {
+    "code": "52075",
+    "ch": "镜像命令获取结果超时！",
+    "en": "Time Out!"
+  },
+  {
+    "code": "52076",
+    "ch": "更新变量管理表失败！",
+    "en": "Update Variable false!"
+  },
+  {
+    "code": "52077",
+    "ch": "操作失败！系统初始化未完成，请稍后重试！",
+    "en": "Operate failed! System initialization is unfinished! Please try again later!"
+  },
+  {
+    "code": "52078",
+    "ch": "获取选定外部TCP坐标系参数失败！",
+    "en": "Failed to get externaltcp coordinate system parameters!"
+  },
+  {
+    "code": "52079",
+    "ch": "获取选定变位机坐标系参数失败！",
+    "en": "Failed to get positioner coordinate system parameters!"
+  },
+  {
+    "code": "52080",
+    "ch": "获取选定负载惯量参数失败！",
+    "en": "Failed to get payload parameters!"
+  },
+  {
+    "code": "52081",
+    "ch": "传入的label名不存在，获取label所在行失败 ！",
+    "en": "The label name is not existed!"
+  },
+  {
+    "code": "52082",
+    "ch": "程序删除成功！",
+    "en": "Program deleted successfully!"
+  },
+  {
+    "code": "52083",
+    "ch": "工程删除成功！",
+    "en": "Project deleted successfully!"
+  },
+  {
+    "code": "52084",
+    "ch": "外部控制模式下不支持该操作！",
+    "en": "External mode is not support to this operation!"
+  },
+  {
+    "code": "52085",
+    "ch": "全局工程不支持该操作！",
+    "en": "It is forbid to operate Global program!"
+  },
+  {
+    "code": "52086",
+    "ch": "工程文件处于写保护状态！",
+    "en": "The project file is protected!"
+  },
+  {
+    "code": "52087",
+    "ch": "程序文件处于写保护状态！",
+    "en": "The program file is protected!"
+  },
+  {
+    "code": "52088",
+    "ch": "变量文件处于写保护状态！",
+    "en": "The var file is protected!"
+  },
+  {
+    "code": "52089",
+    "ch": "设置程序文件为只读权限失败！",
+    "en": "Failed to set the ReadOnly permission of the program file!"
+  },
+  {
+    "code": "52090",
+    "ch": "设置程序文件为读写权限失败！",
+    "en": "Failed to set the ReadWrite permission of the program file!"
+  },
+  {
+    "code": "52091",
+    "ch": "程序注释超过了最大长度！",
+    "en": "The length of Program Comment  is out of limit!"
+  },
+  {
+    "code": "52092",
+    "ch": "有工程处于加载状态,不允许执行恢复操作！",
+    "en": "There is a project in the loading state, not allow restore operations!"
+  },
+  {
+    "code": "52093",
+    "ch": "没有工程或者程序需要恢复！",
+    "en": "There are no project or program that need to be sertored!"
+  },
+  {
+    "code": "52094",
+    "ch": "只读程序无法覆盖！",
+    "en": "read only progarm cannot restore!"
+  },
+  {
+    "code": "52095",
+    "ch": "程序转换点太近或共线，请重新选取转换位置点！",
+    "en": "The position points of the progarm are too close or collinear! Please re-select position points!"
+  },
+  {
+    "code": "52096",
+    "ch": "程序内容为空，程序转换失败！",
+    "en": "Failed to shift the progarm because the content of the progarm is empty!"
+  },
+  {
+    "code": "52097",
+    "ch": "变量校验，工程数量超出限制！",
+    "en": "Checkout Project Var, Too Much Project!"
+  },
+  {
+    "code": "52098",
+    "ch": "工程变量校验中！",
+    "en": "Project Var Checkouting!"
+  },
+  {
+    "code": "52099",
+    "ch": "当前示教坐标系与所选坐标系不匹配，示教失败！",
+    "en": "Failed to teach points because current coordinate system does not match the selected coordinate system!"
+  },
+  {
+    "code": "52100",
+    "ch": "当前示教工具与所选工具不匹配，示教失败！",
+    "en": "Failed to teach points because current tool system does not match the selected tool system!"
+  },
+  {
+    "code": "52101",
+    "ch": "当前打开程序与加载程序不匹配，程序转换失败！",
+    "en": "Failed to shift the progarm because current opened program does not match current loaded program!"
+  },
+  {
+    "code": "52102",
+    "ch": "当前程序中存在点位数组变量，禁止程序转换！",
+    "en": "The current program exists position array var, forbid to shift or mirror the progarm!"
+  },
+  {
+    "code": "52103",
+    "ch": "当前程序中无位置点或程序变量校验关系缺失，禁止程序转换！",
+    "en": "There ara no position points or program var test relationship in current progarm, forbid to shift the progarm!"
+  },
+  {
+    "code": "52104",
+    "ch": "当前机器人处于协同模式，禁止加载、注销、设置PC等操作！",
+    "en": "The robot is in synchronous mode, forbid operations such as loading, unloading or setting PC!"
+  },
+  {
+    "code": "52105",
+    "ch": "设备未完全断电后再次上电！该操作被禁止",
+    "en": "Power on device before it is compeletely powered off! The current operation is disable"
+  },
+  {
+    "code": "52106",
+    "ch": "当前程序中的运动指令超过700行，禁止程序转换!",
+    "en": "The motion instructions are over 700 lines in current progarm, forbid to shift the progarm!"
+  },
+  {
+    "code": "52107",
+    "ch": "选中行范围内流程控制指令不完整，不允许转换！",
+    "en": "Logical command in selected lines of program shift or mirror is incomplete!"
+  },
+  {
+    "code": "52108",
+    "ch": "程序转换选取的开始行或结束行不合适，请重新选取！",
+    "en": "Selected start line or end line in program shift are incorrect, please reselect!"
+  },
+  {
+    "code": "52109",
+    "ch": "程序转换选取插入行不合适，请重新选取！",
+    "en": "Selected insert line is incorrect, please reselect!"
+  },
+  {
+    "code": "52110",
+    "ch": "程序转换后新程序总行数超限制！",
+    "en": "Total number of lines in new program is over limit!"
+  },
+  {
+    "code": "52111",
+    "ch": "获取目标程序总行数失败！",
+    "en": "Get total number of lines of target program failed!"
+  },
+  {
+    "code": "52112",
+    "ch": "选中行内有默认坐标系或默认工具，将按照选择坐标系或工具进行转换！",
+    "en": "Deafaut coordinate or tool not match with selected ones!"
+  },
+  {
+    "code": "52113",
+    "ch": "选择行内存在程序转换后与目标程序中名称相同的点，请修改源程序或目标程序中同名点的名称 ",
+    "en": "Target program has same point with origin program"
+  },
+  {
+    "code": "52114",
+    "ch": "源程序维护表位置变量与程序中位置变量不一致，无法进行程序转换。请检查VarE文件！ ",
+    "en": " Position vars in VarE file of original program is inconsistent with erp file"
+  },
+  {
+    "code": "52301",
+    "ch": "枚举字符串未找到！",
+    "en": "Enumeration string not found!"
+  },
+  {
+    "code": "52302",
+    "ch": "指令校验不合法！",
+    "en": "Instruction verification is illegal!"
+  },
+  {
+    "code": "52303",
+    "ch": "获取完整的指令内容失败！",
+    "en": "Failed to get complete instruction content!"
+  },
+  {
+    "code": "52304",
+    "ch": "获取新建的指令列表失败！",
+    "en": "Failed to get new instruction list!"
+  },
+  {
+    "code": "52305",
+    "ch": "获取修改的指令列表失败！",
+    "en": "Failed to get modified instruction list!"
+  },
+  {
+    "code": "52306",
+    "ch": "获取新建的小指令列表失败！",
+    "en": "Failed to get the  new \"add do\" instruction list!"
+  },
+  {
+    "code": "52307",
+    "ch": "获取修改的小指令列表失败！",
+    "en": "Failed to get the \"add do\" instruction list modified!"
+  },
+  {
+    "code": "52308",
+    "ch": "小功能指令创建失败！",
+    "en": "Failed to create \"add do\" instruction!"
+  },
+  {
+    "code": "52309",
+    "ch": "指令创建失败！",
+    "en": "Create instruction failed!"
+  },
+  {
+    "code": "52310",
+    "ch": "指令修改失败！",
+    "en": "Modify instruction failed!"
+  },
+  {
+    "code": "52311",
+    "ch": "指令复制失败！",
+    "en": "Copy instruction failed!"
+  },
+  {
+    "code": "52312",
+    "ch": "指令剪切失败！",
+    "en": "Cut instruction failed!"
+  },
+  {
+    "code": "52313",
+    "ch": "指令粘贴失败！",
+    "en": "Paste instruction failed!"
+  },
+  {
+    "code": "52314",
+    "ch": "指令删除失败！",
+    "en": "Delete instruction failed!"
+  },
+  {
+    "code": "52315",
+    "ch": "指令注释失败！",
+    "en": "Annotate instruction failed!"
+  },
+  {
+    "code": "52316",
+    "ch": "指令恢复失败！",
+    "en": "Restore instruction failed!"
+  },
+  {
+    "code": "52317",
+    "ch": "当前行号超过了最大数量限制！",
+    "en": "Current line number exceeds the maximum number of restriction!"
+  },
+  {
+    "code": "52318",
+    "ch": "变量数据超过了最大限制！",
+    "en": "Data in Variable exceeds limitation!"
+  },
+  {
+    "code": "52319",
+    "ch": "不支持的指令类型！",
+    "en": "Instruction type unsupported!"
+  },
+  {
+    "code": "52320",
+    "ch": "指令参数缺失，添加AddDo指令失败！",
+    "en": "Some instruction parameters are missing, failed to create \"AddDo\" instruction!"
+  },
+  {
+    "code": "52321",
+    "ch": "指令转译失败！",
+    "en": "Instruction translation failed!"
+  },
+  {
+    "code": "52322",
+    "ch": "指令校验时获取全部指令失败！",
+    "en": "Failed to get all instructions when the instructions are verified!"
+  },
+  {
+    "code": "52323",
+    "ch": "指令MD5校验失败！",
+    "en": "Instructions MD5 check failed!"
+  },
+  {
+    "code": "52324",
+    "ch": "工程名或程序名错误！",
+    "en": "The project name or program name is incorrect!"
+  },
+  {
+    "code": "52325",
+    "ch": "程序为空，或结束行号大于起始行号！",
+    "en": "The program is empty or the starting line number bigger than ending line number!"
+  },
+  {
+    "code": "52326",
+    "ch": "存在特殊字符或不闭合的语句，指令批量操作失败！",
+    "en": "There are special characters or logic instructions not closed, batch operation failed!"
+  },
+  {
+    "code": "52327",
+    "ch": "更新程序文件失败！",
+    "en": "Failed to update program file!"
+  },
+  {
+    "code": "52328",
+    "ch": "无法删除当前加载的程序！",
+    "en": "Current loaded program cannot be deleted!"
+  },
+  {
+    "code": "52329",
+    "ch": "程序指令数量超出最大限制！",
+    "en": "The number of the program instruction exceed the limit!"
+  },
+  {
+    "code": "52330",
+    "ch": "内存插入指令操作失败！",
+    "en": "Failed to insert an instruction into memory failed!"
+  },
+  {
+    "code": "52331",
+    "ch": "指令文件打开错误！",
+    "en": "Failed to open the instruction file of the program!"
+  },
+  {
+    "code": "52332",
+    "ch": "指令行数超出最大限制！",
+    "en": "The number of instruction lines exceeds the maximum limit!"
+  },
+  {
+    "code": "52333",
+    "ch": "指令文件为空！",
+    "en": "The instruction file is empty!"
+  },
+  {
+    "code": "52334",
+    "ch": "指令文件损坏，系统已从备份文件恢复该文件！",
+    "en": "The instruction file is corrupt, system has restored the file from the backup file!"
+  },
+  {
+    "code": "52335",
+    "ch": "单行指令长度超出限制！",
+    "en": "The length of a single line instruction exceeds the limit!"
+  },
+  {
+    "code": "52336",
+    "ch": "获取工程下的程序文件列表失败！",
+    "en": "Failed to get the list of program files under the project!"
+  },
+  {
+    "code": "52337",
+    "ch": "指令粘贴失败，没有被复制或剪切的指令！",
+    "en": "There are no instruction to be copied or cut, failed to paste instruction!"
+  },
+  {
+    "code": "52338",
+    "ch": "没有待粘贴的指令，指令粘贴失败！",
+    "en": "There are no instructions to be pasted!"
+  },
+  {
+    "code": "52339",
+    "ch": "撤销失败！",
+    "en": "Undo operation failed!"
+  },
+  {
+    "code": "52340",
+    "ch": "没有可撤销的操作！",
+    "en": "There are no operation can be undone!"
+  },
+  {
+    "code": "52341",
+    "ch": "撤销文件名错误！",
+    "en": "Undo operation of file name error!"
+  },
+  {
+    "code": "52342",
+    "ch": "触发操作不能为空！",
+    "en": "TrigDo param is empty! Please set it!"
+  },
+  {
+    "code": "52343",
+    "ch": "操作失败！程序文件与指令系统版本不匹配，两者分别为:",
+    "en": "The version of program and inst version is not matching! They are "
+  },
+  {
+    "code": "52344",
+    "ch": "操作的行号超过当前的程序总数，请刷新界面后重试！",
+    "en": "The line number of operation is out of the total number of current program!"
+  },
+  {
+    "code": "52345",
+    "ch": "反向粘贴不能包含IF或WHILE或FOR或SWITCH指令！",
+    "en": "Reverse paste cannot cantain IF or WHILE or FOR or SWITCH!"
+  },
+  {
+    "code": "52346",
+    "ch": "IF逻辑内ELSIF或ELSE不匹配！",
+    "en": "There is no matching ELSIF instruction or ELSE instruction in the IF instruction!"
+  },
+  {
+    "code": "52347",
+    "ch": "FOR指令内没有与之匹配的IF指令！",
+    "en": "There is no matching IF instruction in the FOR instruction!"
+  },
+  {
+    "code": "52348",
+    "ch": "WHILE指令内没有与之匹配的IF指令！",
+    "en": "There is no matching IF instruction in the WHILE instruction!"
+  },
+  {
+    "code": "52349",
+    "ch": "被注释的指令不允许被修改！",
+    "en": "The instructions which are annotated are not be allowed to be modified!"
+  },
+  {
+    "code": "52350",
+    "ch": "拷贝失败！！拷贝指令包括ELSIF或ELSE,ELSIF或ELSE必须在拷贝首行！",
+    "en": "Copy failed! The copy inst contain ELSIF or ELSE,please make sure the ELSIF or ELSE must in copy first row!"
+  },
+  {
+    "code": "52501",
+    "ch": "获取所有的变量值域失败！",
+    "en": "Failed to get all variable scopes!"
+  },
+  {
+    "code": "52502",
+    "ch": "变量列表获取失败！",
+    "en": "Failed to get variable list!"
+  },
+  {
+    "code": "52503",
+    "ch": "变量名为空或超过最大长度！",
+    "en": "Variable name is empty or exceeds the maximum length!"
+  },
+  {
+    "code": "52504",
+    "ch": "变量作用域错误！",
+    "en": "Variable scope error!"
+  },
+  {
+    "code": "52505",
+    "ch": "变量名已存在！",
+    "en": "Variable name have existed!"
+  },
+  {
+    "code": "52506",
+    "ch": "变量创建失败！",
+    "en": "Create variable failed!"
+  },
+  {
+    "code": "52507",
+    "ch": "变量删除失败！",
+    "en": "Delete variable failed!"
+  },
+  {
+    "code": "52508",
+    "ch": "变量修改失败！",
+    "en": "Modify variable failed!"
+  },
+  {
+    "code": "52509",
+    "ch": "变量值获取失败！",
+    "en": "Get variable value failed!"
+  },
+  {
+    "code": "52510",
+    "ch": "变量名获取失败！",
+    "en": "Get variable name failed!"
+  },
+  {
+    "code": "52511",
+    "ch": "变量未找到！",
+    "en": "Variable not fount!"
+  },
+  {
+    "code": "52512",
+    "ch": "变量类型不合法！",
+    "en": "Variable type is illegal!"
+  },
+  {
+    "code": "52513",
+    "ch": "示教点坐标获取失败！",
+    "en": "Failed to get teaching point!"
+  },
+  {
+    "code": "52514",
+    "ch": "程序域变量掉电保存属性不允许修改！",
+    "en": "Program domain variables power-down protection attribute does not allow change!"
+  },
+  {
+    "code": "52515",
+    "ch": "安全区域不是全局变量或者变量不存在！",
+    "en": "Safe-area is not a global variable or the variable does not exist!"
+  },
+  {
+    "code": "52516",
+    "ch": "变量新建写入文件失败！",
+    "en": "Variable creation failed to write to file!"
+  },
+  {
+    "code": "52517",
+    "ch": "变量修改写入文件失败！",
+    "en": "Variable modification failed to write to file!"
+  },
+  {
+    "code": "52518",
+    "ch": "变量示教写入文件失败！",
+    "en": "Variable teaching failed to write to file!"
+  },
+  {
+    "code": "52519",
+    "ch": "变量值不合法或超过最大长度！",
+    "en": "The variable value is invalid or the value's length exceeds the limit!"
+  },
+  {
+    "code": "52520",
+    "ch": "PLC变量索引号不能相同！",
+    "en": "The indexes of different PLC variables cannot be the same!"
+  },
+  {
+    "code": "52521",
+    "ch": "PLC变量已达最大数量！",
+    "en": "The number of PLC variable exceeds the maximum number limit!"
+  },
+  {
+    "code": "52522",
+    "ch": "PLC变量正在被其他应用占用！",
+    "en": "PLC variable is using by other applications!"
+  },
+  {
+    "code": "52523",
+    "ch": "变量重命名失败！",
+    "en": "Failed to rename the variable!"
+  },
+  {
+    "code": "52524",
+    "ch": "系统变量不允许修改！",
+    "en": "The system variables cannot be modified!"
+  },
+  {
+    "code": "52525",
+    "ch": "系统变量不允许删除！",
+    "en": "The system variables cannot be deleted!"
+  },
+  {
+    "code": "52526",
+    "ch": "系统变量不允许重命名！",
+    "en": "The system variables cannot be renamed!"
+  },
+  {
+    "code": "52527",
+    "ch": "全局变量内部处理错误！",
+    "en": "Global variable internal processing error!"
+  },
+  {
+    "code": "52528",
+    "ch": "工程变量内部处理错误！",
+    "en": "Project variable internal processing error!"
+  },
+  {
+    "code": "52529",
+    "ch": "程序变量内部处理错误！",
+    "en": "Program variable internal processing error!"
+  },
+  {
+    "code": "52530",
+    "ch": "Run/Kill数据内部处理错误！",
+    "en": "Run/Kill data internal processing error!"
+  },
+  {
+    "code": "52531",
+    "ch": "删除全局变量执行失败！",
+    "en": "Failed to delete the global variable!"
+  },
+  {
+    "code": "52532",
+    "ch": "删除工程变量执行失败！",
+    "en": "Failed to delete the project variable!"
+  },
+  {
+    "code": "52533",
+    "ch": "删除程序变量执行失败！",
+    "en": "Failed to delete the program variable!"
+  },
+  {
+    "code": "52534",
+    "ch": "安全区域变量数据获取失败！",
+    "en": "Failed to get data of the area variable!"
+  },
+  {
+    "code": "52535",
+    "ch": "安全区域变量不存在或者不是全局变量！",
+    "en": "The area variable does not exist or is not a global variable!"
+  },
+  {
+    "code": "52536",
+    "ch": "系统变量不允许删除！",
+    "en": "The system variable is not allowed to be delete!"
+  },
+  {
+    "code": "52537",
+    "ch": "当前加载的工程或程序与变量所在工程或程序不匹配！",
+    "en": "The currently loaded project or program does not match which the variable in!"
+  },
+  {
+    "code": "52538",
+    "ch": "没有找到该用户坐标系变量！",
+    "en": "The user coordinate system variable was not found!"
+  },
+  {
+    "code": "52539",
+    "ch": "没有找到该工具坐标系变量！",
+    "en": "The tool coordinate system variable was not found!"
+  },
+  {
+    "code": "52540",
+    "ch": "该变量在程序指令中已经被引用！",
+    "en": "The variable has been referenced in the program!"
+  },
+  {
+    "code": "52541",
+    "ch": "系统变量不允许创建！",
+    "en": "The system variables cannot be created!"
+  },
+  {
+    "code": "52542",
+    "ch": "变量所在程序与当前打开的程序不一致！",
+    "en": "Variable is not in the current open program!"
+  },
+  {
+    "code": "52543",
+    "ch": "程序变量文本打开失败！",
+    "en": "Failed to open program variable text!"
+  },
+  {
+    "code": "52544",
+    "ch": "禁止对已被设为系统工具坐标系的tool参数进行修改/删除/重命名操作！",
+    "en": "This Variable is being used by the system tool, operate failed!"
+  },
+  {
+    "code": "52545",
+    "ch": "禁止对已被设为系统用户坐标系的user参数进行修改/删除/重命名操作！",
+    "en": "This Variable is being used by the system user, operate failed!"
+  },
+  {
+    "code": "52546",
+    "ch": "禁止对已被设为系统工件负载的payload参数进行修改/删除/重命名操作！",
+    "en": "This Variable is being used by the system payload, operate failed!"
+  },
+  {
+    "code": "52547",
+    "ch": "当前域变量总数达到上限！",
+    "en": "The total number of variables in the current domain has reached the upper limit!"
+  },
+  {
+    "code": "52548",
+    "ch": "变量创建失败,个数超出！",
+    "en": "Create variable failed,number of variables has reached the upper limit!"
+  },
+  {
+    "code": "52549",
+    "ch": "禁止对使用中的extTcp参数进行修改/删除/重命名操作！",
+    "en": "This Variable is being used by the system, operate failed!"
+  },
+  {
+    "code": "52550",
+    "ch": "禁止对使用中的变位机参数进行修改/删除/重命名操作！",
+    "en": "This Variable is being used by the system, operate failed!"
+  },
+  {
+    "code": "52551",
+    "ch": "修改t_x域变量失败！",
+    "en": "Failed to modify t_x domain variable!"
+  },
+  {
+    "code": "52552",
+    "ch": "修改t_xb域变量失败！",
+    "en": "Failed to modify t_xb domain variable!"
+  },
+  {
+    "code": "52553",
+    "ch": "修改临时域变量失败！",
+    "en": "Failed to modify t_tmp domain variable!"
+  },
+  {
+    "code": "52554",
+    "ch": "临时域变量转字符串失败！",
+    "en": "Conversion of t_tmp domain variable to string failed!"
+  },
+  {
+    "code": "52555",
+    "ch": "更新变量文本失败！",
+    "en": "Failed to update variable text!"
+  },
+  {
+    "code": "52556",
+    "ch": "禁止对已设为默认工具坐标系的tool参数进行删除/重命名操作！",
+    "en": "This Variable is being used by the default tool, operate failed!"
+  },
+  {
+    "code": "52557",
+    "ch": "禁止对已设为默认用户坐标系的user参数进行删除/重命名操作！",
+    "en": "This Variable is being used by the default user, operate failed!"
+  },
+  {
+    "code": "52558",
+    "ch": "禁止对已设为默认工件负载的payload参数进行删除/重命名操作！",
+    "en": "This Variable is being used by the default payload, operate failed!"
+  },
+  {
+    "code": "52559",
+    "ch": "此区域变量处于激活状态，请冻结区域后再删除此变量！",
+    "en": "Failed to delete the variable because the variable is activated,please deactivate the variable then delete the variable!"
+  },
+  {
+    "code": "52560",
+    "ch": "禁止对已被设为动坐标系的syncoord参数进行修改/删除/重命名操作！",
+    "en": "This Variable is being used by the system synccoord, operate failed!"
+  },
+  {
+    "code": "52561",
+    "ch": "多边体区域变量数据获取失败！",
+    "en": "Failed to get data of the polyhedron area variable!"
+  },
+  {
+    "code": "52562",
+    "ch": "多边体区域变量不存在或者不是全局变量！",
+    "en": "The polyhedron area variable does not exist or is not a global variable!"
+  },
+  {
+    "code": "52563",
+    "ch": "全局工程中不可创建/使用/查看工程变量 ！",
+    "en": "It is forbid to use project var in Global program!"
+  },
+  {
+    "code": "52564",
+    "ch": "获取IO值失败！",
+    "en": "Get IO value failed!"
+  },
+  {
+    "code": "52565",
+    "ch": "保存的点位数组元素太多，可删除一些数组后尝试！",
+    "en": "Too many saved POS array, please delete some arrays and try!"
+  },
+  {
+    "code": "52566",
+    "ch": "点位数组个数已达最大值！",
+    "en": "The number of POS arrays has reached the maximum!"
+  },
+  {
+    "code": "52567",
+    "ch": "获取显示变量域失败！",
+    "en": "Failed to get displaying var scope!"
+  },
+  {
+    "code": "52568",
+    "ch": "设置显示变量域失败！",
+    "en": "Failed to set displaying var scope!"
+  },
+  {
+    "code": "52569",
+    "ch": "更新变量文本冲突！",
+    "en": "update variable text conflicted!"
+  },
+  {
+    "code": "52570",
+    "ch": "校验位置变量的变量注释失败！",
+    "en": "Failed to check Pos var note!"
+  },
+  {
+    "code": "52571",
+    "ch": "位置数组变量不支持复制粘贴！",
+    "en": "Pos Array Var not support Copy and Paste!"
+  },
+  {
+    "code": "52572",
+    "ch": "变量拷贝失败！变量名已存在",
+    "en": "Copy Var Failed! VarName Exited!"
+  },
+  {
+    "code": "52573",
+    "ch": "变量拷贝失败! 变量拷贝不能跨域或工程",
+    "en": "Copy Var Failed! Cross Scope or Project not Support"
+  },
+  {
+    "code": "52701",
+    "ch": "“停止”命令写入到解析器或者内核中失败！",
+    "en": "The stop command failed to be written to parser or motion kernel!"
+  },
+  {
+    "code": "52702",
+    "ch": "启动解析器或者内核失败！",
+    "en": "Failed to start parser or motion kernel!"
+  },
+  {
+    "code": "52703",
+    "ch": "程序指针设置失败！",
+    "en": "Set point cursor failed!"
+  },
+  {
+    "code": "52704",
+    "ch": "程序模式设置失败！",
+    "en": "Set program mode failed!"
+  },
+  {
+    "code": "52705",
+    "ch": "工具坐标系变量获取失败！",
+    "en": "Failed to get the tool coordinate system variable!"
+  },
+  {
+    "code": "52706",
+    "ch": "工具坐标系设置失败！",
+    "en": "Failed to set the tool coordinate system!"
+  },
+  {
+    "code": "52707",
+    "ch": "用户坐标系获取失败！",
+    "en": "Failed to get the user coordinate system!"
+  },
+  {
+    "code": "52708",
+    "ch": "用户坐标系设置失败！",
+    "en": "Failed to set the user coordinate system!"
+  },
+  {
+    "code": "52709",
+    "ch": "程序没有加载！",
+    "en": "The program has not been loaded!"
+  },
+  {
+    "code": "52710",
+    "ch": "PLC变量属性有变更，更改将在重启后生效！",
+    "en": "The \"PLC\" variable attributes have changed, the changes will take effect after restart!"
+  },
+  {
+    "code": "52711",
+    "ch": "当前程序仅为打开状态，不允许启动！",
+    "en": "Current program is only open and not allowed to start!"
+  },
+  {
+    "code": "52712",
+    "ch": "程序不处于停止或暂停状态，启动程序失败！",
+    "en": "The program is not in pause or stop state, failed to start the program!"
+  },
+  {
+    "code": "52713",
+    "ch": "启动运动内核失败，无法启动程序！",
+    "en": "Failed to start the motion kernel, cannot start the program!"
+  },
+  {
+    "code": "52714",
+    "ch": "停止指令下发失败！",
+    "en": "The stop command failed to be delivered!"
+  },
+  {
+    "code": "52715",
+    "ch": "当前无工程加载，或打开的程序与加载程序不匹配！",
+    "en": "There is no project loaded, or the program opened does not match the loaded one!"
+  },
+  {
+    "code": "52716",
+    "ch": "暂停程序失败！",
+    "en": "Failed to pause the program!"
+  },
+  {
+    "code": "52717",
+    "ch": "恢复启动内核失败，无法启动程序！",
+    "en": "Failed to restart the motion kernel ,cannot start the program!"
+  },
+  {
+    "code": "52718",
+    "ch": "恢复指令解析失败，无法启动程序！",
+    "en": "Recovery parsing instructions failed, cannot start the program!"
+  },
+  {
+    "code": "52719",
+    "ch": "启动指令解析失败，无法启动程序！",
+    "en": "Failed to start parsing instruction, cannot start the program!"
+  },
+  {
+    "code": "52720",
+    "ch": "“停止”命令写入解析器失败！",
+    "en": "The stop command failed to be written to the parser!"
+  },
+  {
+    "code": "52721",
+    "ch": "“暂停”命令写入解析器失败！",
+    "en": "The pause command failed to be written to the parser!"
+  },
+  {
+    "code": "52722",
+    "ch": "“暂停”命令写入内核失败！",
+    "en": "The pause command failed to be written to the kernel!"
+  },
+  {
+    "code": "52723",
+    "ch": "激活区域命令写入解析器失败！",
+    "en": "Activating area command failed to be written to parser!"
+  },
+  {
+    "code": "52724",
+    "ch": "冻结区域命令写入内核失败！",
+    "en": "Freezing area command failed to be written to motion kernel!"
+  },
+  {
+    "code": "52725",
+    "ch": "此次工具参数标定错误，请重新标定！",
+    "en": "Failed to calculate TOOL param, please calculate it again!"
+  },
+  {
+    "code": "52726",
+    "ch": "此次用户坐标系标定错误，请重新标定！",
+    "en": "Failed to calculate UserCoord param, please calculate it again!"
+  },
+  {
+    "code": "52727",
+    "ch": "获取暂停点与当前点是否一致的状态失败！",
+    "en": "Failed to get pause point state!"
+  },
+  {
+    "code": "52728",
+    "ch": "请切换到手动模式，再设置为倒序执行！",
+    "en": "Please set Back_Step in Teach mode!"
+  },
+  {
+    "code": "52729",
+    "ch": "设置的变量类型不合法！",
+    "en": "Please ensure the default param type is legal!"
+  },
+  {
+    "code": "52730",
+    "ch": "一点到达只支持手动模式！",
+    "en": "The function which system can mov to targetPos only support jog mode!"
+  },
+  {
+    "code": "52731",
+    "ch": "机器人未完全停止状态，不响应GO操作，请增大抬起与按下的时间间隔！",
+    "en": "The robot is not completely stopped and does not respond to GO operation.Please increase the time interval between lifting and pressing!"
+  },
+  {
+    "code": "52732",
+    "ch": "从文件中刷新全局变量失败！",
+    "en": "Failed to refresh the global var from file!"
+  },
+  {
+    "code": "52733",
+    "ch": "因系统切到停止状态而导致本次中断被忽略！",
+    "en": "The interrupt was ignored because the system switched to the stop state!"
+  },
+  {
+    "code": "52734",
+    "ch": "暂停复位命令写入内核失败！",
+    "en": "The pause reset command failed to be written to the kernel!"
+  },
+  {
+    "code": "52735",
+    "ch": "系统暂停信号使能，禁止启动程序！",
+    "en": "System Stop Singal is enabled, forbid to start program!"
+  },
+  {
+    "code": "52736",
+    "ch": "程序指针信息为空，无法恢复程序指针行号！",
+    "en": "ProgPC Info is empty, failed to recover ProgPC!"
+  },
+  {
+    "code": "52737",
+    "ch": "因点位操作指令对内存的操作还未完成，系统处于锁定状态，待完成后再重试!",
+    "en": "System is locked for position operation not finished, please try later!"
+  },
+  {
+    "code": "52738",
+    "ch": "虚拟安全门信号打开，禁止启动程序！",
+    "en": "Virtual SafetyDoor Singal disabled, forbid to start program!"
+  },
+  {
+    "code": "52739",
+    "ch": "MultiProg程序执行异常！",
+    "en": "The multiprog program executed fault!"
+  },
+  {
+    "code": "52740",
+    "ch": "提速参数自调节过程中，请勿操作...",
+    "en": "ADP auto tuning..."
+  },
+  {
+    "code": "52741",
+    "ch": "PID自调节过程中，请勿操作",
+    "en": "PID auto tuning...,please do other things"
+  },
+  {
+    "code": "52742",
+    "ch": "提速参数自调节结束，请回到自动调节设置界面选择是否保存参数",
+    "en": "ADP auto tune is finished,please save it..."
+  },
+  {
+    "code": "52743",
+    "ch": "PID自调节已完成",
+    "en": "PID auto tune is finished"
+  },
+  {
+    "code": "52744",
+    "ch": "安全门打开，禁止启动程序！",
+    "en": "Safety door signal enabled, forbid to start!"
+  },
+  {
+    "code": "52745",
+    "ch": "点位重合，导轨轴标定失败！",
+    "en": "Position coincidence, calibration rail shaft filed!"
+  },
+  {
+    "code": "52746",
+    "ch": "参数保存成功!",
+    "en": "Successed to save the data!"
+  },
+  {
+    "code": "52747",
+    "ch": "参数保存失败!",
+    "en": "Failed to save the data!"
+  },
+  {
+    "code": "52748",
+    "ch": "PID自调节已完成1次!",
+    "en": "PID auto tune has been completed once!"
+  },
+  {
+    "code": "52749",
+    "ch": "PID自调节超出调节次数范围!",
+    "en": "PID auto tune exceeds the range of the tuning frequency!"
+  },
+  {
+    "code": "52750",
+    "ch": "主从机器人处于协同模式，禁止切换工具坐标系！",
+    "en": "Master robot and slave robot are in the synchronous mode, forbid to set the tool coordinate system!"
+  },
+  {
+    "code": "52751",
+    "ch": "本地自动备份进行中!",
+    "en": "Local auto backup is running!"
+  },
+  {
+    "code": "52752",
+    "ch": "远程手动备份进行中!",
+    "en": "Remote manual backup is running!"
+  },
+  {
+    "code": "52753",
+    "ch": "中断功能不支持单步模式!",
+    "en": "Interrupt is forbid to execute when system is step mode!"
+  },
+  {
+    "code": "53001",
+    "ch": "modbustcp 通讯中断！",
+    "en": "Modbustcp communication is interrupted!"
+  },
+  {
+    "code": "53002",
+    "ch": "网络连接断开超过时限，系统加密！",
+    "en": "Network disconnected beyond time limit, system encryption!"
+  },
+  {
+    "code": "53003",
+    "ch": "公网下发命令，系统加密！",
+    "en": "Public network issuing commands, system encryption!"
+  },
+  {
+    "code": "53004",
+    "ch": "公网下发命令, 功能使能！",
+    "en": "Public network issuing commands, open the function!"
+  },
+  {
+    "code": "53005",
+    "ch": "公网下发命令，永久解锁！",
+    "en": "Public network issuing commands, permanently unlock!"
+  },
+  {
+    "code": "53008",
+    "ch": "示教器设置Modbus寄存器失败！",
+    "en": "Teaching-Programming pendant write ModubsTcp register failed！"
+  },
+  {
+    "code": "53009",
+    "ch": "示教器读取Modbus寄存器失败！",
+    "en": "Teaching-Programming pendant read ModubsTcp register failed！"
+  },
+  {
+    "code": "53011",
+    "ch": "modbustcp 通讯中断，客户端主动断开，服务器接收报文失败！",
+    "en": "Modbustcp communication is interrupted, server failed to receive message because the client is actively disconnect!"
+  },
+  {
+    "code": "53012",
+    "ch": "modbustcp 通讯中断，客户端主动断开，服务器发送报文失败！",
+    "en": "Modbustcp communication is interrupted, server failed to receive message because the client is actively disconnect!"
+  },
+  {
+    "code": "53013",
+    "ch": "modbustcp 通讯中断，服务器接收报文超时！",
+    "en": "Modbustcp communication is interrupted, server received message time out!"
+  },
+  {
+    "code": "53180",
+    "ch": "已超过保养周期或日期，建议及时保养！",
+    "en": "It has exceeded the maintenance period or date, please maintain it in time!"
+  },
+  {
+    "code": "53181",
+    "ch": "当前机型与保养机型不匹配，已重置保养信息！",
+    "en": "The current robot type does not match the maintenance robot type,please reset the maintenance information !"
+  },
+  {
+    "code": "53182",
+    "ch": "编码器电池使用已超过一年，请及时维护检查！",
+    "en": "The battery has been used for more than half a year. Please maintain and check it in time!"
+  },
+  {
+    "code": "53183",
+    "ch": "编码器电池电压过低，请及时维护检查！",
+    "en": "The battery has been in undervotage. Please maintain and check it in time!"
+  },
+  {
+    "code": "53502",
+    "ch": "加载eni.xml文件失败 ",
+    "en": "Failed to load eni.xml file!"
+  },
+  {
+    "code": "53503",
+    "ch": "加载slaveinfo.xml文件失败 ",
+    "en": "Failed to load slaveinfo.xml file!"
+  },
+  {
+    "code": "53504",
+    "ch": "保存文件失败",
+    "en": "Failed to save file!"
+  },
+  {
+    "code": "53505",
+    "ch": "备份文件失败",
+    "en": "Failed to backup file!"
+  },
+  {
+    "code": "53506",
+    "ch": "设备类型输入错误",
+    "en": "Failed to identify the input device type!"
+  },
+  {
+    "code": "53507",
+    "ch": "操作文件错误",
+    "en": "Failed to modify file!"
+  },
+  {
+    "code": "53508",
+    "ch": "打开文件错误",
+    "en": "Failed to open file!"
+  },
+  {
+    "code": "53509",
+    "ch": "该电柜不支持操作IO",
+    "en": "Failed to modify io device!"
+  },
+  {
+    "code": "53510",
+    "ch": "添加伺服数量超限",
+    "en": "Add servo quantity overrun!"
+  },
+  {
+    "code": "53511",
+    "ch": "添加IO数量超限",
+    "en": "Add io quantity overrun!"
+  },
+  {
+    "code": "53512",
+    "ch": "添加编码器数量超限",
+    "en": "Add encoder quantity overrun!"
+  },
+  {
+    "code": "53513",
+    "ch": "删除伺服失败，拓扑最后一个伺服不可删除",
+    "en": "Failed to delete servo,the last servo is can not be deleted!"
+  },
+  {
+    "code": "53514",
+    "ch": "删除IO失败，拓扑最后一个IO不可删除",
+    "en": "Failed to delete IO,the last IO is can not be deleted!"
+  },
+  {
+    "code": "53515",
+    "ch": "删除编码器失败，拓扑最后一个编码器不可删除或不存在",
+    "en": "Failed to delete encoder,the last encoder is can not be deleted or non-exist!"
+  },
+  {
+    "code": "53516",
+    "ch": "不支持该配置操作，当前电柜中IO端子不被识别或不存在",
+    "en": "The configuration operation is not supported,the current IO of the cabinet is not recognized or non-existent!"
+  },
+  {
+    "code": "53517",
+    "ch": "不支持该配置操作，当前电柜中存在未识别模块",
+    "en": "The configuration operation is not supported,the module in cabinet can not be recognized!"
+  },
+  {
+    "code": "53518",
+    "ch": "不支持该配置操作，C1或S2电柜添加IO数量超限",
+    "en": "The configuration operation is not supported,add io quantity overrun in C1 or S2 cabinet!"
+  },
+  {
+    "code": "53602",
+    "ch": "Eip连接失败，目标设备离线！",
+    "en": "Connection establishment failed. Target is offline!"
+  },
+  {
+    "code": "53603",
+    "ch": "Eip连接失败，目标设备在线但无应答！",
+    "en": "Connection establishment failed. Target is online but did not respond to the connection request!"
+  },
+  {
+    "code": "53604",
+    "ch": "Eip连接失败，目标设备应答错误！",
+    "en": "Connection establishment failed. Target responded with an error response!"
+  },
+  {
+    "code": "53605",
+    "ch": "Eip当前连接超时！",
+    "en": "Active connection timed out!"
+  },
+  {
+    "code": "53606",
+    "ch": "Eip连接被本地或者远程关闭！",
+    "en": "Connection closed based either on the local or remote request!"
+  },
+  {
+    "code": "53607",
+    "ch": "Class1连接中运行标识已被更改！",
+    "en": "Run Idle flag changed for the incoming Class1 connection!"
+  },
+  {
+    "code": "53608",
+    "ch": "收到指定实例发送的数据！",
+    "en": "New data received for the specified assembly instance!"
+  },
+  {
+    "code": "53609",
+    "ch": "收到指定成员发送的数据！",
+    "en": "New data received for the specified assembly member!"
+  },
+  {
+    "code": "53610",
+    "ch": "Eip主站收到新的输入数据！",
+    "en": "New input data received for the scanner connection!"
+  },
+  {
+    "code": "53611",
+    "ch": "收到新连接建立请求，正在识别！",
+    "en": "New connection received!"
+  },
+  {
+    "code": "53612",
+    "ch": "连接已成功重新配置！",
+    "en": "Connection successfully reconfigured (successful NULL Forward Open)!"
+  },
+  {
+    "code": "53613",
+    "ch": "正在使用冗余连接的数据！",
+    "en": "Redundant connection's data now being used!"
+  },
+  {
+    "code": "53614",
+    "ch": "Class1连接的准备标识位已被更改！",
+    "en": "Ready Ownership Output value changed for the incoming Class1 connection!"
+  },
+  {
+    "code": "53615",
+    "ch": "冗余连接不存在主站！",
+    "en": "No redundant owner \"master\" for associated redundant connections!"
+  },
+  {
+    "code": "53616",
+    "ch": "连接失败，(D)TLS握手无法完成！",
+    "en": "Connection establishment failed. (D)TLS handshake could not be completed!"
+  },
+  {
+    "code": "53617",
+    "ch": "创建动态实例成功！",
+    "en": "A dynamic assembly isntance has been created!"
+  },
+  {
+    "code": "53618",
+    "ch": "删除动态实例成功！",
+    "en": "A dynamic assembly isntance has been deleted!"
+  },
+  {
+    "code": "53619",
+    "ch": "收到对先前发送的请求的响应！",
+    "en": "Response received on the previously sent request!"
+  },
+  {
+    "code": "53620",
+    "ch": "无法连接到请求中指定的路径！",
+    "en": "Unable to connect to the path specified in the request!"
+  },
+  {
+    "code": "53621",
+    "ch": "请求超时，从未收到响应！",
+    "en": "Request timed out - response never received!"
+  },
+  {
+    "code": "53622",
+    "ch": "已收到为客户端对象注册的请求！",
+    "en": "Request received for the object registered for the client application processing!"
+  },
+  {
+    "code": "53623",
+    "ch": "检测到Class3已有连接接收到响应报文异常！",
+    "en": "Detected change in the response received on the previously established Class3 connection!"
+  },
+  {
+    "code": "53624",
+    "ch": "收到PCCC对象请求！",
+    "en": "Request received for the PCCC object!"
+  },
+  {
+    "code": "53625",
+    "ch": "接收到针对先前发送的标识报文广播的响应！",
+    "en": "Response received for previously send List Identity broadcast!"
+  },
+  {
+    "code": "53626",
+    "ch": "收到识别重置请求！",
+    "en": "Identity Reset was received!"
+  },
+  {
+    "code": "53627",
+    "ch": "收到空的路径请求！",
+    "en": "Request received from a path targeted at the backplane!"
+  },
+  {
+    "code": "53628",
+    "ch": "网络状态已更改！",
+    "en": "Network LED status has changed!"
+  },
+  {
+    "code": "53629",
+    "ch": "网络配置对象更改完成！",
+    "en": "Connection Configuration Object changes completed!"
+  },
+  {
+    "code": "53630",
+    "ch": "已连接到指定设备，但是无法完成(D)TLS握手！",
+    "en": "Connected to path specified, but (D)TLS handshake could not be completed!"
+  },
+  {
+    "code": "53631",
+    "ch": "可分配内存不足！",
+    "en": "Out of available memory!"
+  },
+  {
+    "code": "53632",
+    "ch": "无法初始化Windows套接库！",
+    "en": "Unable to initialize Windows Sockets library!"
+  },
+  {
+    "code": "53633",
+    "ch": "主站无法启动线程！",
+    "en": "Unable to start a thread!"
+  },
+  {
+    "code": "53634",
+    "ch": "使用Windows套接字库函数时收到错误！",
+    "en": "Received an error when using Windows Sockets library functions!"
+  },
+  {
+    "code": "53635",
+    "ch": "套接字设置非阻塞模式时失败！",
+    "en": "Error encountered when setting the socket to non-blocking mode!"
+  },
+  {
+    "code": "53636",
+    "ch": "创建信号量时失败！",
+    "en": "Error encountered when failing to create semaphore!"
+  },
+  {
+    "code": "53637",
+    "ch": "客户端数量超出支持范围！",
+    "en": "Number of network peers exceeded MAX_SESSIONS constant!"
+  },
+  {
+    "code": "53638",
+    "ch": "连接数超出最大限制！",
+    "en": "Number of connections exceeded MAX_CONNECTIONS limit!"
+  },
+  {
+    "code": "53639",
+    "ch": "未完成的对象请求超出最大请求数范围！",
+    "en": " Number of outstanding object requests exceeded MAX_REQUESTS limit!"
+  },
+  {
+    "code": "53640",
+    "ch": "未完成的多个服务请求数超出范围！",
+    "en": "Number of outstanding multiple service requests exceeded MAX_REQUEST_GROUPS limit!"
+  },
+  {
+    "code": "53641",
+    "ch": "尝试获取对象响应时指定了未知索引！",
+    "en": "Unknown index specified when trying to get an object response!"
+  },
+  {
+    "code": "53642",
+    "ch": "未收到对发送的请求的响应！",
+    "en": "The response on the request sent has not been received yet!"
+  },
+  {
+    "code": "53643",
+    "ch": "指定的实例没有可用的活动连接！",
+    "en": "There is no active connection available for the specified instance!"
+  },
+  {
+    "code": "53644",
+    "ch": "主机地址未声明！",
+    "en": "No host addresses have been claimed yet!"
+  },
+  {
+    "code": "53645",
+    "ch": "主机地址无效或者未声明！",
+    "en": "Invalid or not yet claimed host address specified in the function call!"
+  },
+  {
+    "code": "53646",
+    "ch": "指定的实例连接号无效！",
+    "en": "Invalid assembly instance specified!"
+  },
+  {
+    "code": "53647",
+    "ch": "指定实例连接号已存在！",
+    "en": "Multiple claims of the assembly instance!"
+  },
+  {
+    "code": "53648",
+    "ch": "配置的实例连接数量超出最大限制！",
+    "en": "Number of configured assemblies would exceed MAX_ASSEMBLIES limit !"
+  },
+  {
+    "code": "53649",
+    "ch": "配置的偏移地址缓冲区重叠！",
+    "en": "Specified offset and size combination overlap with one of the already configured assemblies!"
+  },
+  {
+    "code": "53650",
+    "ch": "偏移地址缓冲区已满！",
+    "en": "No unallocated buffer space left in the assembly buffer!"
+  },
+  {
+    "code": "53651",
+    "ch": "指定实例连接配置数据交互大小超出限制！",
+    "en": "Specified assembly size exceed maximum allowed size of MAX_ASSEMBLY_SIZE!"
+  },
+  {
+    "code": "53652",
+    "ch": "指定实例连接尚未配置！",
+    "en": "Specified assembly instance has not been configured!"
+  },
+  {
+    "code": "53653",
+    "ch": "指定实例连接号已被使用！",
+    "en": "Specified assembly instance is being used by one of the active or pending connections!"
+  },
+  {
+    "code": "53654",
+    "ch": "指定成员大小将导致成员列表超出限制！",
+    "en": "Specified member size would cause the total member list size exceed assembly instance size!"
+  },
+  {
+    "code": "53655",
+    "ch": "配置成员数目超出限制！",
+    "en": "Number of configured members for the corresponding assembly would exceed MAX_MEMBERS limit!"
+  },
+  {
+    "code": "53656",
+    "ch": "多个主站实例声明！",
+    "en": "Multiple claims of the assembly instance member!"
+  },
+  {
+    "code": "53657",
+    "ch": "指定的标识实例无效！",
+    "en": "Invalid identity instance specified!"
+  },
+  {
+    "code": "53658",
+    "ch": "空的转发打开请求，而现有请求正在处理中！",
+    "en": "NULL Forward Open request made while existing one is still being processed!"
+  },
+  {
+    "code": "53659",
+    "ch": "打开连接函数接口失效！",
+    "en": "Invalid value in EtIPConnectionConfig when calling OpenConnection function !"
+  },
+  {
+    "code": "53660",
+    "ch": "显式消息数据区过大！",
+    "en": "Message data size for class3 connection is too big!"
+  },
+  {
+    "code": "53661",
+    "ch": "没有为数据分配足够的数据缓冲区！",
+    "en": "Not enough buffer size was allocated for a STRINGI <-> buffer conversion!"
+  },
+  {
+    "code": "53662",
+    "ch": "指定连接的输入/输出过大！",
+    "en": "Connection size specified is too large for the connection!"
+  },
+  {
+    "code": "53663",
+    "ch": "尝试修改已有连接的输入/输出字节数！",
+    "en": "Variable sized connection operation attempted on fixed sized connection!"
+  },
+  {
+    "code": "53664",
+    "ch": "正在尝试在未应答的显式消息上继续发送请求！",
+    "en": "Attempting to send an explicit message on a class3 connection that already has an outstanding request!"
+  },
+  {
+    "code": "53665",
+    "ch": "Eip连接失败，发送无连接信息请求！",
+    "en": "EIP connection failed,EIP_NO_ORIGINATE_UCMM is set and application is trying to send a UCMM!"
+  },
+  {
+    "code": "53666",
+    "ch": "Eip连接失败，发送显式消息请求未应答！",
+    "en": "EIP connection failed,Send Exp Msg and non-response!"
+  },
+  {
+    "code": "53667",
+    "ch": "Eip连接失败，Adapter连接IP地址已存在，不允许重复添加！",
+    "en": "EIP connection failed,Adapter IP Address has existed!"
+  },
+  {
+    "code": "53668",
+    "ch": "Eip连接失败，Adapter的IP地址与LAN4IP重复！",
+    "en": "EIP connection failed,Adapter IP Address same as LAN4 IP Address!"
+  },
+  {
+    "code": "54001",
+    "ch": "模型辨识模块，与内核通讯失败！",
+    "en": "Failed to communicate with Kernel!"
+  },
+  {
+    "code": "54002",
+    "ch": "模型辨识模块，创建与子模块的通讯失败！",
+    "en": "Failed to create communication with submodule!"
+  },
+  {
+    "code": "54003",
+    "ch": "模型辨识模块，与子模块的通讯失败！",
+    "en": "Failed to communicate with submodule!"
+  },
+  {
+    "code": "54004",
+    "ch": "模型辨识模块，校验与子模块的参数配置，当前不支持该机型类型！",
+    "en": "This type of robot is not supported!"
+  },
+  {
+    "code": "54005",
+    "ch": "模型辨识模块，校验与子模块的参数配置，本体轴数设置有误！",
+    "en": "The number of robot axes is wrong!"
+  },
+  {
+    "code": "54006",
+    "ch": "模型辨识模块，校验与子模块的参数配置，轴速比参数设置有误！",
+    "en": "Joint transmission ratio is set incorrectly!"
+  },
+  {
+    "code": "54099",
+    "ch": "模型辨识过程中，请等待数分钟...",
+    "en": "Please waiting for a few minutes..."
+  },
+  {
+    "code": "54101",
+    "ch": "模型辨识模块，通讯连接失败！",
+    "en": "Communication connection failure!"
+  },
+  {
+    "code": "54102",
+    "ch": "模型辨识模块，不支持当前机型！",
+    "en": "The type of robot is not supported!"
+  },
+  {
+    "code": "54103",
+    "ch": "模型辨识模块，关节参数校验有误！",
+    "en": "The joint parameters are incorrectly set!"
+  },
+  {
+    "code": "54104",
+    "ch": "模型辨识模块，腕部关节参数校验有误！",
+    "en": "Wrist joint parameters are incorrectly set!"
+  },
+  {
+    "code": "54105",
+    "ch": "模型辨识模块，校验初始化状态失败！",
+    "en": "Failed to verify the initialization status!"
+  },
+  {
+    "code": "54106",
+    "ch": "模型辨识模块，校验机型配置参数失败！",
+    "en": "Failed to verify the robot configuration!"
+  },
+  {
+    "code": "54107",
+    "ch": "模型辨识模块，校验机型对象失败！",
+    "en": "Failed to verify the object of robot!"
+  },
+  {
+    "code": "54108",
+    "ch": "模型辨识模块，子模块通讯连接失败！",
+    "en": "Communication connection of the submodule fails!"
+  },
+  {
+    "code": "54109",
+    "ch": "模型辨识模块，校验子模块初始化失败！",
+    "en": "Failed to verify submodule initialization!"
+  },
+  {
+    "code": "54110",
+    "ch": "模型辨识模块，模型类型配置有误！",
+    "en": "The type of robot is wrong!"
+  },
+  {
+    "code": "54111",
+    "ch": "模型辨识模块，负载/工具辨识时，缺少本体模型！",
+    "en": "The robot model is missing in payload/tool identification!"
+  },
+  {
+    "code": "54112",
+    "ch": "模型辨识模块，子模块通讯建立失败！",
+    "en": "Failed to create submodule communication!"
+  },
+  {
+    "code": "54113",
+    "ch": "模型辨识模块，子模块通讯数据为空！",
+    "en": "The communication data of the submodule is empty!"
+  },
+  {
+    "code": "54114",
+    "ch": "模型辨识模块，更新模型文件失败！",
+    "en": "Failed to update the model file!"
+  },
+  {
+    "code": "54115",
+    "ch": "模型辨识模块，清理缓存失败！",
+    "en": "Failed to clear cache!"
+  },
+  {
+    "code": "54116",
+    "ch": "模型辨识模块，清理临时文件！",
+    "en": "Failed to clear temporary files!"
+  },
+  {
+    "code": "54117",
+    "ch": "模型辨识模块，子模块建立失败！",
+    "en": "Failed to create the submodule!"
+  },
+  {
+    "code": "54118",
+    "ch": "模型辨识模块异常,请重启后再使用该功能！",
+    "en": "Model identification process is interrupted! Please restart system!"
+  },
+  {
+    "code": "54119",
+    "ch": "模型辨识模块，负载/工具结果数据误差较大，不建议采用！",
+    "en": "The error of payload/tool result is too large, so it's not recommended!"
+  },
+  {
+    "code": "54120",
+    "ch": "模型辨识模块，未找到Robot辨识数据！",
+    "en": "Robot-data is not found!"
+  },
+  {
+    "code": "54121",
+    "ch": "模型辨识模块，Robot辨识数据量太少！",
+    "en": "Robot-data is too little!"
+  },
+  {
+    "code": "54122",
+    "ch": "模型辨识模块，Robot辨识数据量过多！",
+    "en": "Robot-data is too much!"
+  },
+  {
+    "code": "54123",
+    "ch": "模型辨识模块，未找到WithLoad辨识数据！",
+    "en": "WithLoad-data is not found!"
+  },
+  {
+    "code": "54124",
+    "ch": "模型辨识模块，WithLoad辨识数据量太少！",
+    "en": "WithLoad-data is too little!"
+  },
+  {
+    "code": "54125",
+    "ch": "模型辨识模块，WithLoad辨识数据量过多！",
+    "en": "WithLoad-data is too much!"
+  },
+  {
+    "code": "54126",
+    "ch": "模型辨识模块，未找到ValidData辨识数据！",
+    "en": "ValidData-data is not found!"
+  },
+  {
+    "code": "54127",
+    "ch": "模型辨识模块，ValidData辨识数据量太少！",
+    "en": "ValidData-data is too little!"
+  },
+  {
+    "code": "54128",
+    "ch": "模型辨识模块，ValidData辨识数据量过多！",
+    "en": "ValidData-data is too much!"
+  },
+  {
+    "code": "54130",
+    "ch": "模型辨识模块，当前剩余存储空间过小！",
+    "en": "Remaining storage space is too small!"
+  },
+  {
+    "code": "54170",
+    "ch": "模型辨识模块，机型对象中参数信息有误！",
+    "en": "Parameters in the model of object are incorrect!"
+  },
+  {
+    "code": "54171",
+    "ch": "模型辨识模块，杆件参数信息有误！",
+    "en": "The link parameter information is incorrect!"
+  },
+  {
+    "code": "54172",
+    "ch": "模型辨识模块，轴电机额定转矩参数信息有误！",
+    "en": "Motor rated torque parameter information is incorrect!"
+  },
+  {
+    "code": "54173",
+    "ch": "模型辨识模块，关节运动当量参数信息有误！",
+    "en": "The information of joint motion equivalent parameter is incorrect!"
+  },
+  {
+    "code": "54174",
+    "ch": "模型辨识模块，关节速比或耦合参数信息有误！",
+    "en": "The parameter information of joint transmission ratio is incorrect!"
+  },
+  {
+    "code": "54175",
+    "ch": "模型辨识模块，指令配置参数信息有误！",
+    "en": "The command setting information is incorrect!"
+  },
+  {
+    "code": "54176",
+    "ch": "模型辨识模块，本体安装类型信息有误！",
+    "en": "The method of mount information is incorrect!"
+  },
+  {
+    "code": "54177",
+    "ch": "模型辨识模块，附加机构配置信息有误！",
+    "en": "The additional organization information is incorrect!"
+  },
+  {
+    "code": "54178",
+    "ch": "模型辨识模块，附加信息有误！",
+    "en": "The additional information is incorrect!"
+  },
+  {
+    "code": "54300",
+    "ch": "模型辨识模块，配置参数异常导致模块运行中断！",
+    "en": "The module is interrupted because the condition parameters are abnormal!"
+  },
+  {
+    "code": "54301",
+    "ch": "模型辨识模块，计算过程中发生暂停，系统转入停止！",
+    "en": "System will switch to stop status because pause happen during calculate erbd!"
+  },
+  {
+    "code": "55001",
+    "ch": "Log模块加载组件失败！",
+    "en": "ER_LOG failed to load components!"
+  },
+  {
+    "code": "55002",
+    "ch": "Manager模块加载组件失败！",
+    "en": "ER_Manager failed to load components!"
+  },
+  {
+    "code": "55003",
+    "ch": "MovManager模块加载组件失败！",
+    "en": "ER_MovManager failed to load components!"
+  },
+  {
+    "code": "55004",
+    "ch": "Instruction模块加载组件失败！",
+    "en": "ER_Instruction failed to load components!"
+  },
+  {
+    "code": "55005",
+    "ch": "Linker模块加载组件失败！",
+    "en": "ER_Linker failed to load components!"
+  },
+  {
+    "code": "55006",
+    "ch": "PlcManager模块加载组件失败！",
+    "en": "ER_PlcManager failed to load components!"
+  },
+  {
+    "code": "55007",
+    "ch": "Cam2D3D模块加载组件失败！",
+    "en": "ER_Cam2D3D failed to load components!"
+  },
+  {
+    "code": "55008",
+    "ch": "ModbusTCP模块加载组件失败！",
+    "en": "ER_ModbusTCP failed to load components!"
+  },
+  {
+    "code": "55009",
+    "ch": "CommIFace模块加载组件失败！",
+    "en": "ER_CommIFace failed to load components!"
+  },
+  {
+    "code": "55010",
+    "ch": "CfgManager模块加载组件失败！",
+    "en": "ER_CfgManager failed to load components!"
+  },
+  {
+    "code": "55011",
+    "ch": "OPCUA模块加载组件失败！",
+    "en": "ER_OPCUA failed to load components!"
+  },
+  {
+    "code": "55021",
+    "ch": "创建EIP通信的共享缓存失败！",
+    "en": " Failed to create EIP Share Memory  !"
+  },
+  {
+    "code": "55022",
+    "ch": "OPCUA创建共享缓存失败！",
+    "en": "ER_OPCUA failed to create Share Memory  !"
+  },
+  {
+    "code": "55023",
+    "ch": "初始化与RTMC交互的共享缓存失败！",
+    "en": "ER_MovManager failed to init Share Memory  !"
+  },
+  {
+    "code": "55031",
+    "ch": "初始化RtProgram失败！",
+    "en": "Start RtProgram failed!"
+  },
+  {
+    "code": "55032",
+    "ch": "PRT启动失败！",
+    "en": "Start PRT failed!"
+  },
+  {
+    "code": "55033",
+    "ch": "OPCUA启动失败！",
+    "en": "Start OPCUA failed!"
+  },
+  {
+    "code": "55041",
+    "ch": "UPS创建线程启动失败！",
+    "en": "Create UPS thread failed!"
+  },
+  {
+    "code": "55042",
+    "ch": "Cam2D3D创建线程启动失败！",
+    "en": "Create UPS thread failed!"
+  },
+  {
+    "code": "55051",
+    "ch": "Instruction初始化配置文件失败！",
+    "en": "ER_Instruction init configure files failed!"
+  },
+  {
+    "code": "55052",
+    "ch": "数据文件加载失败！",
+    "en": "Load data  file failed!"
+  },
+  {
+    "code": "55053",
+    "ch": "global.erd文件加载失败！",
+    "en": "Load project file failed!"
+  },
+  {
+    "code": "55054",
+    "ch": "数学库加载失败！",
+    "en": "Load Math library failed!"
+  },
+  {
+    "code": "55055",
+    "ch": "string库加载失败！",
+    "en": "Load String library failed!"
+  },
+  {
+    "code": "55056",
+    "ch": "APOS&CPOS数组加载失败！",
+    "en": "Load APOS&CPOS array failed!"
+  },
+  {
+    "code": "55057",
+    "ch": "全局变量数据加载失败！",
+    "en": "Load Global data failed!"
+  },
+  {
+    "code": "55058",
+    "ch": "T_gb表加载失败！",
+    "en": "Load T_gb failed!"
+  },
+  {
+    "code": "55059",
+    "ch": "打开系统数据文件失败！",
+    "en": "Open system data file failed!"
+  },
+  {
+    "code": "55060",
+    "ch": "系统IO加载失败！",
+    "en": "Load system IO failed!"
+  },
+  {
+    "code": "55061",
+    "ch": "system.erd文件加载失败！",
+    "en": "Load system data failed!"
+  },
+  {
+    "code": "55062",
+    "ch": "component文件加载失败！",
+    "en": "Load component file failed!"
+  },
+  {
+    "code": "55063",
+    "ch": "commIFace读取系统参数失败！",
+    "en": "CommIFace read system parameter failed!"
+  },
+  {
+    "code": "55071",
+    "ch": "ModbusTCP 初始化失败！",
+    "en": "ER_ModbusTCP init failed!"
+  },
+  {
+    "code": "55080",
+    "ch": "创建信号量失败！",
+    "en": "Create semaphore failed!"
+  }
+]
